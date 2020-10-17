@@ -8,19 +8,18 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
+  root: {},
   appbar: {
     background: "#56377E",
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    flexGrow: 10,
   },
   navtext: {
     fontSize: "1rem",
-    flexGrow: 1,
+    ["@media (max-width:800px)"]: {
+      fontSize: "0.5rem",
+    },
   },
 }));
 
