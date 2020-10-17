@@ -6,12 +6,12 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
-  root: {},
-  appbar: {
-    background: "#56377E",
+  root: {
+    position: "absolute",
   },
-  menuButton: {
-    marginRight: theme.spacing(4),
+  appbar: {
+    background: "none",
+    boxShadow: "none"
   },
   navtext: {
     color: "white",
@@ -54,6 +54,10 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "0.5rem",
     },
   },
+  imageLogo: {
+    width: "20%",
+    marginRight: theme.spacing(3),
+  },
 }));
 
 function navbar() {
@@ -63,7 +67,15 @@ function navbar() {
       <div className={classes.root}>
         <AppBar position="static" className={classes.appbar}>
           <Toolbar>
-            <img src="./lifitwebsite.sg" alt="Logo"/>
+            <img
+              src="./method-draw-image.svg"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className={classes.imageLogo}
+              alt="Logo"
+            />
             <Typography variant="h2" className={classes.navtext}>
               Mission
             </Typography>

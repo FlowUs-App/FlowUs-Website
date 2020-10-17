@@ -1,0 +1,20 @@
+<svg width="2796.91" height="582" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.cls-1,.cls-2{fill:#fff;}.cls-2{font-size:400px;font-family:Lato-Black, Lato;font-weight:800;}.cls-3{font-size:484px;font-family:Lato-Bold, Lato;font-weight:700;}</style>
+ </defs>
+ <title>lifitwebsite</title>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect height="103.45" width="339.1" y="470.85" x="103.45" class="cls-1" id="Rechteck_1211"/>
+  <rect height="103.9" width="287.37" y="235.2" x="155.18" class="cls-1" id="Rechteck_1212"/>
+  <rect height="574.3" width="103.45" class="cls-1" id="Rechteck_1213"/>
+  <rect height="103.45" width="339.1" x="154.74" class="cls-1" id="Rechteck_1214"/>
+  <rect height="574.3" width="103.45" x="493.84" class="cls-1" id="Rechteck_1215"/>
+  <text id="svg_1" x="746.54991" y="452.45001" class="cls-2">LiFit App
+   <tspan id="svg_2" y="0" x="1570.26992" class="cls-3"/></text>
+ </g>
+</svg>
