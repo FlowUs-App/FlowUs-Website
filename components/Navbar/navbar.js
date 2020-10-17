@@ -13,11 +13,46 @@ const useStyles = makeStyles((theme) => ({
     background: "#56377E",
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(4),
   },
   navtext: {
-    fontSize: "1rem",
-    ["@media (max-width:800px)"]: {
+    color: "white",
+    marginRight: "0.8rem",
+    fontSize: "1.2rem",
+    ["@media (max-width: 800px)"]: {
+      fontSize: "1.2rem",
+    },
+    ["@media (max-width: 700px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 600px)"]: {
+      fontSize: "0.7rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      fontSize: "0.6rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      fontSize: "0.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      fontSize: "0.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      fontSize: "0.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      fontSize: "0.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      fontSize: "0.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 600px)"]: {
+      fontSize: "0.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 500px)"]: {
+      fontSize: "0.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
       fontSize: "0.5rem",
     },
   },
@@ -53,7 +88,7 @@ function navbar() {
             <Typography variant="h1" className={classes.navtext}>
               Terms of services
             </Typography>
-            <Button color="inherit">Login</Button>
+            <Button className={classes.navtext}>Login</Button>
           </Toolbar>
         </AppBar>
       </div>
