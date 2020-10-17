@@ -63,7 +63,7 @@ function navbar() {
       <div className={classes.root}>
         <AppBar position="static" className={classes.appbar}>
           <Toolbar>
-            <img src="./lifitwebsite.svg" alt="Logo"/>
+            <img src="./lifitwebsite.sg" alt="Logo"/>
             <Typography variant="h2" className={classes.navtext}>
               Mission
             </Typography>

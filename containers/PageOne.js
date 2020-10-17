@@ -5,7 +5,7 @@ function PageOne() {
   return (
     <>
       <Navbar />
-      <p>LiFit</p>
+      <p>LiFit Webpage</p>
     </>
   );
 }
