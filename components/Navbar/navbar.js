@@ -65,14 +65,7 @@ function navbar() {
       <div className={classes.root}>
         <AppBar position="static" className={classes.appbar}>
           <Toolbar>
-            <IconButton
-              edge="start"
-              className={classes.menuButton}
-              color="inherit"
-              aria-label="menu"
-            >
-              <MenuIcon />
-            </IconButton>
+            <img src="./lifitwebsite.svg" alt="Logo"/>
             <Typography variant="h2" className={classes.navtext}>
               Mission
             </Typography>
