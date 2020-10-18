@@ -108,6 +108,7 @@ function navbar() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1200 120"
               preserveAspectRatio="none"
+              fontFamily="Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif"
               className={classes.imageLogo}
               alt="Logo"
             />
