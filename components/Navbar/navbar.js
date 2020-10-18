@@ -8,20 +8,23 @@ import Button from "@material-ui/core/Button";
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "absolute",
+    marginTop: "1vw"
   },
   appbar: {
     background: "none",
     boxShadow: "none"
   },
   navtext: {
-    color: "white",
+    fontFamily: "Poppins",
+    fontWeight: "500",
+    color: "#D9F0FF",
     marginRight: "0.8rem",
-    fontSize: "1.2rem",
+    fontSize: "1rem",
     ["@media (max-width: 800px)"]: {
-      fontSize: "1.2rem",
+      fontSize: "0.9rem",
     },
     ["@media (max-width: 700px)"]: {
-      fontSize: "1rem",
+      fontSize: "0.8rem",
     },
     ["@media (max-width: 600px)"]: {
       fontSize: "0.7rem",
@@ -33,31 +36,60 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "0.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
-      fontSize: "0.5rem",
+      fontSize: "1rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
-      fontSize: "0.5rem",
+      fontSize: "0.8rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
-      fontSize: "0.5rem",
+      fontSize: "0.6rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
       fontSize: "0.5rem",
     },
-    ["@media screen and (orientation: landscape) and (max-device-width: 600px)"]: {
-      fontSize: "0.5rem",
-    },
-    ["@media screen and (orientation: landscape) and (max-device-width: 500px)"]: {
-      fontSize: "0.5rem",
-    },
     ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
-      fontSize: "0.5rem",
+      fontSize: "0.3rem",
     },
   },
   imageLogo: {
     width: "20%",
-    marginRight: theme.spacing(3),
+    marginRight: theme.spacing(60),
+    ["@media (max-width: 1500px)"]: {
+      marginRight: theme.spacing(50),
+    },
+    ["@media (max-width: 1300px)"]: {
+      marginRight: theme.spacing(40),
+    },
+    ["@media (max-width: 1200px)"]: {
+      marginRight: theme.spacing(30),
+    },
+    ["@media (max-width: 1000px)"]: {
+      marginRight: theme.spacing(20),
+    },
+    ["@media (max-width: 800px)"]: {
+      marginRight: theme.spacing(5),
+    },
+    ["@media (max-width: 700px)"]: {
+      marginRight: theme.spacing(5),
+    },
+    ["@media (max-width: 600px)"]: {
+      marginRight: theme.spacing(1),
+    },
   },
+  loginButton:{
+    width: "6.5rem",
+    letterSpacing: "0em",
+    color: "#405FB1",
+    background: "#D9F0FF",
+    border: "10px solid #D9F0FF",
+    borderRadius: "20px",
+    lineHeight: "0px",
+    display: "default",
+    "&:hover":{
+      background: "#D9F0FF",
+      fontSize: "1rem"
+    }
+  }
 }));
 
 function navbar() {
@@ -77,21 +109,21 @@ function navbar() {
               alt="Logo"
             />
             <Typography variant="h2" className={classes.navtext}>
-              Mission
+              MISSION
             </Typography>
             <Typography variant="h1" className={classes.navtext}>
-              Features
+              FEATURES
             </Typography>
             <Typography variant="h1" className={classes.navtext}>
-              Community
+              COMMUNITY
             </Typography>
             <Typography variant="h1" className={classes.navtext}>
-              Contact Us
+              CONTACT US
             </Typography>
             <Typography variant="h1" className={classes.navtext}>
-              Terms of services
+              TERMS OF SERVICES
             </Typography>
-            <Button className={classes.navtext}>Login</Button>
+            <Button variant="contained" className={classes.navtext, classes.loginButton} disableElevation>Login</Button>
           </Toolbar>
         </AppBar>
       </div>
