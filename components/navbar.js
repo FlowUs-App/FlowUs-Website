@@ -4,15 +4,18 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import CoverText from "../components/covertext";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "absolute",
-    marginTop: "1vw"
+    marginTop: "1vw",
   },
   appbar: {
     background: "none",
-    boxShadow: "none"
+    boxShadow: "none",
   },
   navtext: {
     fontFamily: "Poppins",
@@ -76,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
       marginRight: theme.spacing(1),
     },
   },
-  loginButton:{
+  loginButton: {
     width: "6.5rem",
     letterSpacing: "0em",
     color: "#405FB1",
@@ -85,11 +88,11 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "20px",
     lineHeight: "0px",
     display: "default",
-    "&:hover":{
+    "&:hover": {
       background: "#D9F0FF",
-      fontSize: "1rem"
-    }
-  }
+      fontSize: "1rem",
+    },
+  },
 }));
 
 function navbar() {
@@ -123,9 +126,17 @@ function navbar() {
             <Typography variant="h1" className={classes.navtext}>
               TERMS OF SERVICES
             </Typography>
-            <Button variant="contained" className={classes.navtext, classes.loginButton} disableElevation>Login</Button>
+            <Button
+              variant="contained"
+              className={(classes.navtext, classes.loginButton)}
+              disableElevation
+            >
+              Login
+            </Button>
           </Toolbar>
         </AppBar>
+
+        <CoverText />
       </div>
     </>
   );

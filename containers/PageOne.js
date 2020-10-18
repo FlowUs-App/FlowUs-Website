@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar/navbar";
+import Navbar from "../components/navbar";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -17,6 +17,7 @@ function PageOne() {
     <>
       <div className={classes.root}>
         <Navbar />
+
         <img src="./hombre.jpg" className={classes.bgCover}/>
       </div>
     </>
