@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "none",
   },
   navtext: {
-    fontFamily: "Poppins",
+    fontFamily: "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif", 
     fontWeight: "500",
     color: "#D9F0FF",
     marginRight: "0.8rem",

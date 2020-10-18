@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   },
   coverTitle: {
     color: "#FFFFFF",
-    fontFamily: "Lato",
+    fontFamily: "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif", 
     fontWeight: "300",
     fontSize: "7rem",
     ["@media (max-width: 1000px)"]: {
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
   },
   coverSubTitle: {
     color: "#FFFFFF",
-    fontFamily: "Lato",
+    fontFamily: "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif", 
     fontWeight: "300",
     fontSize: "1.5rem",
     ["@media (max-width: 800px)"]: {
@@ -89,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
   },
   coverButton: {
     backgroundColor: "#56377E",
-    fontFamily: "Lato",
+    fontFamily: "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif", 
     color: "#FFF",
     width: "20rem",
     height: "4rem",
