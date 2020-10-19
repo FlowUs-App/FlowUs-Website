@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     position: "absolute",
     marginTop: "1vw",
+    width: "100%",
   },
   appbar: {
     background: "none",
