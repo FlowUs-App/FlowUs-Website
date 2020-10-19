@@ -4,6 +4,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import Container from "@material-ui/core/Container";
 import CoverText from "../components/covertext";
 
 const useStyles = makeStyles((theme) => ({
@@ -60,6 +61,9 @@ const useStyles = makeStyles((theme) => ({
     ["@media (max-width: 400px)"]: {
       fontSize: "0.3rem",
     },
+    ["@media (max-width: 300px)"]: {
+      fontSize: "0.1rem",
+    },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
       fontSize: "1rem",
     },
@@ -100,7 +104,6 @@ const useStyles = makeStyles((theme) => ({
     ["@media (max-width: 600px)"]: {
       marginRight: theme.spacing(1),
     },
-
   },
   loginButton: {
     width: "6.5rem",
@@ -161,42 +164,43 @@ function navbar() {
     <>
       <div className={classes.root}>
         <AppBar position="static" className={classes.appbar}>
-          <Toolbar>
-            <img
-              src="./method-draw-image.svg"
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-              fontFamily="Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif"
-              className={classes.imageLogo}
-              alt="Logo"
-            />
-            <Typography variant="h2" className={classes.navtext}>
-              MISSION
-            </Typography>
-            <Typography variant="h1" className={classes.navtext}>
-              FEATURES
-            </Typography>
-            <Typography variant="h1" className={classes.navtext}>
-              COMMUNITY
-            </Typography>
-            <Typography variant="h1" className={classes.navtext}>
-              CONTACT US
-            </Typography>
-            <Typography variant="h1" className={classes.navtext}>
-              TERMS OF SERVICES
-            </Typography>
-            <Button
-              variant="contained"
-              className={(classes.loginButton)}
-              disableElevation
-            >
-              Login
-            </Button>
-          </Toolbar>
+          <Container>
+            <Toolbar>
+              <img
+                src="./method-draw-image.svg"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+                fontFamily="Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif"
+                className={classes.imageLogo}
+                alt="Logo"
+              />
+              <Typography variant="h2" className={classes.navtext}>
+                MISSION
+              </Typography>
+              <Typography variant="h1" className={classes.navtext}>
+                FEATURES
+              </Typography>
+              <Typography variant="h1" className={classes.navtext}>
+                COMMUNITY
+              </Typography>
+              <Typography variant="h1" className={classes.navtext}>
+                CONTACT US
+              </Typography>
+              <Typography variant="h1" className={classes.navtext}>
+                TERMS OF SERVICES
+              </Typography>
+              <Button
+                variant="contained"
+                className={classes.loginButton}
+                disableElevation
+              >
+                Login
+              </Button>
+            </Toolbar>
+          </Container>
         </AppBar>
-
         <CoverText />
       </div>
     </>
