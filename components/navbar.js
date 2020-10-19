@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "0.6rem",
     },
     ["@media (max-width: 400px)"]: {
-      fontSize: "0.5rem",
+      fontSize: "0.3rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
       fontSize: "1rem",
@@ -100,6 +100,7 @@ const useStyles = makeStyles((theme) => ({
     ["@media (max-width: 600px)"]: {
       marginRight: theme.spacing(1),
     },
+
   },
   loginButton: {
     width: "6.5rem",
@@ -188,7 +189,7 @@ function navbar() {
             </Typography>
             <Button
               variant="contained"
-              className={(classes.navtext, classes.loginButton)}
+              className={(classes.loginButton)}
               disableElevation
             >
               Login
