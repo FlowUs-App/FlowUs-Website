@@ -8,16 +8,39 @@ import CoverText from "../components/covertext";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    position: "absolute",
-    marginTop: "1vw",
+    zIndex: 1,
+    position: "relative",
+    backgroundImage: "url(./hombre.jpg)",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    height: "50rem",
     width: "100%",
+    ["@media (max-width: 800px)"]: {
+      height: "30rem",
+    },
+    ["@media (max-width: 700px)"]: {
+      height: "25rem",
+    },
+    ["@media (max-width: 600px)"]: {
+      height: "20rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      height: "15rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      height: "13rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      height: "10rem",
+    },
   },
   appbar: {
     background: "none",
     boxShadow: "none",
   },
   navtext: {
-    fontFamily: "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif", 
+    fontFamily:
+      "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontWeight: "500",
     color: "#D9F0FF",
     marginRight: "0.8rem",

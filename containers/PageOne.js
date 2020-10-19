@@ -19,7 +19,6 @@ function PageOne() {
   return (
     <>
         <Navbar />
-        <img src="./hombre.jpg" className={classes.bgCover}/>
     </>
   );
 }
