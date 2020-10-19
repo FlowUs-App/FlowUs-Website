@@ -55,18 +55,18 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     fontFamily: "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif", 
     fontWeight: "300",
-    fontSize: "1.5rem",
+    fontSize: "1.3rem",
     ["@media (max-width: 800px)"]: {
-      fontSize: "1rem",
+      fontSize: "0.75rem",
     },
     ["@media (max-width: 700px)"]: {
-      fontSize: "0.8rem",
-    },
-    ["@media (max-width: 600px)"]: {
       fontSize: "0.6rem",
     },
+    ["@media (max-width: 600px)"]: {
+      fontSize: "0.5rem",
+    },
     ["@media (max-width: 500px)"]: {
-      fontSize: "0.4rem",
+      fontSize: "0.4    rem",
     },
     ["@media (max-width: 400px)"]: {
       fontSize: "0.3rem",
