@@ -85,10 +85,47 @@ const useStyles = makeStyles((theme) => ({
     border: "10px solid #D9F0FF",
     borderRadius: "20px",
     lineHeight: "0px",
-    display: "default",
+    fontSize: "1rem",
     "&:hover": {
       background: "#D9F0FF",
       fontSize: "1rem",
+    },
+    ["@media (max-width: 800px)"]: {
+      width: "5.5rem",
+      fontSize: "0.7rem",
+    },
+    ["@media (max-width: 700px)"]: {
+      width: "4.5rem",
+      fontSize: "0.6rem",
+    },
+    ["@media (max-width: 600px)"]: {
+      width: "3.5rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      width: "2.5rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      width: "0.3rem",
+      fontSize: "0.5rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      width: "0.3rem",
+      fontSize: "0.3rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      fontSize: "0.8rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      fontSize: "0.6rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      fontSize: "0.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
+      fontSize: "0.3rem",
     },
   },
 }));
