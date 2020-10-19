@@ -8,6 +8,39 @@ const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: "center",
     padding: "70px 0",
+    ["@media (max-width: 1300px)"]: {
+      marginTop: "0rem"
+    },
+    ["@media (max-width: 1200px)"]: {
+      marginTop: "-3.5rem"
+    },
+    ["@media (max-width: 1100px)"]: {
+      marginTop: "-5rem"
+    },
+    ["@media (max-width: 1000px)"]: {
+      marginTop: "-3rem"
+    },
+    ["@media (max-width: 900px)"]: {
+      marginTop: "-3rem"
+    },
+    ["@media (max-width: 800px)"]: {
+      marginTop: "-4rem"
+    },
+    ["@media (max-width: 700px)"]: {
+      marginTop: "-3rem"
+    },
+    ["@media (max-width: 600px)"]: {
+      marginTop: "-3rem"
+    },
+    ["@media (max-width: 500px)"]: {
+      marginTop: "-3rem"
+    },
+    ["@media (max-width: 400px)"]: {
+      marginTop: "-3rem"
+    },
+    ["@media (max-width: 300px)"]: {
+      marginTop: "-5rem"
+    },
   },
   coverTitle: {
     color: "#FFFFFF",
@@ -66,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "0.5rem",
     },
     ["@media (max-width: 500px)"]: {
-      fontSize: "0.4    rem",
+      fontSize: "0.4rem",
     },
     ["@media (max-width: 400px)"]: {
       fontSize: "0.3rem",
@@ -116,6 +149,11 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "0.4rem",
     },
     ["@media (max-width: 400px)"]: {
+      height: "1rem",
+      width: "5rem",
+      fontSize: "0.2rem",
+    },
+    ["@media (max-width: 300px)"]: {
       height: "1rem",
       width: "5rem",
       fontSize: "0.2rem",
