@@ -4,9 +4,9 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import Container from "@material-ui/core/Container";
 import CoverText from "../components/covertext";
 import SideDrawer from "./sidedrawer";
+import useWindowDimensions from "../hooks/windowsize"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,11 +15,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: "url(./hombre.jpg)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    height: "50rem",
     width: "100%",
-    ["@media (max-width: 800px)"]: {
-      height: "42rem",
-    },
   },
   appbar: {
     background: "none",
@@ -160,13 +156,14 @@ const navLinks = [
 
 function navbar() {
   const classes = useStyles();
+  const { height, width } = useWindowDimensions();
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
   const [touchDevice, setTouchDevice] = React.useState(false);
   return (
     <>
-      <div className={classes.root}>
+      <div className={classes.root} style={{height: height}}>
         <AppBar position="static" className={classes.appbar}>
             <Toolbar>
               <img
