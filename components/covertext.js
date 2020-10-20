@@ -48,25 +48,16 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "300",
     fontSize: "7rem",
     ["@media (max-width: 1000px)"]: {
-      fontSize: "5rem",
-    },
-    ["@media (max-width: 900px)"]: {
-      fontSize: "4.5rem",
+      fontSize: "5.5rem",
     },
     ["@media (max-width: 800px)"]: {
-      fontSize: "4rem",
-    },
-    ["@media (max-width: 700px)"]: {
-      fontSize: "3rem",
+      fontSize: "4.5rem",
     },
     ["@media (max-width: 600px)"]: {
-      fontSize: "2.5rem",
-    },
-    ["@media (max-width: 500px)"]: {
-      fontSize: "2rem",
+      fontSize: "3.5rem",
     },
     ["@media (max-width: 400px)"]: {
-      fontSize: "1.5rem",
+      fontSize: "2.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
       fontSize: "5rem",
@@ -90,19 +81,19 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "300",
     fontSize: "1.3rem",
     ["@media (max-width: 800px)"]: {
-      fontSize: "0.75rem",
+      fontSize: "0.9rem",
     },
     ["@media (max-width: 700px)"]: {
-      fontSize: "0.6rem",
+      fontSize: "0.8rem",
     },
     ["@media (max-width: 600px)"]: {
-      fontSize: "0.5rem",
+      fontSize: "0.7rem",
     },
     ["@media (max-width: 500px)"]: {
-      fontSize: "0.4rem",
+      fontSize: "0.6rem",
     },
     ["@media (max-width: 400px)"]: {
-      fontSize: "0.3rem",
+      fontSize: "0.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
       fontSize: "1.2rem",
@@ -128,35 +119,19 @@ const useStyles = makeStyles((theme) => ({
     height: "4rem",
     marginTop: "2rem",
     borderRadius: "30px",
-    ["@media (max-width: 800px)"]: {
-      height: "3rem",
-      width: "15rem",
+    ["@media (max-width: 500px)"]: {
+      height: "4rem",
+      width: "80%",
       fontSize: "1rem",
     },
-    ["@media (max-width: 700px)"]: {
-      height: "2.5rem",
-      width: "12rem",
-      fontSize: "0.8rem",
-    },
-    ["@media (max-width: 600px)"]: {
-      height: "2rem",
-      width: "10rem",
-      fontSize: "0.6rem",
-    },
-    ["@media (max-width: 500px)"]: {
-      height: "1.5rem",
-      width: "8rem",
-      fontSize: "0.4rem",
-    },
     ["@media (max-width: 400px)"]: {
-      height: "1rem",
-      width: "5rem",
-      fontSize: "0.2rem",
+      height: "3.5rem",
+      width: "80%",
+      fontSize: "1rem",
     },
     ["@media (max-width: 300px)"]: {
-      height: "1rem",
-      width: "5rem",
-      fontSize: "0.2rem",
+      height: "3rem",
+      width: "80%",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
       fontSize: "1rem",

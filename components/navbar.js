@@ -18,22 +18,7 @@ const useStyles = makeStyles((theme) => ({
     height: "50rem",
     width: "100%",
     ["@media (max-width: 800px)"]: {
-      height: "30rem",
-    },
-    ["@media (max-width: 700px)"]: {
-      height: "25rem",
-    },
-    ["@media (max-width: 600px)"]: {
-      height: "20rem",
-    },
-    ["@media (max-width: 500px)"]: {
-      height: "15rem",
-    },
-    ["@media (max-width: 400px)"]: {
-      height: "13rem",
-    },
-    ["@media (max-width: 300px)"]: {
-      height: "10rem",
+      height: "42rem",
     },
   },
   appbar: {
