@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   navtext: {
-    marginTop: "1rem",
+    marginTop: "3rem",
     fontFamily:
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontWeight: "500",
@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imageLogo: {
-    marginTop: "1rem",
+    marginTop: "3rem",
     width: "20%",
     minWidth: "0.3rem",
     marginRight: theme.spacing(60),
@@ -98,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   loginButton: {
-    marginTop: "1rem",
+    marginTop: "3rem",
     width: "6.5rem",
     letterSpacing: "0em",
     color: "#405FB1",
@@ -106,7 +106,7 @@ const useStyles = makeStyles((theme) => ({
     border: "10px solid #D9F0FF",
     borderRadius: "20px",
     lineHeight: "0px",
-    fontSize: "1rem",
+    fontSize: "0.9rem",
     fontWeight: "200",
     "&:hover": {
       background: "#D9F0FF",
