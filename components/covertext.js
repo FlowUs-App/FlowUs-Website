@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   coverTitle: {
+    marginTop: "5rem",
     color: "#FFFFFF",
     fontFamily: "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif", 
     fontWeight: "300",

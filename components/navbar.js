@@ -21,6 +21,8 @@ const useStyles = makeStyles((theme) => ({
     background: "none",
     boxShadow: "none",
     width: "100%",
+    display: "flex",
+    alignItems: "center",
   },
   navtext: {
     marginTop: "1rem",
@@ -30,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#D9F0FF",
     marginRight: "0.8rem",
     fontSize: "1rem",
+    fontWeight: "200",
     ["@media (max-width: 800px)"]: {
       fontSize: "0.9rem",
     },
@@ -95,6 +98,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   loginButton: {
+    marginTop: "1rem",
     width: "6.5rem",
     letterSpacing: "0em",
     color: "#405FB1",
@@ -103,6 +107,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "20px",
     lineHeight: "0px",
     fontSize: "1rem",
+    fontWeight: "200",
     "&:hover": {
       background: "#D9F0FF",
       fontSize: "1rem",

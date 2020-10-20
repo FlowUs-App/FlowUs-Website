@@ -66,6 +66,7 @@ const useStyles = makeStyles({
   basketballcontainer: {
     position: "relative",
     overflow: "hidden",
+    height: "100%",
   },
   basketballImg: {
     position: "absolute",
