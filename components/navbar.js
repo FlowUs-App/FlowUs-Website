@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
   appbar: {
     background: "none",
     boxShadow: "none",
+    width: "100%",
   },
   navtext: {
     fontFamily:
