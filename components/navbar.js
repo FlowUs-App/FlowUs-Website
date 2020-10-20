@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     zIndex: 1,
     position: "relative",
-    backgroundImage: "url(./hombre.jpg)",
+    backgroundImage: "url(./mountain.jpg)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     width: "100%",
@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   navtext: {
+    marginTop: "1rem",
     fontFamily:
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontWeight: "500",
@@ -64,6 +65,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imageLogo: {
+    marginTop: "1rem",
     width: "20%",
     minWidth: "0.3rem",
     marginRight: theme.spacing(60),

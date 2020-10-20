@@ -6,15 +6,14 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import useWindowDimensions from "../hooks/windowsize"
+import useWindowDimensions from "../hooks/windowsize";
 
 const useStyles = makeStyles({
   root: {
     margin: "-0.2rem",
+    overflowX: "hidden",
   },
-  grid: {
-
-  },
+  grid: {},
   title: {
     fontSize: 14,
   },
@@ -68,10 +67,6 @@ const useStyles = makeStyles({
     width: "100%",
     height: "100%",
   },
-  basketballImgMobile: {
-    width: "50%",
-    height: "100%",
-  },
   MissionTitle: {
     color: "black",
     fontFamily:
@@ -83,7 +78,7 @@ const useStyles = makeStyles({
     color: "black",
     fontFamily:
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
-    fontSize: "1.1rem",
+    fontSize: "1rem",
     fontWeight: "normal",
   },
   card: {
@@ -94,7 +89,7 @@ const useStyles = makeStyles({
 function PageTwo() {
   const classes = useStyles();
   const { height } = useWindowDimensions();
-  const halfHeight = height/6;
+  const halfHeight = height / 6;
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
@@ -103,7 +98,15 @@ function PageTwo() {
     <>
       {touchDevice ? (
         <>
-          <Grid container className={classes.grid} direction="row" spacing={0}>
+          <Grid
+            container
+            className={classes.grid}
+            direction="column"
+            justify="center"
+            alignContent="center"
+            spacing={0}
+            style={{marginLeft: "0rem"}}
+          >
             <Grid item xs={12}>
               <Card className={classes.root} elevation={0}>
                 <CardContent>
@@ -121,11 +124,11 @@ function PageTwo() {
                       component="p"
                       className={classes.MissionsSubTitle}
                     >
-                      It doesn´t matter in which domain of your life, to achieve
-                      Greatness you need full focus on your goals. <br /> <br />
-                      We created LiFit to bring you help to achieve each of your
+                      It doesn´t matter in which domain of your<br/> life, to achieve<br/>
+                      Greatness you need full focus on your<br/> goals. <br /> <br />
+                      We created LiFit to bring you<br/> help to achieve each of<br/> your
                       goals in the fitness-space. <br /> <br />
-                      Meanwhile you will meet lots of like-minded people on your
+                      Meanwhile you will meet lots of<br/> like-minded people<br/> on your
                       journey.
                     </Typography>
                   </Grid>
@@ -134,7 +137,7 @@ function PageTwo() {
                   <Grid item xs={12}>
                     <Button
                       variant="contained"
-                      style={{ width: "100%" }}
+                      style={{ width: "80%" }}
                       className={classes.featButton}
                     >
                       VIEW OUR FEATURES
@@ -143,20 +146,23 @@ function PageTwo() {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item xs={12}>
-              <img
-                className={classes.basketballImgMobile}
-                src="./baskteball.jpg"
-                style={{ width: "100%" }}
-              />
-            </Grid>
           </Grid>
         </>
       ) : (
         <>
-          <Grid container className={classes.grid} direction="row" spacing={0} style={{height: height}}>
+          <Grid
+            container
+            className={classes.grid}
+            direction="row"
+            spacing={0}
+            style={{ height: height }}
+          >
             <Grid item xs={6}>
-              <Card className={(classes.root, classes.card)} elevation={0} style={{marginTop: halfHeight}}>
+              <Card
+                className={(classes.root, classes.card)}
+                elevation={0}
+                style={{ marginTop: halfHeight }}
+              >
                 <CardContent>
                   <Typography
                     variant="h5"
@@ -170,12 +176,14 @@ function PageTwo() {
                     component="p"
                     className={classes.MissionsSubTitle}
                   >
-                    It doesn´t matter in which domain of your life, to achieve <br />
+                    It doesn´t matter in which domain of your life, to achieve{" "}
+                    <br />
                     Greatness you need full focus on your goals. <br /> <br />
-                    We created LiFit to bring you help to<br /> achieve each of your
-                    goals in the fitness-space. <br /> <br />
-                    Meanwhile you will meet lots of like-minded people<br /> on your
-                    journey.
+                    We created LiFit to bring you help to
+                    <br /> achieve each of your goals in the fitness-space.{" "}
+                    <br /> <br />
+                    Meanwhile you will meet lots of like-minded people
+                    <br /> on your journey.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -186,7 +194,7 @@ function PageTwo() {
               </Card>
             </Grid>
             <Grid item xs={6}>
-              <img className={classes.basketballImg} src="./baskteball.jpg" />
+              <img className={classes.basketballImg} src="./sport.jpg" />
             </Grid>
           </Grid>
         </>
