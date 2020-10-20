@@ -191,9 +191,6 @@ function navbar() {
                 COMMUNITY
               </Typography>
               <Typography variant="h1" className={classes.navtext}>
-                CONTACT US
-              </Typography>
-              <Typography variant="h1" className={classes.navtext}>
                 TERMS OF SERVICES
               </Typography>
               <Button
