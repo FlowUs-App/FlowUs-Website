@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#FAFAFA",
   },
   featTitle: {
-    marginTop: "3rem",
+    marginTop: "5rem",
     color: "black",
     fontFamily:
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontWeight: "300",
     fontSize: "1rem",
-    marginBottom: "2rem",
+    marginBottom: "4rem",
     ["@media (max-width: 800px)"]: {
       fontSize: "0.9rem",
     },
@@ -148,8 +148,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="88"
-                        height="88"
+                        width="66"
+                        height="66"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -183,8 +183,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="88"
-                        height="88"
+                        width="66"
+                        height="66"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -200,14 +200,14 @@ function PageThree() {
                         />
                       </svg>
                       <Typography variant="h3" className={classes.paperTitle}>
-                        Nutrition
+                        Workouts
                       </Typography>
                       <Typography
                         variant="h4"
                         className={classes.paperSubTitle}
                       >
-                        Keep track of your consumed foods and expand your
-                        knowledge with new recipes and blog posts.
+                        Improve your workouts with our in-built workout coach
+                        and discover new exercises or share your own.
                       </Typography>
                     </Paper>
                   </Grid>
@@ -254,8 +254,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="88"
-                        height="88"
+                        width="66"
+                        height="66"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -289,8 +289,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="88"
-                        height="88"
+                        width="66"
+                        height="66"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -324,8 +324,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="88"
-                        height="88"
+                        width="66"
+                        height="66"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -364,8 +364,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="88"
-                        height="88"
+                        width="66"
+                        height="66"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -399,8 +399,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="88"
-                        height="88"
+                        width="66"
+                        height="66"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -416,14 +416,14 @@ function PageThree() {
                         />
                       </svg>
                       <Typography variant="h3" className={classes.paperTitle}>
-                        Nutrition
+                        Workouts
                       </Typography>
                       <Typography
                         variant="h4"
                         className={classes.paperSubTitle}
                       >
-                        Keep track of your consumed foods and expand your
-                        knowledge with new recipes and blog posts.
+                        Improve your workouts with our in-built workout coach
+                        and discover new exercises or share your own.
                       </Typography>
                     </Paper>
                   </Grid>
@@ -470,8 +470,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="88"
-                        height="88"
+                        width="66"
+                        height="66"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -505,8 +505,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="88"
-                        height="88"
+                        width="66"
+                        height="66"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -540,8 +540,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="88"
-                        height="88"
+                        width="66"
+                        height="66"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
