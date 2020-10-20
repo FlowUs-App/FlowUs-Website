@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
 import CoverText from "../components/covertext";
+import SideDrawer from "./sidedrawer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -83,6 +84,7 @@ const useStyles = makeStyles((theme) => ({
   },
   imageLogo: {
     width: "20%",
+    minWidth: "0.3rem",
     marginRight: theme.spacing(60),
     ["@media (max-width: 1500px)"]: {
       marginRight: theme.spacing(50),
@@ -163,13 +165,24 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const navLinks = [
+  { title: `Mission`, path: `#mission` },
+  { title: `Features`, path: `#features` },
+  { title: `Community`, path: `#community` },
+  { title: `Contact Us`, path: `#contact` },
+  { title: `Terms of services`, path: `#tos` },
+];
+
 function navbar() {
   const classes = useStyles();
+  useEffect(() => {
+    setTouchDevice("ontouchstart" in document.documentElement);
+  }, []);
+  const [touchDevice, setTouchDevice] = React.useState(false);
   return (
     <>
       <div className={classes.root}>
         <AppBar position="static" className={classes.appbar}>
-          <Container>
             <Toolbar>
               <img
                 src="./method-draw-image.svg"
@@ -181,27 +194,37 @@ function navbar() {
                 className={classes.imageLogo}
                 alt="Logo"
               />
-              <Typography variant="h2" className={classes.navtext}>
-                MISSION
-              </Typography>
-              <Typography variant="h1" className={classes.navtext}>
-                FEATURES
-              </Typography>
-              <Typography variant="h1" className={classes.navtext}>
-                COMMUNITY
-              </Typography>
-              <Typography variant="h1" className={classes.navtext}>
-                TERMS OF SERVICES
-              </Typography>
-              <Button
-                variant="contained"
-                className={classes.loginButton}
-                disableElevation
-              >
-                Login
-              </Button>
+              {touchDevice ? (
+                <>
+                  <SideDrawer navLinks={navLinks} />
+                </>
+              ) : (
+                <>
+                  <Typography variant="h2" className={classes.navtext}>
+                    MISSION
+                  </Typography>
+                  <Typography variant="h1" className={classes.navtext}>
+                    FEATURES
+                  </Typography>
+                  <Typography variant="h1" className={classes.navtext}>
+                    COMMUNITY
+                  </Typography>
+                  <Typography variant="h1" className={classes.navtext}>
+                    CONTACT US
+                  </Typography>
+                  <Typography variant="h1" className={classes.navtext}>
+                    TERMS OF SERVICES
+                  </Typography>
+                  <Button
+                    variant="contained"
+                    className={classes.loginButton}
+                    disableElevation
+                  >
+                    Login
+                  </Button>
+                </>
+              )}
             </Toolbar>
-          </Container>
         </AppBar>
         <CoverText />
       </div>

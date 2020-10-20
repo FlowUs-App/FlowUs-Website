@@ -105,19 +105,19 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "0.3rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
-      fontSize: "5rem",
+      fontSize: "1.2rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
-      fontSize: "4rem",
+      fontSize: "0.9rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
-      fontSize: "3rem",
+      fontSize: "0.75rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
-      fontSize: "2rem",
+      fontSize: "0.6rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
-      fontSize: "1.5rem",
+      fontSize: "0.3rem",
     },
   },
   coverButton: {
@@ -159,19 +159,19 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "0.2rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
-      fontSize: "5rem",
+      fontSize: "1rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
-      fontSize: "4rem",
+      fontSize: "1rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
-      fontSize: "3rem",
+      fontSize: "1rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
-      fontSize: "2rem",
+      fontSize: "0.8rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
-      fontSize: "1.5rem",
+      fontSize: "0.2rem",
     },
     "&:hover": {
       background: "#56377E",
