@@ -22,6 +22,7 @@ const useStyles = makeStyles({
   },
   featButton: {
     backgroundColor: "#56377E",
+    position: "center",
     fontFamily:
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     color: "#FFF",
@@ -29,45 +30,34 @@ const useStyles = makeStyles({
     height: "4rem",
     marginTop: "2rem",
     borderRadius: "30px",
-    ["@media (max-width: 800px)"]: {
-      height: "3rem",
-      width: "15rem",
+
+    ["@media (max-width: 500px)"]: {
+      height: "4rem",
+      width: "20rem",
       fontSize: "1rem",
     },
-    ["@media (max-width: 700px)"]: {
-      height: "2.5rem",
-      width: "12rem",
-      fontSize: "0.8rem",
-    },
-    ["@media (max-width: 600px)"]: {
-      height: "2rem",
-      width: "10rem",
-      fontSize: "0.6rem",
-    },
-    ["@media (max-width: 500px)"]: {
-      height: "1.5rem",
-      width: "8rem",
-      fontSize: "0.4rem",
-    },
     ["@media (max-width: 400px)"]: {
-      height: "1rem",
-      width: "5rem",
-      fontSize: "0.2rem",
+      height: "3.5rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      height: "3rem",
+      fontSize: "0.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
-      fontSize: "5rem",
+      fontSize: "1rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
-      fontSize: "4rem",
+      fontSize: "1rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
-      fontSize: "3rem",
+      fontSize: "1rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
-      fontSize: "2rem",
+      fontSize: "0.8rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
-      fontSize: "1.5rem",
+      fontSize: "0.2rem",
     },
     "&:hover": {
       background: "#56377E",
@@ -82,7 +72,21 @@ const useStyles = makeStyles({
     height: "100%",
   },
   MissionTitle: {
-    color: "000",
+    color: "black",
+    fontFamily:
+      "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
+    fontSize: "4rem",
+    fontWeight: 300,
+  },
+  MissionsSubTitle: {
+    color: "black",
+    fontFamily:
+      "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
+    fontSize: "1rem",
+    fontWeight: "normal",
+  },
+  card: {
+    marginLeft: "5rem",
   },
 });
 
@@ -95,56 +99,78 @@ function PageTwo() {
   return (
     <>
       {touchDevice ? (
-        <Container>
+        <>
           <Grid container className={classes.grid} direction="row" spacing={0}>
             <Grid item xs={12}>
               <Card className={classes.root} elevation={0}>
                 <CardContent>
-                  <Typography variant="h5" component="h2" className={classes.MissionTitle}>
+                  <Typography
+                    variant="h5"
+                    component="h2"
+                    className={classes.MissionTitle}
+                  >
                     Our Mission: <br /> Greatness.
                   </Typography>
-                  <Typography variant="body2" component="p">
-                    It doesn´t matter in which domain of your life, to achieve
-                    Greatness you need full focus on your goals. <br />
-                    We created LiFit to bring you help to achieve each of your
-                    goals in the fitness-space. <br />
-                    Meanwhile you will meet lots of like-minded people on your
-                    journey.
-                  </Typography>
+                  <Grid />
+                  <Grid item xs={12}>
+                    <Typography
+                      variant="body2"
+                      component="p"
+                      className={classes.MissionsSubTitle}
+                    >
+                      It doesn´t matter in which domain of your life, to achieve
+                      Greatness you need full focus on your goals. <br /> <br />
+                      We created LiFit to bring you help to achieve each of your
+                      goals in the fitness-space. <br /> <br />
+                      Meanwhile you will meet lots of like-minded people on your
+                      journey.
+                    </Typography>
+                  </Grid>
                 </CardContent>
                 <CardActions>
-                  <Button variant="contained" className={classes.featButton}>
-                    VIEW OUR FEATURES
-                  </Button>
+                  <Grid item xs={12}>
+                    <Button
+                      variant="contained"
+                      style={{ width: "100%" }}
+                      className={classes.featButton}
+                    >
+                      VIEW OUR FEATURES
+                    </Button>
+                  </Grid>
                 </CardActions>
               </Card>
             </Grid>
             <Grid item xs={12}>
-              <Card className={classes.root} elevation={0}>
-                <CardContent>
-                  <img
-                    className={classes.basketballImgMobile}
-                    src="./baskteball.jpg"
-                  />
-                </CardContent>
-              </Card>
+              <img
+                className={classes.basketballImgMobile}
+                src="./baskteball.jpg"
+                style={{ width: "100%" }}
+              />
             </Grid>
           </Grid>
-        </Container>
+        </>
       ) : (
-        <Container>
+        <>
           <Grid container className={classes.grid} direction="row" spacing={0}>
             <Grid item xs={6}>
-              <Card className={classes.root} elevation={0}>
+              <Card className={(classes.root, classes.card)} elevation={0}>
                 <CardContent>
-                  <Typography variant="h5" component="h2">
+                  <Typography
+                    variant="h5"
+                    component="h2"
+                    className={classes.MissionTitle}
+                  >
                     Our Mission: <br /> Greatness.
                   </Typography>
-                  <Typography variant="body2" component="p">
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.MissionsSubTitle}
+                  >
                     It doesn´t matter in which domain of your life, to achieve
-                    Greatness you need full focus on your goals. <br />
+                    Greatness you need full focus on your goals. <br /> <br />
                     We created LiFit to bring you help to achieve each of your
-                    goals in the fitness-space. <br />
+                    goals in the fitness-space. <br /> <br />
                     Meanwhile you will meet lots of like-minded people on your
                     journey.
                   </Typography>
@@ -157,17 +183,10 @@ function PageTwo() {
               </Card>
             </Grid>
             <Grid item xs={6}>
-              <Card className={classes.root} elevation={0}>
-                <CardContent>
-                  <img
-                    className={classes.basketballImg}
-                    src="./baskteball.jpg"
-                  />
-                </CardContent>
-              </Card>
+              <img className={classes.basketballImg} src="./baskteball.jpg" />
             </Grid>
           </Grid>
-        </Container>
+        </>
       )}
     </>
   );
