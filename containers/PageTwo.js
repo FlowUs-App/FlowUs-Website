@@ -63,9 +63,17 @@ const useStyles = makeStyles({
       background: "#56377E",
     },
   },
+  basketballcontainer: {
+    position: "relative",
+    overflow: "hidden",
+  },
   basketballImg: {
-    width: "100%",
-    height: "100%",
+    position: "absolute",
+    top: "-700px",
+    left: "-999px",
+    right: "-999px",
+    bottom: "-999px",
+    margin: "auto",
   },
   MissionTitle: {
     color: "black",
@@ -105,7 +113,7 @@ function PageTwo() {
             justify="center"
             alignContent="center"
             spacing={0}
-            style={{marginLeft: "0rem"}}
+            style={{ marginLeft: "0rem" }}
           >
             <Grid item xs={12}>
               <Card className={classes.root} elevation={0}>
@@ -124,12 +132,17 @@ function PageTwo() {
                       component="p"
                       className={classes.MissionsSubTitle}
                     >
-                      It doesn´t matter in which domain of your<br/> life, to achieve<br/>
-                      Greatness you need full focus on your<br/> goals. <br /> <br />
-                      We created LiFit to bring you<br/> help to achieve each of<br/> your
-                      goals in the fitness-space. <br /> <br />
-                      Meanwhile you will meet lots of<br/> like-minded people<br/> on your
-                      journey.
+                      It doesn´t matter in which domain of your
+                      <br /> life, to achieve
+                      <br />
+                      Greatness you need full focus on your
+                      <br /> goals. <br /> <br />
+                      We created LiFit to bring you
+                      <br /> help to achieve each of
+                      <br /> your goals in the fitness-space. <br /> <br />
+                      Meanwhile you will meet lots of
+                      <br /> like-minded people
+                      <br /> on your journey.
                     </Typography>
                   </Grid>
                 </CardContent>
@@ -193,7 +206,7 @@ function PageTwo() {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={6} className={classes.basketballcontainer}>
               <img className={classes.basketballImg} src="./sport.jpg" />
             </Grid>
           </Grid>
