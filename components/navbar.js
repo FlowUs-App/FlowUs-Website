@@ -163,7 +163,7 @@ function navbar() {
   const [touchDevice, setTouchDevice] = React.useState(false);
   return (
     <>
-      <div className={classes.root} style={{height: height + 100}}>
+      <div className={classes.root} style={{height: height}}>
         <AppBar position="static" className={classes.appbar}>
             <Toolbar>
               <img

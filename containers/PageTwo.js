@@ -82,7 +82,7 @@ const useStyles = makeStyles({
     height: "100%",
   },
   MissionTitle: {
-    color: "red",
+    color: "000",
   },
 });
 
