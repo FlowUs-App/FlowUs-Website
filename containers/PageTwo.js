@@ -81,6 +81,9 @@ const useStyles = makeStyles({
     width: "100%",
     height: "100%",
   },
+  MissionTitle: {
+    color: "red",
+  },
 });
 
 function PageTwo() {
@@ -97,7 +100,7 @@ function PageTwo() {
             <Grid item xs={12}>
               <Card className={classes.root} elevation={0}>
                 <CardContent>
-                  <Typography variant="h5" component="h2">
+                  <Typography variant="h5" component="h2" className={classes.MissionTitle}>
                     Our Mission: <br /> Greatness.
                   </Typography>
                   <Typography variant="body2" component="p">

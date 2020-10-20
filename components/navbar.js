@@ -156,14 +156,14 @@ const navLinks = [
 
 function navbar() {
   const classes = useStyles();
-  const { height, width } = useWindowDimensions();
+  const { height } = useWindowDimensions();
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
   const [touchDevice, setTouchDevice] = React.useState(false);
   return (
     <>
-      <div className={classes.root} style={{height: height}}>
+      <div className={classes.root} style={{height: height + 100}}>
         <AppBar position="static" className={classes.appbar}>
             <Toolbar>
               <img
