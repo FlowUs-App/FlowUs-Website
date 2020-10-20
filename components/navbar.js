@@ -104,6 +104,9 @@ const useStyles = makeStyles((theme) => ({
     ["@media (max-width: 600px)"]: {
       marginRight: theme.spacing(1),
     },
+    ["@media (max-width: 500px)"]: {
+      marginRight: theme.spacing(0),
+    },
   },
   loginButton: {
     width: "6.5rem",
@@ -135,6 +138,7 @@ const useStyles = makeStyles((theme) => ({
     ["@media (max-width: 400px)"]: {
       width: "0.3rem",
       fontSize: "0.5rem",
+      border: "2px solid #D9F0FF",
     },
     ["@media (max-width: 300px)"]: {
       width: "0.3rem",
