@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Card from "@material-ui/core/Card";
 import Typography from "@material-ui/core/Typography";
-import Paper from "@material-ui/core/Paper";
+import Slide from "@material-ui/core/Slide";
 import Arrow from "../components/arrow";
 
 const SLIDE_INFO = ["./hombre.jpg", "./sport.jpg", "./mountain.jpg"];
@@ -19,11 +19,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   card: {
-    borderRadius: 5,
     padding: "75px 50px",
-    margin: "0px 25px",
-    width: "90%",
-    boxShadow: "20px 20px 20px black",
+    width: "100%",
     display: "flex",
     justifyContent: "center",
   },
@@ -31,33 +28,51 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-  }
+  },
 }));
 
 function PageFour() {
   const classes = useStyles();
-  const [index, setIndex] = useState(0);
   const content = SLIDE_INFO[index];
   const numSlides = SLIDE_INFO.length;
+  const [seconds, setSeconds] = useState(10);
+  const [index, setIndex] = useState(0);
+  const [slideIn, setSlideIn] = useState(true);
+  const [slideDirection, setSlideDirection] = useState("right");
+  useEffect(() => {
+    seconds > 0 && setTimeout(() => setSeconds(seconds - 1), 1000);
+    if (seconds == 0) {
+      setSeconds(10);
+      if (slideDirection === "right") {
+        onArrowClick("left");
+      } else {
+        onArrowClick("right");
+      }
+    }
+  }, [seconds]);
   const onArrowClick = (direction) => {
     const increment = direction === "left" ? -1 : 1;
     const newIndex = (index + increment + numSlides) % numSlides;
     setIndex(newIndex);
+    const oppDirection = direction === "left" ? "right" : "left";
+    setSlideDirection(direction);
+    setSlideIn(false);
+    setTimeout(() => {
+      setIndex(newIndex);
+      setSlideDirection(oppDirection);
+      setSlideIn(true);
+    }, 500);
   };
   return (
     <>
       <div className={classes.root}>
         <Container className={classes.flex}>
-          <Arrow direction="left" clickFunction={() => onArrowClick("left")} />
-          <Card
-            className={classes.card}
-            style={{ backgroundImage: "url(" + SLIDE_INFO[index] + ")" }}
-          >
-          </Card>
-          <Arrow
-          direction="right"
-          clickFunction={() => onArrowClick("right")}
-        />
+          <Slide in={slideIn} direction={slideDirection}>
+            <Card
+              className={classes.card}
+              style={{ backgroundImage: "url(" + SLIDE_INFO[index] + ")" }}
+            />
+          </Slide>
         </Container>
       </div>
     </>
