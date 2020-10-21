@@ -2255,6 +2255,11 @@ data-uri-to-buffer@3.0.0:
   dependencies:
     buffer-from "^1.1.1"
 
+debounce@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.0.tgz#44a540abc0ea9943018dc0eaa95cce87f65cd131"
+  integrity sha512-mYtLl1xfZLi1m4RtQYlZgJUNQjl4ZxVnHzIR8nLLgi4q1YT8o/WM+MK/f8yfcc9s5Ir5zRaPZyZU6xs1Syoocg==
+
 debug@4, debug@^4.1.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.2.0.tgz#7f150f93920e94c58f5574c2fd01a3110effe7f1"
@@ -4219,6 +4224,19 @@ randomfill@^1.0.3:
   dependencies:
     randombytes "^2.0.5"
     safe-buffer "^5.1.0"
+
+range@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/range/-/range-0.0.3.tgz#b5b8eb2463a516b624a563bd32b18fe89e70151b"
+  integrity sha1-tbjrJGOlFrYkpWO9MrGP6J5wFRs=
+
+react-carousel@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/react-carousel/-/react-carousel-4.3.0.tgz#de694c605664cb58174f20b02947cb559f519e89"
+  integrity sha512-t8MfCK877KuOaQFAsO6NwzkWdhcJG8hxSN5zYR7/cSfTNI6DnM/HswvgvdfajtiETuoLZRMXXLZv6QRLGETKjw==
+  dependencies:
+    debounce "^1.1.0"
+    range "0.0.3"
 
 react-dom@16.14.0:
   version "16.14.0"

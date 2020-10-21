@@ -6,3 +6,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
     scroll-behavior: smooth;
 }
+
+svg {
+  height: 30px;
+  cursor: pointer;
+}

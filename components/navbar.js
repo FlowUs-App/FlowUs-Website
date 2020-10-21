@@ -108,10 +108,6 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "0px",
     fontSize: "0.9rem",
     fontWeight: "200",
-    "&:hover": {
-      background: "#D9F0FF",
-      fontSize: "1rem",
-    },
     ["@media (max-width: 800px)"]: {
       width: "5.5rem",
       fontSize: "0.7rem",
