@@ -189,7 +189,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "2rem",
     },
     ["@media (max-width: 2000px)"]: {
-      width: "12rem",
+      width: "8rem",
       marginTop: "3rem",
       fontSize: "1rem",
     },
