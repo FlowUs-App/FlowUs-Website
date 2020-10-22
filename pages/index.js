@@ -4,6 +4,7 @@ import PageOne from "../containers/PageOne"
 import PageTwo from "../containers/PageTwo";
 import PageThree from "../containers/PageThree";
 import PageFour from "../containers/PageFour";
+import PageFive from "../containers/PageFive";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <PageTwo/>
         <PageThree/>
         <PageFour/>
+        <PageFive/>
       </>
   );
 }

@@ -92,6 +92,7 @@ const useStyles = makeStyles((theme) => ({
   paperImg: {
     marginTop: "3.5rem",
     marginBottom: "2rem",
+    transform: "scale(1.5)",
   },
   paperTitle: {
     textAlign: "center",
@@ -364,8 +365,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="66"
-                        height="66"
+                        width="88"
+                        height="88"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -380,6 +381,7 @@ function PageThree() {
                           fill="white"
                         />
                       </svg>
+
                       <Typography variant="h3" className={classes.paperTitle}>
                         Nutrition
                       </Typography>
@@ -399,8 +401,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="66"
-                        height="66"
+                        width="77"
+                        height="77"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -434,8 +436,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="66"
-                        height="66"
+                        width="77"
+                        height="77"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -470,8 +472,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="66"
-                        height="66"
+                        width="77"
+                        height="77"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -505,8 +507,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="66"
-                        height="66"
+                        width="77"
+                        height="77"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
@@ -540,8 +542,8 @@ function PageThree() {
                       elevation={0}
                     >
                       <svg
-                        width="66"
-                        height="66"
+                        width="77"
+                        height="77"
                         viewBox="0 0 88 88"
                         fill="none"
                         className={classes.paperImg}
