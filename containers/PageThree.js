@@ -135,6 +135,7 @@ function PageThree() {
             alignContent="center"
             justify="center"
           >
+            <d id="features"></d>
             <Typography align="center" className={classes.featTitle}>
               Features of the LiFit App
             </Typography>
@@ -364,6 +365,7 @@ function PageThree() {
             ) : (
               <>
                 <Grid container spacing={3}>
+                  <d id="features"></d>
                   <Grid item xs={4}>
                     <Paper
                       className={classes.paper}

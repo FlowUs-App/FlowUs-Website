@@ -273,6 +273,7 @@ function PageFive() {
       {touchDevice ? (
         <>
           <Grid container direction="column">
+            <d id="community"></d>
             <Typography align="center" className={classes.comTitle}>
               Community Projects
             </Typography>
@@ -317,6 +318,8 @@ function PageFive() {
                   <CardActions>
                     <Grid item xs={12}>
                       <Button
+                        href="https://www.instagram.com/lifit.magazine/"
+                        target="_blank"
                         variant="contained"
                         style={{ width: "80%" }}
                         className={classes.featButton}
@@ -333,6 +336,7 @@ function PageFive() {
       ) : (
         <>
           <Grid container direction="column" className={classes.grid2}>
+            <d id="community"></d>
             <Typography align="center" className={classes.comTitle}>
               Community Projects
             </Typography>
@@ -374,7 +378,12 @@ function PageFive() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button variant="contained" className={classes.featButton}>
+                  <Button
+                    href="https://www.instagram.com/lifit.magazine/"
+                    target="_blank"
+                    variant="contained"
+                    className={classes.featButton}
+                  >
                     INSTAGRAM
                   </Button>
                 </CardActions>
@@ -425,6 +434,8 @@ function PageFive() {
                   <CardActions>
                     <Grid item xs={12}>
                       <Button
+                        href="https://www.instagram.com/lifit.magazine/"
+                        target="_blank"
                         variant="contained"
                         style={{ width: "80%" }}
                         className={classes.featButton}
@@ -472,7 +483,12 @@ function PageFive() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button variant="contained" className={classes.featButton}>
+                  <Button
+                    href="https://www.instagram.com/lifit.magazine/"
+                    target="_blank"
+                    variant="contained"
+                    className={classes.featButton}
+                  >
                     INSTAGRAM
                   </Button>
                 </CardActions>
@@ -506,7 +522,7 @@ function PageFive() {
                     <Typography
                       variant="h5"
                       component="h2"
-                      style={{marginBottom: "3rem"}}
+                      style={{ marginBottom: "3rem" }}
                       className={classes.MissionTitle}
                     >
                       LiFit Giveaways
@@ -528,6 +544,8 @@ function PageFive() {
                   <CardActions>
                     <Grid item xs={12}>
                       <Button
+                        href="https://www.instagram.com/lifit.magazine/"
+                        target="_blank"
                         variant="contained"
                         style={{ width: "80%" }}
                         className={classes.featButton}
@@ -576,7 +594,12 @@ function PageFive() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button variant="contained" className={classes.featButton}>
+                  <Button
+                    href="https://www.instagram.com/lifit.magazine/"
+                    target="_blank"
+                    variant="contained"
+                    className={classes.featButton}
+                  >
                     INSTAGRAM
                   </Button>
                 </CardActions>

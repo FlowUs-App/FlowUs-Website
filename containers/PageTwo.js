@@ -182,6 +182,7 @@ function PageTwo() {
               spacing={0}
               style={{ marginLeft: "0rem" }}
             >
+              <d id="mission"></d>
               <Grid item xs={12}>
                 <Card className={classes.root} elevation={0}>
                   <CardContent>
@@ -215,7 +216,7 @@ function PageTwo() {
                   </CardContent>
                   <CardActions>
                     <Grid item xs={12}>
-                      <Button
+                      <Button href="#features"
                         variant="contained"
                         style={{ width: "80%" }}
                         className={classes.featButton}
@@ -238,6 +239,7 @@ function PageTwo() {
             spacing={0}
             style={{ height: height }}
           >
+            <d id="mission"></d>
             <Grid item xs={6}>
               <Card
                 className={(classes.root, classes.card)}
@@ -268,7 +270,7 @@ function PageTwo() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button variant="contained" className={classes.featButton}>
+                  <Button href="#features" variant="contained" className={classes.featButton}>
                     VIEW OUR FEATURES
                   </Button>
                 </CardActions>

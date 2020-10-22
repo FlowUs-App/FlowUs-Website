@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#D9F0FF",
     marginRight: "0.8rem",
     fontSize: "1rem",
+    textDecoration: "none",
     ["@media (max-width: 800px)"]: {
       fontSize: "0.9rem",
     },
@@ -107,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "0px",
     fontSize: "0.9rem",
     fontWeight: "200",
-    "&:hover":{
+    "&:hover": {
       background: "#D9F0FF",
     },
     ["@media (max-width: 800px)"]: {
@@ -197,26 +198,32 @@ function navbar() {
               </>
             ) : (
               <>
-                <Typography variant="h2" className={classes.navtext}>
-                  MISSION
-                </Typography>
-                <Typography variant="h1" className={classes.navtext}>
-                  FEATURES
-                </Typography>
-                <Typography variant="h1" className={classes.navtext}>
-                  COMMUNITY
-                </Typography>
-                <Typography variant="h1" className={classes.navtext}>
-                  CONTACT US
-                </Typography>
-                <Typography variant="h1" className={classes.navtext}>
-                  TERMS OF SERVICES
-                </Typography>
-                <Button
-                  
-                  className={classes.loginButton}
-                  disableElevation
-                >
+                <a href="#mission" style={{ textDecoration: "none" }}>
+                  <Typography variant="h2" className={classes.navtext}>
+                    MISSION
+                  </Typography>
+                </a>
+                <a href="#features" style={{ textDecoration: "none" }}>
+                  <Typography variant="h1" className={classes.navtext}>
+                    FEATURES
+                  </Typography>
+                </a>
+                <a href="#community" style={{ textDecoration: "none" }}>
+                  <Typography variant="h1" className={classes.navtext}>
+                    COMMUNITY
+                  </Typography>
+                </a>
+                <a href="#contact" style={{ textDecoration: "none" }}>
+                  <Typography variant="h1" className={classes.navtext}>
+                    CONTACT US
+                  </Typography>
+                </a>
+                <a href="#tos" style={{ textDecoration: "none" }}>
+                  <Typography variant="h1" className={classes.navtext}>
+                    TERMS OF SERVICES
+                  </Typography>
+                </a>
+                <Button className={classes.loginButton} disableElevation>
                   Login
                 </Button>
               </>

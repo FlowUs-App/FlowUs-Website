@@ -177,7 +177,7 @@ function covertext() {
           </Typography>
         </Grid>
         <Grid item>
-          <Button variant="contained" className={classes.coverButton}>
+          <Button variant="contained" className={classes.coverButton} href="#mission">
             EXPLORE OUR APP
           </Button>
         </Grid>
