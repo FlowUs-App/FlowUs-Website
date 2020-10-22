@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 import CoverText from "../components/covertext";
 import SideDrawer from "./sidedrawer";
 import useWindowDimensions from "../hooks/windowsize";
+import { LinearScale } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,6 +34,26 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "0.8rem",
     fontSize: "1rem",
     textDecoration: "none",
+    ["@media (max-width: 4000px)"]: {
+      marginTop: "10rem",
+      fontSize: "3.5rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      marginTop: "10rem",
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      marginTop: "10rem",
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      marginTop: "10rem",
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      marginTop: "3rem",
+      fontSize: "1rem",
+    },
     ["@media (max-width: 800px)"]: {
       fontSize: "0.9rem",
     },
@@ -71,7 +92,30 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "3rem",
     width: "20%",
     minWidth: "0.3rem",
-    marginRight: theme.spacing(80),
+    ["@media (max-width: 4000px)"]: {
+      transform: "scale(3)",
+      marginTop: "13rem",
+      marginRight: theme.spacing(180),
+    },
+    ["@media (max-width: 3500px)"]: {
+      transform: "scale(3)",
+      marginTop: "10rem",
+      marginRight: theme.spacing(130),
+    },
+    ["@media (max-width: 3000px)"]: {
+      transform: "scale(2.5)",
+      marginTop: "10rem",
+      marginRight: theme.spacing(100),
+    },
+    ["@media (max-width: 2500px)"]: {
+      transform: "scale(2)",
+      marginTop: "10rem",
+      marginRight: theme.spacing(80),
+    },
+    ["@media (max-width: 2000px)"]: {
+      marginTop: "3rem",
+      marginRight: theme.spacing(50),
+    },
     ["@media (max-width: 1500px)"]: {
       marginRight: theme.spacing(50),
     },
@@ -123,6 +167,31 @@ const useStyles = makeStyles((theme) => ({
     },
     "&:focus": {
       boxShadow: "0 0 0 0.2rem rgba(0,123,255,.5)",
+    },
+    ["@media (max-width: 4000px)"]: {
+      width: "21rem",
+      marginTop: "10rem",
+      fontSize: "3.5rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      width: "19rem",
+      marginTop: "10rem",
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      width: "17rem",
+      marginTop: "10rem",
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      width: "14rem",
+      marginTop: "10rem",
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      width: "12rem",
+      marginTop: "3rem",
+      fontSize: "1rem",
     },
   },
 }));
