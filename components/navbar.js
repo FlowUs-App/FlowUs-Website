@@ -28,11 +28,10 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "3rem",
     fontFamily:
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
-    fontWeight: "500",
+    fontWeight: "200",
     color: "#D9F0FF",
     marginRight: "0.8rem",
     fontSize: "1rem",
-    fontWeight: "200",
     ["@media (max-width: 800px)"]: {
       fontSize: "0.9rem",
     },
@@ -108,6 +107,9 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "0px",
     fontSize: "0.9rem",
     fontWeight: "200",
+    "&:hover":{
+      background: "#D9F0FF",
+    },
     ["@media (max-width: 800px)"]: {
       width: "5.5rem",
       fontSize: "0.7rem",
@@ -150,6 +152,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const navLinks = [
+  { title: `Login`, path: `#login` },
   { title: `Mission`, path: `#mission` },
   { title: `Features`, path: `#features` },
   { title: `Community`, path: `#community` },
@@ -210,7 +213,7 @@ function navbar() {
                   TERMS OF SERVICES
                 </Typography>
                 <Button
-                  variant="contained"
+                  
                   className={classes.loginButton}
                   disableElevation
                 >
