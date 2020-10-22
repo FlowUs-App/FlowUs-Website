@@ -99,55 +99,30 @@ const useStyles = makeStyles((theme) => ({
   },
   loginButton: {
     marginTop: "3rem",
-    width: "6.5rem",
+    boxShadow: "none",
+    textTransform: "none",
+    width: "8rem",
     letterSpacing: "0em",
     color: "#405FB1",
     background: "#D9F0FF",
-    border: "10px solid #D9F0FF",
-    borderRadius: "20px",
-    lineHeight: "0px",
-    fontSize: "0.9rem",
+    fontSize: "1rem",
     fontWeight: "200",
+    border: "0px solid",
+    borderRadius: "20px",
+    fontFamily:
+      "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     "&:hover": {
       background: "#D9F0FF",
+      borderColor: "#0062cc",
+      boxShadow: "none",
     },
-    ["@media (max-width: 800px)"]: {
-      width: "5.5rem",
-      fontSize: "0.7rem",
+    "&:active": {
+      boxShadow: "none",
+      background: "#D9F0FF",
+      borderColor: "#005cbf",
     },
-    ["@media (max-width: 700px)"]: {
-      width: "4.5rem",
-      fontSize: "0.6rem",
-    },
-    ["@media (max-width: 600px)"]: {
-      width: "3.5rem",
-    },
-    ["@media (max-width: 500px)"]: {
-      width: "2.5rem",
-    },
-    ["@media (max-width: 400px)"]: {
-      width: "0.3rem",
-      fontSize: "0.5rem",
-      border: "2px solid #D9F0FF",
-    },
-    ["@media (max-width: 300px)"]: {
-      width: "0.3rem",
-      fontSize: "0.3rem",
-    },
-    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
-      fontSize: "1rem",
-    },
-    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
-      fontSize: "0.8rem",
-    },
-    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
-      fontSize: "0.6rem",
-    },
-    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
-      fontSize: "0.5rem",
-    },
-    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
-      fontSize: "0.3rem",
+    "&:focus": {
+      boxShadow: "0 0 0 0.2rem rgba(0,123,255,.5)",
     },
   },
 }));

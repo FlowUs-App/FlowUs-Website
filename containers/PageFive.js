@@ -309,9 +309,9 @@ function PageFive() {
                         component="p"
                         className={classes.MissionsSubTitle}
                       >
-                        Once a month we launch a Cooking Competition in our
-                        Community. The winners get featured on our instagram
-                        channel.
+                        Once a month we launch a Cooking Competition
+                        <br /> in our Community. The winners get featured on our
+                        <br /> instagram channel.
                       </Typography>
                     </Grid>
                   </CardContent>
@@ -372,9 +372,9 @@ function PageFive() {
                     component="p"
                     className={classes.MissionsSubTitle}
                   >
-                    Once a month we launch a Cooking Competition in our
-                    Community. The winners get featured on our instagram
-                    channel.
+                    Once a month we launch a Cooking Competition
+                    <br /> in our Community. The winners get featured on our
+                    <br /> instagram channel.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -424,10 +424,11 @@ function PageFive() {
                         component="p"
                         className={classes.MissionsSubTitle}
                       >
-                        Like our Cooking Competitions we also launch every other
-                        week a Sports Challenge, where each individual from our
-                        community can take part. See more on our instagram
-                        channel.
+                        Like our Cooking Competitions we also launch every
+                        <br /> other week a Sports Challenge, where each
+                        individual
+                        <br /> from our community can take part. See more on our
+                        <br /> instagram channel. channel.
                       </Typography>
                     </Grid>
                   </CardContent>
@@ -477,9 +478,10 @@ function PageFive() {
                     component="p"
                     className={classes.MissionsSubTitle}
                   >
-                    Like our Cooking Competitions we also launch every other
-                    week a Sports Challenge, where each individual from our
-                    community can take part. See more on our instagram channel.
+                    Like our Cooking Competitions we also launch every
+                    <br /> other week a Sports Challenge, where each individual
+                    <br /> from our community can take part. See more on our
+                    <br /> instagram channel.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -535,9 +537,12 @@ function PageFive() {
                         className={classes.MissionsSubTitle}
                       >
                         It is important for us to give back to our community,
-                        therefore we launch giveaways to appreciate loyal
-                        members of our community. The prizes are always fitness
-                        related and can be put into use immediately.
+                        <br />
+                        therefore we launch giveaways to appreciate
+                        <br /> loyal members of our community.
+                        <br /> The prizes are always fitness related and can
+                        <br />
+                        be put into use immediately.
                       </Typography>
                     </Grid>
                   </CardContent>
@@ -588,8 +593,11 @@ function PageFive() {
                     className={classes.MissionsSubTitle}
                   >
                     It is important for us to give back to our community,
-                    therefore we launch giveaways to appreciate loyal members of
-                    our community. The prizes are always fitness related and can
+                    <br />
+                    therefore we launch giveaways to appreciate
+                    <br /> loyal members of our community.
+                    <br /> The prizes are always fitness related and can
+                    <br />
                     be put into use immediately.
                   </Typography>
                 </CardContent>
