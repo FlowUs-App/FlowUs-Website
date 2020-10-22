@@ -8,10 +8,13 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import useWindowDimensions from "../hooks/windowsize";
+import { red } from "@material-ui/core/colors";
+import { Widgets } from "@material-ui/icons";
 
 const useStyles = makeStyles({
   root: {
     background: "#56377E",
+    overflowX: "hidden",
   },
   bros: {
     marginTop: "3rem",
@@ -24,11 +27,67 @@ const useStyles = makeStyles({
   mobbro2: {
     marginBottom: "3rem",
   },
+  imageLogo: {
+
+    ["@media (max-width: 1500px)"]: {
+  
+    },
+    ["@media (max-width: 1300px)"]: {
+  
+    },
+    ["@media (max-width: 1200px)"]: {
+
+    },
+    ["@media (max-width: 1000px)"]: {
+
+    },
+    ["@media (max-width: 800px)"]: {
+
+    },
+    ["@media (max-width: 700px)"]: {
+
+    },
+    ["@media (max-width: 600px)"]: {
+
+    },
+    ["@media (max-width: 500px)"]: {
+      transform: "scale(1)",
+    },
+  },
+  imageExp: {
+
+    ["@media (max-width: 1500px)"]: {
+  
+    },
+    ["@media (max-width: 1300px)"]: {
+  
+    },
+    ["@media (max-width: 1200px)"]: {
+
+    },
+    ["@media (max-width: 1000px)"]: {
+
+    },
+    ["@media (max-width: 800px)"]: {
+
+    },
+    ["@media (max-width: 500px)"]: {
+      transform: "scale(1)",
+    },
+    ["@media (max-width: 400px)"]: {
+      transform: "scale(0.85)",
+      marginLeft: "-2rem"
+    },
+    ["@media (max-width: 300px)"]: {
+      transform: "scale(0.75)",
+      marginLeft: "-3rem"
+    },
+  },
 });
 
 function Footer() {
   const classes = useStyles();
-  const { height } = useWindowDimensions();
+  const { height, width } = useWindowDimensions();
   const halfHeight = height / 6;
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
@@ -47,6 +106,7 @@ function Footer() {
                     height="30"
                     viewBox="0 0 178 30"
                     fill="none"
+                    className={classes.imageLogo}
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -62,10 +122,11 @@ function Footer() {
                 </Grid>
                 <Grid item className={classes.mobbro2}>
                   <svg
-                    width="356"
+                    width="360"
                     height="22"
-                    viewBox="0 0 356 22"
+                    viewBox="0 0 360 22"
                     fill="none"
+                    className={classes.imageExp}
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path

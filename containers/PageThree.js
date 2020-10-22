@@ -17,16 +17,20 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "300",
     fontSize: "3rem",
     ["@media (max-width: 1000px)"]: {
-      fontSize: "2.5rem",
+      fontSize: "4rem",
     },
     ["@media (max-width: 800px)"]: {
-      fontSize: "2rem",
+      textAlign: "start",
+      fontSize: "3.5rem",
     },
     ["@media (max-width: 600px)"]: {
-      fontSize: "1.5rem",
+      fontSize: "3rem",
     },
     ["@media (max-width: 400px)"]: {
-      fontSize: "1.5rem",
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      fontSize: "2rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
       fontSize: "3rem",
@@ -52,19 +56,21 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1rem",
     marginBottom: "4rem",
     ["@media (max-width: 800px)"]: {
-      fontSize: "0.9rem",
+      textAlign: "start",
+      marginTop: "1.5rem",
+      fontSize: "1rem",
     },
     ["@media (max-width: 700px)"]: {
-      fontSize: "0.7rem",
+      fontSize: "1rem",
     },
     ["@media (max-width: 600px)"]: {
-      fontSize: "0.6rem",
+      fontSize: "1rem",
     },
     ["@media (max-width: 500px)"]: {
-      fontSize: "0.5rem",
+      fontSize: "1rem",
     },
     ["@media (max-width: 400px)"]: {
-      fontSize: "0.45rem",
+      fontSize: "0.7rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
       fontSize: "1.2rem",

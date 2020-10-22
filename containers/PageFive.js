@@ -23,16 +23,20 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "300",
     fontSize: "3rem",
     ["@media (max-width: 1000px)"]: {
-      fontSize: "2.5rem",
+      fontSize: "4rem",
     },
     ["@media (max-width: 800px)"]: {
-      fontSize: "2rem",
+      textAlign: "start",
+      fontSize: "3.5rem",
     },
     ["@media (max-width: 600px)"]: {
-      fontSize: "1.5rem",
+      fontSize: "3rem",
     },
     ["@media (max-width: 400px)"]: {
-      fontSize: "1.5rem",
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      fontSize: "2rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
       fontSize: "3rem",
@@ -58,19 +62,21 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1rem",
     marginBottom: "4rem",
     ["@media (max-width: 800px)"]: {
-      fontSize: "0.9rem",
+      textAlign: "start",
+      marginTop: "1.5rem",
+      fontSize: "1rem",
     },
     ["@media (max-width: 700px)"]: {
-      fontSize: "0.7rem",
+      fontSize: "1rem",
     },
     ["@media (max-width: 600px)"]: {
-      fontSize: "0.6rem",
+      fontSize: "1rem",
     },
     ["@media (max-width: 500px)"]: {
-      fontSize: "0.5rem",
+      fontSize: "1rem",
     },
     ["@media (max-width: 400px)"]: {
-      fontSize: "0.45rem",
+      fontSize: "0.7rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
       fontSize: "1.2rem",
@@ -175,6 +181,38 @@ const useStyles = makeStyles((theme) => ({
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontSize: "4rem",
     fontWeight: 300,
+    ["@media (max-width: 800px)"]: {
+      textAlign: "start",
+      marginTop: "1.5rem",
+      fontSize: "4rem",
+    },
+    ["@media (max-width: 700px)"]: {
+      fontSize: "4rem",
+    },
+    ["@media (max-width: 600px)"]: {
+      fontSize: "4rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      fontSize: "2.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      fontSize: "1.2rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      fontSize: "0.9rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      fontSize: "0.75rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      fontSize: "0.6rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
+      fontSize: "0.3rem",
+    },
   },
   MissionsSubTitle: {
     color: "black",
@@ -183,6 +221,38 @@ const useStyles = makeStyles((theme) => ({
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontSize: "1rem",
     fontWeight: "normal",
+    ["@media (max-width: 800px)"]: {
+      textAlign: "start",
+      marginTop: "1.5rem",
+      fontSize: "2.2rem",
+    },
+    ["@media (max-width: 700px)"]: {
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 600px)"]: {
+      fontSize: "1.5rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      fontSize: "0.8rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      fontSize: "1.2rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      fontSize: "0.9rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      fontSize: "0.75rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      fontSize: "0.6rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
+      fontSize: "0.3rem",
+    },
   },
   card: {
     marginLeft: "5rem",
@@ -428,7 +498,7 @@ function PageFive() {
               justify="center"
               alignContent="center"
               spacing={0}
-              style={{ marginLeft: "0rem" }}
+              style={{ marginLeft: "0rem", marginBottom: "5rem" }}
             >
               <Grid item xs={12}>
                 <Card className={classes.root} elevation={0}>
@@ -436,6 +506,7 @@ function PageFive() {
                     <Typography
                       variant="h5"
                       component="h2"
+                      style={{marginBottom: "3rem"}}
                       className={classes.MissionTitle}
                     >
                       LiFit Giveaways

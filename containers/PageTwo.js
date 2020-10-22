@@ -83,6 +83,38 @@ const useStyles = makeStyles({
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontSize: "4rem",
     fontWeight: 300,
+    ["@media (max-width: 800px)"]: {
+      textAlign: "start",
+      marginTop: "1.5rem",
+      fontSize: "4rem",
+    },
+    ["@media (max-width: 700px)"]: {
+      fontSize: "4rem",
+    },
+    ["@media (max-width: 600px)"]: {
+      fontSize: "4rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      fontSize: "2.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      fontSize: "1.2rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      fontSize: "0.9rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      fontSize: "0.75rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      fontSize: "0.6rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
+      fontSize: "0.3rem",
+    },
   },
   MissionsSubTitle: {
     color: "black",
@@ -90,6 +122,38 @@ const useStyles = makeStyles({
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontSize: "1rem",
     fontWeight: "normal",
+    ["@media (max-width: 800px)"]: {
+      textAlign: "start",
+      marginTop: "1.5rem",
+      fontSize: "2.2rem",
+    },
+    ["@media (max-width: 700px)"]: {
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 600px)"]: {
+      fontSize: "1.5rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      fontSize: "0.8rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      fontSize: "1.2rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      fontSize: "0.9rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      fontSize: "0.75rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      fontSize: "0.6rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
+      fontSize: "0.3rem",
+    },
   },
   card: {
     marginLeft: "5rem",
