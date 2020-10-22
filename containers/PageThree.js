@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
   paperImg: {
     marginTop: "3.5rem",
     marginBottom: "2rem",
-    transform: "scale(1.5)",
+    transform: "scale(2)",
   },
   paperTitle: {
     textAlign: "center",

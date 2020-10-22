@@ -178,6 +178,7 @@ const useStyles = makeStyles((theme) => ({
   },
   MissionsSubTitle: {
     color: "black",
+    marginTop: "5rem",
     fontFamily:
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontSize: "1rem",
