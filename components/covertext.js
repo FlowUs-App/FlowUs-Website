@@ -9,45 +9,65 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     padding: "70px 0",
     ["@media (max-width: 1300px)"]: {
-      marginTop: "0rem"
+      marginTop: "0rem",
     },
     ["@media (max-width: 1200px)"]: {
-      marginTop: "-3.5rem"
+      marginTop: "-3.5rem",
     },
     ["@media (max-width: 1100px)"]: {
-      marginTop: "-5rem"
+      marginTop: "-5rem",
     },
     ["@media (max-width: 1000px)"]: {
-      marginTop: "-3rem"
+      marginTop: "-3rem",
     },
     ["@media (max-width: 900px)"]: {
-      marginTop: "-3rem"
+      marginTop: "-3rem",
     },
     ["@media (max-width: 800px)"]: {
-      marginTop: "-4rem"
+      marginTop: "-4rem",
     },
     ["@media (max-width: 700px)"]: {
-      marginTop: "-3rem"
+      marginTop: "-3rem",
     },
     ["@media (max-width: 600px)"]: {
-      marginTop: "-3rem"
+      marginTop: "-3rem",
     },
     ["@media (max-width: 500px)"]: {
-      marginTop: "-3rem"
+      marginTop: "-3rem",
     },
     ["@media (max-width: 400px)"]: {
-      marginTop: "-3rem"
+      marginTop: "-3rem",
     },
     ["@media (max-width: 300px)"]: {
-      marginTop: "-5rem"
+      marginTop: "-5rem",
     },
   },
   coverTitle: {
     marginTop: "5rem",
     color: "#FFFFFF",
-    fontFamily: "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif", 
+    fontFamily:
+      "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontWeight: "300",
     fontSize: "7rem",
+    ["@media (max-width: 4000px)"]: {
+      marginTop: "16rem",
+      fontSize: "20rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      marginTop: "16rem",
+      fontSize: "17rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "14rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      marginTop: "15rem",
+      fontSize: "12rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      marginTop: "5rem",
+      fontSize: "7rem",
+    },
     ["@media (max-width: 1000px)"]: {
       fontSize: "5.5rem",
     },
@@ -78,9 +98,25 @@ const useStyles = makeStyles((theme) => ({
   },
   coverSubTitle: {
     color: "#FFFFFF",
-    fontFamily: "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif", 
+    fontFamily:
+      "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontWeight: "300",
     fontSize: "1.3rem",
+    ["@media (max-width: 4000px)"]: {
+      fontSize: "3.5rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      fontSize: "1.3rem",
+    },
     ["@media (max-width: 800px)"]: {
       fontSize: "0.9rem",
     },
@@ -114,12 +150,37 @@ const useStyles = makeStyles((theme) => ({
   },
   coverButton: {
     backgroundColor: "#56377E",
-    fontFamily: "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif", 
+    fontFamily:
+      "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     color: "#FFF",
     width: "20rem",
     height: "4rem",
     marginTop: "4rem",
     borderRadius: "30px",
+    ["@media (max-width: 4000px)"]: {
+      height: "11rem",
+      width: "43rem",
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      height: "10rem",
+      width: "40rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      height: "9rem",
+      width: "35rem",
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      height: "7rem",
+      width: "25rem",
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      height: "4rem",
+      width: "20rem",
+      fontSize: "1rem",
+    },
     ["@media (max-width: 500px)"]: {
       height: "4rem",
       width: "80%",
@@ -177,7 +238,11 @@ function covertext() {
           </Typography>
         </Grid>
         <Grid item>
-          <Button variant="contained" className={classes.coverButton} href="#mission">
+          <Button
+            variant="contained"
+            className={classes.coverButton}
+            href="#mission"
+          >
             EXPLORE OUR APP
           </Button>
         </Grid>
