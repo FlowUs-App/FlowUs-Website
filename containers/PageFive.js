@@ -163,8 +163,8 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "2rem",
     },
     ["@media (max-width: 2000px)"]: {
-      width: "20rem",
       height: "4rem",
+      width: "20rem",
       fontSize: "1rem",
     },
     ["@media (max-width: 500px)"]: {
@@ -220,10 +220,10 @@ const useStyles = makeStyles((theme) => ({
       margin: "auto",
     },
     ["@media (max-width: 2000px)"]: {
-      top: "1px",
-      left: "-857px",
-      right: "10px",
-      bottom: "10px",
+      top: "-700px",
+      left: "-999px",
+      right: "-999px",
+      bottom: "-999px",
       margin: "auto",
       position: "absolute",
     },
@@ -318,7 +318,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "2.6rem",
     },
     ["@media (max-width: 2000px)"]: {
-      fontSize: "2.4rem",
+      fontSize: "1rem",
     },
     ["@media (max-width: 800px)"]: {
       textAlign: "start",
