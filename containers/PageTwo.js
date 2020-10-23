@@ -31,7 +31,30 @@ const useStyles = makeStyles({
     height: "4rem",
     marginTop: "2rem",
     borderRadius: "30px",
-
+    ["@media (max-width: 4000px)"]: {
+      height: "11rem",
+      width: "43rem",
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      height: "10rem",
+      width: "40rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      height: "9rem",
+      width: "35rem",
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      height: "7rem",
+      width: "25rem",
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      width: "20rem",
+      height: "4rem",
+      fontSize: "1rem",
+    },
     ["@media (max-width: 500px)"]: {
       height: "4rem",
       width: "20rem",
@@ -76,6 +99,9 @@ const useStyles = makeStyles({
     right: "-999px",
     bottom: "-999px",
     margin: "auto",
+    ["@media (max-width: 2000px)"]: {
+      height: "1200px !important",
+    },
   },
   MissionTitle: {
     color: "black",
@@ -83,6 +109,21 @@ const useStyles = makeStyles({
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontSize: "4rem",
     fontWeight: 300,
+    ["@media (max-width: 4000px)"]: {
+      fontSize: "14rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      fontSize: "12rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "10rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "8rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      fontSize: "4rem",
+    },
     ["@media (max-width: 800px)"]: {
       textAlign: "start",
       marginTop: "1.5rem",
@@ -122,6 +163,25 @@ const useStyles = makeStyles({
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontSize: "1rem",
     fontWeight: "normal",
+    ["@media (max-width: 4000px)"]: {
+      marginTop: "2.5rem",
+      fontSize: "2.6rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      marginTop: "2.5rem",
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      marginTop: "2rem",
+      fontSize: "2.4rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      marginTop: "2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      marginTop: "1.5rem",
+      fontSize: "1rem",
+    },
     ["@media (max-width: 800px)"]: {
       textAlign: "start",
       marginTop: "1.5rem",
@@ -164,6 +224,7 @@ function PageTwo() {
   const classes = useStyles();
   const { height } = useWindowDimensions();
   const halfHeight = height / 6;
+  const imgHeight = height + halfHeight;
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
@@ -216,7 +277,8 @@ function PageTwo() {
                   </CardContent>
                   <CardActions>
                     <Grid item xs={12}>
-                      <Button href="#features"
+                      <Button
+                        href="#features"
                         variant="contained"
                         style={{ width: "80%" }}
                         className={classes.featButton}
@@ -270,14 +332,18 @@ function PageTwo() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button href="#features" variant="contained" className={classes.featButton}>
+                  <Button
+                    href="#features"
+                    variant="contained"
+                    className={classes.featButton}
+                  >
                     VIEW OUR FEATURES
                   </Button>
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item xs={6} className={classes.basketballcontainer}>
-              <img className={classes.basketballImg} src="./sport.jpg" />
+            <Grid item xs={6} className={classes.basketballcontainer}  style={{height: height}}>
+              <img className={classes.basketballImg} src="./sport.jpg"  style={{height: imgHeight}}/>
             </Grid>
           </Grid>
         </>
