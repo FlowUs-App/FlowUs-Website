@@ -22,6 +22,21 @@ const useStyles = makeStyles((theme) => ({
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontWeight: "300",
     fontSize: "3rem",
+    ["@media (max-width: 4000px)"]: {
+      fontSize: "8rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      fontSize: "7rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "6rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "5rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      fontSize: "4rem",
+    },
     ["@media (max-width: 1000px)"]: {
       fontSize: "4rem",
     },
@@ -61,6 +76,21 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "300",
     fontSize: "1rem",
     marginBottom: "4rem",
+    ["@media (max-width: 4000px)"]: {
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      fontSize: "1.6rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "1.4rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "1.2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      fontSize: "1rem",
+    },
     ["@media (max-width: 800px)"]: {
       textAlign: "start",
       marginTop: "1.5rem",
@@ -113,7 +143,30 @@ const useStyles = makeStyles((theme) => ({
     height: "4rem",
     marginTop: "2rem",
     borderRadius: "30px",
-
+    ["@media (max-width: 4000px)"]: {
+      height: "11rem",
+      width: "43rem",
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      height: "10rem",
+      width: "40rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      height: "9rem",
+      width: "35rem",
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      height: "7rem",
+      width: "25rem",
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      width: "20rem",
+      height: "4rem",
+      fontSize: "1rem",
+    },
     ["@media (max-width: 500px)"]: {
       height: "4rem",
       width: "20rem",
@@ -158,6 +211,22 @@ const useStyles = makeStyles((theme) => ({
     bottom: "10px",
     margin: "auto",
     position: "absolute",
+    ["@media (max-width: 4000px)"]: {
+      position: "absolute",
+      top: "-700px",
+      left: "-999px",
+      right: "-999px",
+      bottom: "-999px",
+      margin: "auto",
+    },
+    ["@media (max-width: 2000px)"]: {
+      top: "1px",
+      left: "-857px",
+      right: "10px",
+      bottom: "10px",
+      margin: "auto",
+      position: "absolute",
+    },
   },
   sportImg: {
     top: "-700px",
@@ -181,6 +250,21 @@ const useStyles = makeStyles((theme) => ({
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontSize: "4rem",
     fontWeight: 300,
+    ["@media (max-width: 4000px)"]: {
+      fontSize: "12rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      fontSize: "10rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "8rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "6rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      fontSize: "4rem",
+    },
     ["@media (max-width: 800px)"]: {
       textAlign: "start",
       marginTop: "1.5rem",
@@ -221,6 +305,21 @@ const useStyles = makeStyles((theme) => ({
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontSize: "1rem",
     fontWeight: "normal",
+    ["@media (max-width: 4000px)"]: {
+      fontSize: "3.5rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "2.8rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "2.6rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      fontSize: "2.4rem",
+    },
     ["@media (max-width: 800px)"]: {
       textAlign: "start",
       marginTop: "1.5rem",
@@ -264,6 +363,7 @@ function PageFive() {
   const classes = useStyles();
   const { height } = useWindowDimensions();
   const halfHeight = height / 6;
+  const imgHeight = height + halfHeight;
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
@@ -389,8 +489,17 @@ function PageFive() {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item xs={6} className={classes.basketballcontainer}>
-              <img className={classes.basketballImg} src="./veggie.jpg" />
+            <Grid
+              item
+              xs={6}
+              className={classes.basketballcontainer}
+              style={{ height: height }}
+            >
+              <img
+                className={classes.basketballImg}
+                src="./veggie.jpg"
+                style={{ height: imgHeight }}
+              />
             </Grid>
           </Grid>
         </>
