@@ -28,6 +28,23 @@ const useStyles = makeStyles((theme) => ({
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontWeight: 300,
     fontSize: "3rem",
+    ["@media (max-width: 4000px)"]: {
+      marginTop: "5rem",
+      fontSize: "10rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      fontSize: "8rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "7rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "5rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      marginTop: "3rem",
+      fontSize: "3rem",
+    },
     ["@media (max-width: 500px)"]: {
       fontSize: "3rem",
     },
@@ -60,9 +77,40 @@ const useStyles = makeStyles((theme) => ({
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontWeight: 400,
     fontSize: "1rem",
+    ["@media (max-width: 4000px)"]: {
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      fontSize: "1.7rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "1.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "1.2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      marginTop: "3rem",
+      fontSize: "1rem",
+    },
   },
   fav: {
     transform: "scale(5)",
+    ["@media (max-width: 4000px)"]: {
+      transform: "scale(10)",
+    },
+    ["@media (max-width: 3500px)"]: {
+      transform: "scale(8)",
+    },
+    ["@media (max-width: 3000px)"]: {
+      transform: "scale(7)",
+    },
+    ["@media (max-width: 2500px)"]: {
+      transform: "scale(6)",
+    },
+    ["@media (max-width: 2000px)"]: {
+      transform: "scale(5)",
+    },
   },
 }));
 
