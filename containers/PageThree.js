@@ -16,6 +16,20 @@ const useStyles = makeStyles((theme) => ({
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontWeight: "300",
     fontSize: "3rem",
+    ["@media (max-width: 4000px)"]: {
+      marginTop: "9rem",
+      fontSize: "7rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "6rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "5rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      marginTop: "5rem",
+      fontSize: "3rem",
+    },
     ["@media (max-width: 1000px)"]: {
       fontSize: "4rem",
     },
@@ -55,6 +69,21 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "300",
     fontSize: "1rem",
     marginBottom: "4rem",
+    ["@media (max-width: 4000px)"]: {
+      fontSize: "1.9rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      fontSize: "1.7rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "1.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "1.5rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      fontSize: "1rem",
+    },
     ["@media (max-width: 800px)"]: {
       textAlign: "start",
       marginTop: "1.5rem",
@@ -94,11 +123,50 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     flexDirection: "column",
     height: "22rem",
+    ["@media (max-width: 4000px)"]: {
+      height: "30rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      height: "28rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      height: "26rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      height: "24rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      height: "22rem",
+    },
   },
   paperImg: {
     marginTop: "3.5rem",
     marginBottom: "2rem",
     transform: "scale(2)",
+    ["@media (max-width: 4000px)"]: {
+      marginTop: "6rem",
+      transform: "scale(4)",
+      marginBottom: "7rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      marginTop: "5rem",
+      transform: "scale(3.5)",
+      marginBottom: "6rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      marginTop: "4rem",
+      transform: "scale(3)",
+      marginBottom: "5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      marginTop: "3.5rem",
+      transform: "scale(2.5)",
+      marginBottom: "4rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      transform: "scale(2)",
+      marginBottom: "2rem",
+    },
   },
   paperTitle: {
     textAlign: "center",
@@ -107,6 +175,21 @@ const useStyles = makeStyles((theme) => ({
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     marginBottom: "2rem",
     fontWeight: "bold",
+    ["@media (max-width: 4000px)"]: {
+      fontSize: "2.5em",
+    },
+    ["@media (max-width: 3500px)"]: {
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "1.8rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "1.5rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      fontSize: "1.3rem",
+    },
   },
   paperSubTitle: {
     textAlign: "center",
@@ -116,6 +199,18 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "3rem",
     marginRight: "3rem",
     fontWeight: 300,
+    ["@media (max-width: 4000px)"]: {
+      fontSize: "1.5em",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "1.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "1.3rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      fontSize: "1rem",
+    },
   },
 }));
 
