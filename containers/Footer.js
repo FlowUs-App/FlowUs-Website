@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) => ({
   fLogo: {
     transform: "scale(1.2)",
   },
-  grid: { marginTop: "3rem" },
+  grid: { marginTop: "3rem"},
+  gridnav: { marginTop: "3rem",     color: "#D9F0FF",},
   smullgrid: { marginTop: "1rem" },
   fItemDescr: {
     color: "white",
@@ -200,7 +201,7 @@ function Footer() {
                 spacing={10}
                 alignItems="center"
               >
-                <Grid item xs={4}>
+                <Grid item xs={4} className={classes.grid}>
                   <svg
                     width="168"
                     height="37"
@@ -220,10 +221,10 @@ function Footer() {
                     />
                   </svg>
                 </Grid>
-                <Grid item xs={4} className={classes.fNav}>
+                <Grid item xs={4} className={classes.gridnav}>
                   <Typography variant="body1">NAVIGATE</Typography>
                 </Grid>
-                <Grid item xs={4} className={classes.fNav}>
+                <Grid item xs={4} className={classes.gridnav}>
                   <Typography variant="body1">STAY CONNECTED</Typography>
                 </Grid>
               </Grid>
