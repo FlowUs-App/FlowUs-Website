@@ -114,7 +114,7 @@ const useStyles = makeStyles((theme) => ({
     },
     ["@media (max-width: 2000px)"]: {
       marginTop: "3rem",
-      marginRight: theme.spacing(50),
+      marginRight: theme.spacing(60),
     },
     ["@media (max-width: 1500px)"]: {
       marginRight: theme.spacing(50),
@@ -127,18 +127,31 @@ const useStyles = makeStyles((theme) => ({
     },
     ["@media (max-width: 1000px)"]: {
       marginRight: theme.spacing(20),
+      marginLeft: "0rem",
     },
     ["@media (max-width: 800px)"]: {
       marginRight: theme.spacing(5),
+      marginLeft: "5rem",
     },
     ["@media (max-width: 700px)"]: {
       marginRight: theme.spacing(5),
+      marginLeft: "4rem",
     },
     ["@media (max-width: 600px)"]: {
-      marginRight: theme.spacing(1),
+      marginRight: theme.spacing(0),
+      marginLeft: "3rem",
     },
     ["@media (max-width: 500px)"]: {
       marginRight: theme.spacing(0),
+      marginLeft: "2rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      marginRight: theme.spacing(0),
+      marginLeft: "1.5rem",
+    },
+    ["@media (max-width: 350px)"]: {
+      marginRight: theme.spacing(-5),
+      marginLeft: "1.5rem",
     },
   },
   loginButton: {
