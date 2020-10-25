@@ -92,6 +92,78 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "0.3rem",
     },
   },
+  tosLogo: {
+    marginTop: "3rem",
+    width: "20%",
+    minWidth: "0.3rem",
+    ["@media (max-width: 4000px)"]: {
+      transform: "scale(3)",
+      marginTop: "13rem",
+      marginRight: theme.spacing(180),
+    },
+    ["@media (max-width: 3500px)"]: {
+      transform: "scale(3)",
+      marginTop: "10rem",
+      marginRight: theme.spacing(130),
+    },
+    ["@media (max-width: 3000px)"]: {
+      transform: "scale(2.5)",
+      marginTop: "10rem",
+      marginRight: theme.spacing(100),
+    },
+    ["@media (max-width: 2500px)"]: {
+      transform: "scale(2)",
+      marginTop: "10rem",
+      marginRight: theme.spacing(80),
+    },
+    ["@media (max-width: 2000px)"]: {
+      transform: "scale(1)",
+      marginTop: "3rem",
+      marginRight: theme.spacing(60),
+    },
+    ["@media (max-width: 1500px)"]: {
+      marginRight: theme.spacing(50),
+    },
+    ["@media (max-width: 1300px)"]: {
+      marginRight: theme.spacing(40),
+    },
+    ["@media (max-width: 1200px)"]: {
+      marginRight: theme.spacing(30),
+    },
+    ["@media (max-width: 1000px)"]: {
+      transform: "scale(2)",
+      marginRight: theme.spacing(20),
+      marginLeft: "0rem",
+    },
+    ["@media (max-width: 800px)"]: {
+      transform: "scale(2)",
+      marginRight: theme.spacing(5),
+      marginLeft: "5rem",
+    },
+    ["@media (max-width: 700px)"]: {
+      marginRight: theme.spacing(5),
+      marginLeft: "4rem",
+    },
+    ["@media (max-width: 600px)"]: {
+      marginRight: theme.spacing(0),
+      marginLeft: "3rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      transform: "scale(2)",
+      marginRight: theme.spacing(0),
+      marginLeft: "2rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      transform: "scale(2)",
+      marginRight: theme.spacing(0),
+      marginLeft: "1.5rem",
+    },
+    ["@media (max-width: 350px)"]: {
+
+      marginRight: theme.spacing(-5),
+      marginLeft: "1.5rem",
+    },
+  },
   imageLogo: {
     marginTop: "3rem",
     width: "20%",
@@ -304,6 +376,7 @@ function navbar({ tos }) {
                 height="27"
                 viewBox="0 0 254 27"
                 fill="none"
+                className={classes.tosLogo}
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
