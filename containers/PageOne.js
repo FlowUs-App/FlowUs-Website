@@ -18,7 +18,7 @@ function PageOne() {
   const classes = useStyles();
   return (
     <>
-        <Navbar />
+        <Navbar tos={true}/>
     </>
   );
 }
