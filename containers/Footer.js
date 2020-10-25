@@ -98,7 +98,7 @@ function Footer() {
                               href="#"
                               style={{ textDecoration: "none", color: "white" }}
                             >
-                              <Typography variant="body1">HOME</Typography>
+                              <Typography variant="body2">HOME</Typography>
                             </a>
                           </Grid>
                           <Grid item xs={4} className={classes.fItemDescr}>
@@ -106,7 +106,7 @@ function Footer() {
                               href="#mission"
                               style={{ textDecoration: "none", color: "white" }}
                             >
-                              <Typography variant="body1">MISSION</Typography>
+                              <Typography variant="body2">MISSION</Typography>
                             </a>
                           </Grid>
                           <Grid item xs={4} className={classes.fItemDescr}>
@@ -114,7 +114,7 @@ function Footer() {
                               href="#features"
                               style={{ textDecoration: "none", color: "white" }}
                             >
-                              <Typography variant="body1">FEATURES</Typography>
+                              <Typography variant="body2">FEATURES</Typography>
                             </a>
                           </Grid>
                         </Grid>
@@ -129,7 +129,7 @@ function Footer() {
                               style={{ textDecoration: "none", color: "white" }}
                             >
                               <Typography
-                                variant="body1"
+                                variant="body2"
                                 className={classes.fItemDescr}
                               >
                                 COMMUNITY
@@ -146,7 +146,7 @@ function Footer() {
                               style={{ textDecoration: "none", color: "white" }}
                             >
                               <Typography
-                                variant="body1"
+                                variant="body2"
                                 className={classes.fItemDescr}
                               >
                                 CONTACT US
@@ -163,7 +163,7 @@ function Footer() {
                               style={{ textDecoration: "none", color: "white" }}
                             >
                               <Typography
-                                variant="body1"
+                                variant="body2"
                                 className={classes.fItemDescr}
                               >
                                 TERMS OF SERVICE

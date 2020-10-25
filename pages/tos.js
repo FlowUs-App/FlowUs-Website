@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
   grid: {
     backgroundImage: "none",
     background: "#56377E",
+    overflow: "hidden",
   },
   text: {
     background: "#56377E",
