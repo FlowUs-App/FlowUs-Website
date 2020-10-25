@@ -391,22 +391,22 @@ function navbar({ tos }) {
                 </>
               ) : (
                 <>
-                  <a href="#mission" style={{ textDecoration: "none" }}>
+                  <a href="/#mission" style={{ textDecoration: "none" }}>
                     <Typography variant="h2" className={classes.navtext}>
                       MISSION
                     </Typography>
                   </a>
-                  <a href="#features" style={{ textDecoration: "none" }}>
+                  <a href="/#features" style={{ textDecoration: "none" }}>
                     <Typography variant="h1" className={classes.navtext}>
                       FEATURES
                     </Typography>
                   </a>
-                  <a href="#community" style={{ textDecoration: "none" }}>
+                  <a href="/#community" style={{ textDecoration: "none" }}>
                     <Typography variant="h1" className={classes.navtext}>
                       COMMUNITY
                     </Typography>
                   </a>
-                  <a href="#contact" style={{ textDecoration: "none" }}>
+                  <a href="/#contact" style={{ textDecoration: "none" }}>
                     <Typography variant="h1" className={classes.navtext}>
                       CONTACT US
                     </Typography>
