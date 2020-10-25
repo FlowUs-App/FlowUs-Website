@@ -268,7 +268,7 @@ function Footer() {
               <Grid
                 container
                 direction="row"
-                className={classes.smullgrid}
+                className={classes.grid}
                 justify="space-between"
                 spacing={10}
               >
@@ -286,7 +286,7 @@ function Footer() {
                           href="#"
                           style={{ textDecoration: "none", color: "white" }}
                         >
-                          <Typography variant="body1">HOME</Typography>
+                          <Typography variant="body2">HOME</Typography>
                         </a>
                       </Grid>
                       <Grid item xs={4} className={classes.fItemDescr}>
@@ -294,7 +294,7 @@ function Footer() {
                           href="#mission"
                           style={{ textDecoration: "none", color: "white" }}
                         >
-                          <Typography variant="body1">MISSION</Typography>
+                          <Typography variant="body2">MISSION</Typography>
                         </a>
                       </Grid>
                       <Grid item xs={4} className={classes.fItemDescr}>
@@ -302,7 +302,7 @@ function Footer() {
                           href="#features"
                           style={{ textDecoration: "none", color: "white" }}
                         >
-                          <Typography variant="body1">FEATURES</Typography>
+                          <Typography variant="body2">FEATURES</Typography>
                         </a>
                       </Grid>
                     </Grid>
@@ -312,7 +312,7 @@ function Footer() {
                           href="#community"
                           style={{ textDecoration: "none", color: "white" }}
                         >
-                          <Typography variant="body1">COMMUNITY</Typography>
+                          <Typography variant="body2">COMMUNITY</Typography>
                         </a>
                       </Grid>
                       <Grid item xs={4} className={classes.fItemDescr}>
@@ -320,7 +320,7 @@ function Footer() {
                           href="#contact"
                           style={{ textDecoration: "none", color: "white" }}
                         >
-                          <Typography variant="body1">CONTACT US</Typography>
+                          <Typography variant="body2">CONTACT US</Typography>
                         </a>
                       </Grid>
                       <Grid item xs={4} className={classes.fItemDescr}>
@@ -328,7 +328,7 @@ function Footer() {
                           href="tos"
                           style={{ textDecoration: "none", color: "white" }}
                         >
-                          <Typography variant="body1">
+                          <Typography variant="body2">
                             TERMS OF SERVICE
                           </Typography>
                         </a>
