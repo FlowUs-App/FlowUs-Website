@@ -69,8 +69,119 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "1.5rem",
     },
   },
+  mobileComTitle: {
+    marginTop: "5rem",
+    marginLeft: "0.5rem",
+    color: "black",
+    fontFamily:
+      "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
+    fontWeight: "300",
+    fontSize: "3rem",
+    ["@media (max-width: 4000px)"]: {
+      fontSize: "8rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      fontSize: "7rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "6rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "5rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      fontSize: "4rem",
+    },
+    ["@media (max-width: 1000px)"]: {
+      fontSize: "4rem",
+    },
+    ["@media (max-width: 800px)"]: {
+      textAlign: "start",
+      fontSize: "3.5rem",
+    },
+    ["@media (max-width: 600px)"]: {
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      fontSize: "2rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      fontSize: "3rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      fontSize: "2.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      fontSize: "2rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      fontSize: "2rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
+      fontSize: "1.5rem",
+    },
+  },
   comSubTitle: {
     color: "black",
+    fontFamily:
+      "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
+    fontWeight: "300",
+    fontSize: "1rem",
+    marginBottom: "4rem",
+    ["@media (max-width: 4000px)"]: {
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      fontSize: "1.6rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      fontSize: "1.4rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      fontSize: "1.2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 800px)"]: {
+      textAlign: "start",
+      marginTop: "1.5rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 700px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 600px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      fontSize: "0.7rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      fontSize: "1.2rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      fontSize: "0.9rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      fontSize: "0.75rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      fontSize: "0.6rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
+      fontSize: "0.3rem",
+    },
+  },
+  mobileComSubTitle: {
+    color: "black",
+    marginLeft: "1rem",
     fontFamily:
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontWeight: "300",
@@ -374,10 +485,10 @@ function PageFive() {
         <>
           <Grid container direction="column">
             <d id="community"></d>
-            <Typography align="center" className={classes.comTitle}>
+            <Typography align="center" className={classes.mobileComTitle}>
               Community Projects
             </Typography>
-            <Typography align="center" className={classes.comSubTitle}>
+            <Typography align="center" className={classes.mobileComSubTitle}>
               In the past we have launched and worked on several Community
               Projects.
             </Typography>
