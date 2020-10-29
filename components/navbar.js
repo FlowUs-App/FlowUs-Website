@@ -286,7 +286,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const navLinks = [
-  { title: `Login`, path: `#login` },
+  { title: `Login`, path: `login` },
   { title: `Mission`, path: `#mission` },
   { title: `Features`, path: `#features` },
   { title: `Community`, path: `#community` },
@@ -357,7 +357,7 @@ function navbar({ tos }) {
                       TERMS OF SERVICES
                     </Typography>
                   </a>
-                  <Button className={classes.loginButton} disableElevation>
+                  <Button href="login" className={classes.loginButton} disableElevation>
                     Login
                   </Button>
                 </>
@@ -416,7 +416,7 @@ function navbar({ tos }) {
                       TERMS OF SERVICES
                     </Typography>
                   </a>
-                  <Button className={classes.loginButton} disableElevation>
+                  <Button href="login" className={classes.loginButton} disableElevation>
                     Login
                   </Button>
                 </>
