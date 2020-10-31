@@ -256,14 +256,13 @@ function login() {
                 </Grid>
               </Grid>
               <Grid item>
-                <form noValidate autoComplete="off" className={classes.form}>
-                  <Input
-                    defaultValue=""
-                    placeholder="E-Mail"
-                    autoComplete="false"
-                    inputProps={{ "aria-label": "description" }}
-                    required
-                  />
+                     <Button
+                        variant="contained"
+                        style={{ width: "80%" }}
+                        className={classes.featButton}
+                      >
+                        Login
+                      </Button>
                 </form>
               </Grid>
             </Grid>
