@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import useWindowDimensions from "../hooks/windowsize";
-import Input from "@material-ui/core/Input";
+import TextField from "@material-ui/core/TextField";
 
 const useStyles = makeStyles((theme) => ({
   grid: {
@@ -256,15 +256,22 @@ function login() {
                 </Grid>
               </Grid>
               <Grid item>
-                <form noValidate autoComplete="off" className={classes.form}>
-                  <Input
-                    defaultValue=""
-                    placeholder="E-Mail"
-                    autoComplete="false"
-                    inputProps={{ "aria-label": "description" }}
-                    required
-                  />
-                </form>
+                <TextField
+                  label="E-Mail"
+                  size="large"
+                  id="outlined-size-normal"
+                  defaultValue=""
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item>
+                <TextField
+                  label="Password"
+                  size="large"
+                  id="outlined-size-normal"
+                  defaultValue=""
+                  variant="outlined"
+                />
               </Grid>
             </Grid>
           </Grid>
