@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import useWindowDimensions from "../hooks/windowsize";
-import TextField from "@material-ui/core/TextField";
+import Input from "@material-ui/core/Input";
 
 const useStyles = makeStyles((theme) => ({
   grid: {
@@ -256,31 +256,8 @@ function login() {
                 </Grid>
               </Grid>
               <Grid item>
-                <TextField
-                  label="E-Mail"
-                  size="large"
-                  id="outlined-size-normal"
-                  defaultValue=""
-                  variant="outlined"
-                />
-              </Grid>
-              <Grid item>
-                <TextField
-                  label="Password"
-                  size="large"
-                  id="outlined-size-normal"
-                  defaultValue=""
-                  variant="outlined"
-                />
-              </Grid>
-              <Grid item>
-              <Button
-                        variant="contained"
-                        style={{ width: "80%" }}
-                        className={classes.featButton}
-                      >
-                        Login
-                      </Button>
+
+                
               </Grid>
             </Grid>
           </Grid>
