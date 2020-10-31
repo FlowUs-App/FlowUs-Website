@@ -275,7 +275,6 @@ function login() {
               </Grid>
               <Grid item>
               <Button
-                        href="#features"
                         variant="contained"
                         style={{ width: "80%" }}
                         className={classes.featButton}
