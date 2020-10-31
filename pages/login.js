@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import useWindowDimensions from "../hooks/windowsize";
 import TextField from "@material-ui/core/TextField";
 
@@ -272,6 +272,16 @@ function login() {
                   defaultValue=""
                   variant="outlined"
                 />
+              </Grid>
+              <Grid item>
+              <Button
+                        href="#features"
+                        variant="contained"
+                        style={{ width: "80%" }}
+                        className={classes.featButton}
+                      >
+                        Login
+                      </Button>
               </Grid>
             </Grid>
           </Grid>
