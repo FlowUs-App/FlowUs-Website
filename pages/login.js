@@ -257,7 +257,7 @@ function login() {
               </Grid>
               <Grid item>
 
-              github please
+              New
               </Grid>
             </Grid>
           </Grid>
