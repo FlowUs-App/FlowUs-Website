@@ -313,7 +313,6 @@ const useStyles = makeStyles((theme) => ({
   basketballcontainer: {
     position: "relative",
     overflow: "hidden",
-    height: "100%",
   },
   basketballImg: {
     top: "1px",

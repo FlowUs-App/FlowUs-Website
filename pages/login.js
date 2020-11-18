@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
+import { Typography, TextField, Button } from "@material-ui/core";
 import useWindowDimensions from "../hooks/windowsize";
-import Input from "@material-ui/core/Input";
+import Checkbox from "@material-ui/core/Checkbox";
 
 const useStyles = makeStyles((theme) => ({
   grid: {
@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
       "&.Mui-focused fieldset": {
         borderColor: "purple",
       },
+    },
+    "& .MuiCheckbox-colorSecondary.Mui-checked": {
+      color: "purple",
     },
   },
   imageLogo: {
@@ -122,6 +125,221 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "5rem",
     width: "25rem",
     color: "purple",
+  },
+  formText: {
+    color: "#56377E",
+  },
+  LoginButton: {
+    backgroundColor: "#56377E",
+    position: "center",
+    fontFamily:
+      "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
+    color: "#FFF",
+    width: "20rem",
+    height: "4rem",
+    borderRadius: "30px",
+    ["@media (max-width: 4000px)"]: {
+      height: "11rem",
+      width: "43rem",
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      height: "10rem",
+      width: "40rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      height: "9rem",
+      width: "35rem",
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      height: "7rem",
+      width: "25rem",
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      height: "4rem",
+      width: "20rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      height: "4rem",
+      width: "20rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      height: "3.5rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      height: "3rem",
+      fontSize: "0.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      fontSize: "0.8rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
+      fontSize: "0.2rem",
+    },
+    "&:hover": {
+      background: "#56377E",
+    },
+  },
+  RegisterButton: {
+    backgroundColor: "#FAFAFA",
+    position: "center",
+    fontFamily:
+      "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
+    color: "#56377E",
+    width: "20rem",
+    height: "4rem",
+    borderRadius: "30px",
+    ["@media (max-width: 4000px)"]: {
+      height: "11rem",
+      width: "43rem",
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      height: "10rem",
+      width: "40rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      height: "9rem",
+      width: "35rem",
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      height: "7rem",
+      width: "25rem",
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      height: "4rem",
+      width: "20rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      height: "4rem",
+      width: "20rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      height: "3.5rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      height: "3rem",
+      fontSize: "0.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      fontSize: "0.8rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
+      fontSize: "0.2rem",
+    },
+    "&:hover": {
+      background: "#FAFAFA",
+    },
+  },
+  line: {
+    width: "90%",
+    height: "5px",
+    background: "#56377E",
+    borderRadius: "30px",
+  },
+  lineText: {
+    width: "30%",
+    color: "#56377E",
+    marginTop: "3rem",
+    fontWeight: "bold",
+  },
+  SCIcon: {
+    marginTop: "0.5rem",
+    width: "35px",
+    height: "35px",
+  },
+  SCButton: {
+    backgroundColor: "#9E4EBD",
+    position: "center",
+    fontFamily:
+      "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
+    color: "#FFF",
+    width: "20rem",
+    height: "4rem",
+    borderRadius: "30px",
+    ["@media (max-width: 4000px)"]: {
+      height: "11rem",
+      width: "43rem",
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      height: "10rem",
+      width: "40rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      height: "9rem",
+      width: "35rem",
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      height: "7rem",
+      width: "25rem",
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      height: "4rem",
+      width: "20rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      height: "4rem",
+      width: "20rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      height: "3.5rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      height: "3rem",
+      fontSize: "0.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      fontSize: "0.8rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
+      fontSize: "0.2rem",
+    },
+    "&:hover": {
+      background: "#56377E",
+    },
   },
 }));
 
@@ -256,8 +474,127 @@ function login() {
                 </Grid>
               </Grid>
               <Grid item>
-
-              New Test
+                <Grid
+                  container
+                  direction="column"
+                  justify="space-around"
+                  style={{ padding: 20 }}
+                >
+                  <form className={classes.root} noValidate autoComplete="on">
+                    <Grid item style={{ marginTop: "7rem" }}>
+                      <TextField
+                        id="outlined-basic"
+                        label="E-MAIL"
+                        variant="outlined"
+                        style={{ width: "90%" }}
+                      />
+                    </Grid>
+                    <Grid item style={{ marginTop: "1.5rem" }}>
+                      <TextField
+                        id="outlined-basic"
+                        label="PASSWORD"
+                        variant="outlined"
+                        style={{ width: "90%" }}
+                      />
+                      <Grid item>
+                        <Grid
+                          container
+                          direction="row"
+                          justify="space-between"
+                          alignItems="center"
+                          style={{ width: "90%", marginTop: "1.5rem" }}
+                        >
+                          <Grid item>
+                            <Grid
+                              container
+                              direction="row"
+                              alignContent="center"
+                              alignItems="center"
+                            >
+                              <Checkbox />
+                              <Typography className={classes.formText}>
+                                Remember me
+                              </Typography>
+                            </Grid>
+                          </Grid>
+                          <Grid item>
+                            <Typography className={classes.formText}>
+                              Forgot Password?
+                            </Typography>
+                          </Grid>
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                  </form>
+                  <Grid item>
+                    <Button
+                      href="https://www.instagram.com/lifit.magazine/"
+                      target="_blank"
+                      variant="contained"
+                      style={{ width: "90%" }}
+                      className={classes.LoginButton}
+                    >
+                      Login
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    <Button
+                      href="https://www.instagram.com/lifit.magazine/"
+                      target="_blank"
+                      variant="contained"
+                      style={{ width: "90%", marginTop: "1rem" }}
+                      className={classes.RegisterButton}
+                    >
+                      Register
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    <Grid container direction="row" alignItems="baseline">
+                      <Grid item xs={5}>
+                        <div className={classes.line} />
+                      </Grid>
+                      <Grid item xs={1}>
+                        <Typography className={classes.lineText}>OR</Typography>
+                      </Grid>
+                      <Grid item xs={5}>
+                        <div className={classes.line} />
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                  <Grid item>
+                    <Button
+                      href="https://www.instagram.com/lifit.magazine/"
+                      target="_blank"
+                      variant="contained"
+                      style={{ width: "90%", marginTop: "1rem" }}
+                      className={classes.SCButton}
+                    >
+                      <Grid container alignItems="center" spacing={2}>
+                        <Grid item>
+                          <img className={classes.SCIcon} src="./fb_icon.png" />
+                        </Grid>
+                        <Grid item>Login with Facebook</Grid>
+                      </Grid>
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    {" "}
+                    <Button
+                      href="https://www.instagram.com/lifit.magazine/"
+                      target="_blank"
+                      variant="contained"
+                      style={{ width: "90%", marginTop: "1rem" }}
+                      className={classes.SCButton}
+                    >
+                      <Grid container alignItems="center" spacing={2}>
+                        <Grid item>
+                          <img className={classes.SCIcon} src="./google.png" />
+                        </Grid>
+                        <Grid item>Login with Google</Grid>
+                      </Grid>
+                    </Button>
+                  </Grid>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
