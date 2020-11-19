@@ -142,19 +142,19 @@ const useStyles = makeStyles({
       fontSize: "2.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
-      fontSize: "1.2rem",
+      fontSize: "5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
-      fontSize: "0.9rem",
+      fontSize: "4.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
-      fontSize: "0.75rem",
+      fontSize: "4rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
-      fontSize: "0.6rem",
+      fontSize: "3.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
-      fontSize: "0.3rem",
+      fontSize: "0.5rem",
     },
   },
   MissionsSubTitle: {
@@ -203,13 +203,13 @@ const useStyles = makeStyles({
       fontSize: "1.2rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
-      fontSize: "0.9rem",
+      fontSize: "1.1rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
-      fontSize: "0.75rem",
+      fontSize: "1rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
-      fontSize: "0.6rem",
+      fontSize: "0.9rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
       fontSize: "0.3rem",
@@ -280,7 +280,7 @@ function PageTwo() {
                       <Button
                         href="#features"
                         variant="contained"
-                        style={{ width: "80%" }}
+                        style={{ width: "100%" }}
                         className={classes.featButton}
                       >
                         VIEW OUR FEATURES
@@ -342,8 +342,17 @@ function PageTwo() {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item xs={6} className={classes.basketballcontainer}  style={{height: height}}>
-              <img className={classes.basketballImg} src="./sport.jpg"  style={{height: imgHeight}}/>
+            <Grid
+              item
+              xs={6}
+              className={classes.basketballcontainer}
+              style={{ height: height }}
+            >
+              <img
+                className={classes.basketballImg}
+                src="./sport.jpg"
+                style={{ height: imgHeight }}
+              />
             </Grid>
           </Grid>
         </>
