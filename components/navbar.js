@@ -235,23 +235,23 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "1.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
-      marginRight: theme.spacing(2),
+      marginRight: theme.spacing(5),
       marginLeft: "1.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
-      marginRight: theme.spacing(1),
+      marginRight: theme.spacing(3),
       marginLeft: "1.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
-      marginRight: theme.spacing(0),
+      marginRight: theme.spacing(2),
       marginLeft: "1.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
-      marginRight: theme.spacing(-3),
+      marginRight: theme.spacing(1),
       marginLeft: "1.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
-      marginRight: theme.spacing(-5),
+      marginRight: theme.spacing(-3),
       marginLeft: "1.5rem",
     },
   },
