@@ -11,7 +11,7 @@ import useWindowDimensions from "../hooks/windowsize";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: "#FAFAFA",
+    background: "#FFF",
     textAlign: "center",
     width: "100%",
   },
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
   },
   mobileComTitle: {
     marginTop: "5rem",
-    marginLeft: "0.5rem",
+    padding: 10,
     color: "black",
     fontFamily:
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
@@ -109,19 +109,19 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "2rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
-      fontSize: "3rem",
+      fontSize: "5.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
-      fontSize: "2.5rem",
+      fontSize: "5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
-      fontSize: "2rem",
+      fontSize: "4.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
-      fontSize: "2rem",
+      fontSize: "3rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
-      fontSize: "1.5rem",
+      fontSize: "2rem",
     },
   },
   comSubTitle: {
@@ -393,19 +393,19 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "2.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
-      fontSize: "1.2rem",
+      fontSize: "5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
-      fontSize: "0.9rem",
+      fontSize: "4.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
-      fontSize: "0.75rem",
+      fontSize: "4rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
-      fontSize: "0.6rem",
+      fontSize: "3rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
-      fontSize: "0.3rem",
+      fontSize: "2.5rem",
     },
   },
   MissionsSubTitle: {
@@ -531,7 +531,6 @@ function PageFive() {
                         href="https://www.instagram.com/lifit.magazine/"
                         target="_blank"
                         variant="contained"
-                        style={{ width: "80%" }}
                         className={classes.featButton}
                       >
                         INSTAGRAM
@@ -624,7 +623,6 @@ function PageFive() {
               justify="center"
               alignContent="center"
               spacing={0}
-              style={{ marginLeft: "0rem" }}
             >
               <Grid item xs={12}>
                 <Card className={classes.root} elevation={0}>
@@ -657,7 +655,6 @@ function PageFive() {
                         href="https://www.instagram.com/lifit.magazine/"
                         target="_blank"
                         variant="contained"
-                        style={{ width: "80%" }}
                         className={classes.featButton}
                       >
                         INSTAGRAM
@@ -771,7 +768,6 @@ function PageFive() {
                         href="https://www.instagram.com/lifit.magazine/"
                         target="_blank"
                         variant="contained"
-                        style={{ width: "80%" }}
                         className={classes.featButton}
                       >
                         INSTAGRAM
