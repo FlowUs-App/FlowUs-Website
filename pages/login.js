@@ -470,10 +470,33 @@ function login() {
 
       if (!user) {
         throw new Error("The was an issue authorizing");
+        setErrorMSG("The was an issue authorizing");
       }
 
       router.push("/dashboard");
     } catch (error) {
+      setErrorMSG(error.message);
+      setAuthorizing(false);
+    }
+  };
+
+  const handleSignUp = async () => {
+    setAuthorizing(true);
+    try {
+      const result = await firebase
+        .auth()
+        .createUserWithEmailAndPassword(emailAddress, password);
+
+      const { user, credentials } = result;
+
+      if (!user) {
+        throw new Error("The was an issue authorizing");
+        setErrorMSG("The was an issue authorizing");
+      }
+
+      router.push("/dashboard");
+    } catch (error) {
+      setErrorMSG(error.message);
       setAuthorizing(false);
     }
   };
@@ -613,11 +636,11 @@ function login() {
               </Grid>
               <Grid item>
                 <Button
-                  href="https://www.instagram.com/lifit.magazine/"
                   target="_blank"
                   variant="contained"
                   style={{ marginTop: "1rem" }}
                   className={classes.RegisterButton}
+                  onClick={() => handleSignUp()}
                 >
                   Register
                 </Button>
@@ -828,11 +851,11 @@ function login() {
                   </Grid>
                   <Grid item>
                     <Button
-                      href="https://www.instagram.com/lifit.magazine/"
                       target="_blank"
                       variant="contained"
                       style={{ width: "90%", marginTop: "1rem" }}
                       className={classes.RegisterButton}
+                      onClick={() => handleSignUp()}
                     >
                       Register
                     </Button>
