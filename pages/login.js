@@ -150,11 +150,9 @@ const useStyles = makeStyles((theme) => ({
   },
   LoginButton: {
     backgroundColor: "#56377E",
-    position: "center",
     fontFamily:
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     color: "#FFF",
-    width: "20rem",
     height: "4rem",
     borderRadius: "30px",
     ["@media (max-width: 4000px)"]: {
@@ -178,16 +176,16 @@ const useStyles = makeStyles((theme) => ({
     },
     ["@media (max-width: 2000px)"]: {
       height: "4rem",
-      width: "20rem",
+      width: "100%",
       fontSize: "1rem",
     },
     ["@media (max-width: 500px)"]: {
       height: "4rem",
-      width: "20rem",
       fontSize: "1rem",
     },
     ["@media (max-width: 400px)"]: {
       height: "3.5rem",
+      width: "100%",
       fontSize: "1rem",
     },
     ["@media (max-width: 300px)"]: {
@@ -219,7 +217,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily:
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     color: "#56377E",
-    width: "20rem",
     height: "4rem",
     borderRadius: "30px",
     ["@media (max-width: 4000px)"]: {
@@ -243,12 +240,11 @@ const useStyles = makeStyles((theme) => ({
     },
     ["@media (max-width: 2000px)"]: {
       height: "4rem",
-      width: "20rem",
+      width: "100%",
       fontSize: "1rem",
     },
     ["@media (max-width: 500px)"]: {
       height: "4rem",
-      width: "20rem",
       fontSize: "1rem",
     },
     ["@media (max-width: 400px)"]: {
@@ -301,7 +297,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily:
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     color: "#FFF",
-    width: "20rem",
     height: "4rem",
     borderRadius: "30px",
     ["@media (max-width: 4000px)"]: {
@@ -325,12 +320,11 @@ const useStyles = makeStyles((theme) => ({
     },
     ["@media (max-width: 2000px)"]: {
       height: "4rem",
-      width: "20rem",
+      width: "100%",
       fontSize: "1rem",
     },
     ["@media (max-width: 500px)"]: {
       height: "4rem",
-      width: "20rem",
       fontSize: "1rem",
     },
     ["@media (max-width: 400px)"]: {
@@ -440,21 +434,21 @@ function login() {
               />
             </svg>
           </Grid>
-
-          <Grid container direction="column">
-            <Grid
-              container
-              direction="column"
-              justify="space-around"
-              style={{ padding: 20 }}
-            >
-              <form className={classes.grid2} noValidate autoComplete="on">
+          <Grid
+            className={classes.grid2}
+            alignItems="center"
+            justify="center"
+            alignContent="center"
+            style={{ padding: 20 }}
+          >
+            <Grid item xs={12}>
+              <form className={classes.root} noValidate autoComplete="on">
                 <Grid item style={{ marginTop: "7rem" }}>
                   <TextField
                     id="outlined-basic"
                     label="E-MAIL"
                     variant="outlined"
-                    style={{ width: "90%" }}
+                    style={{ width: "100%" }}
                   />
                 </Grid>
                 <Grid item style={{ marginTop: "1.5rem" }}>
@@ -462,122 +456,109 @@ function login() {
                     id="outlined-basic"
                     label="PASSWORD"
                     variant="outlined"
-                    style={{ width: "90%" }}
+                    style={{ width: "100%" }}
                   />
-                  <Grid item>
-                    <Grid
-                      container
-                      direction="row"
-                      justify="space-between"
-                      alignItems="center"
-                      style={{ width: "90%", marginTop: "1.5rem" }}
-                    >
-                      <Grid item>
-                        <Grid
-                          container
-                          direction="row"
-                          alignContent="center"
-                          alignItems="center"
-                        >
-                          <Checkbox
-                            className={
-                              ".MuiCheckbox-colorSecondary.Mui-checked"
-                            }
-                          />
-                          <Typography className={classes.formText}>
-                            Remember me
-                          </Typography>
-                        </Grid>
-                      </Grid>
-                      <Grid item>
-                        <Typography className={classes.formText}>
-                          Forgot Password?
-                        </Typography>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <Button
-                          href="https://www.instagram.com/lifit.magazine/"
-                          target="_blank"
-                          variant="contained"
-                          style={{ marginTop: "1rem", width: "100%" }}
-                          className={classes.LoginButton}
-                        >
-                          Login
-                        </Button>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <Button
-                          href="https://www.instagram.com/lifit.magazine/"
-                          target="_blank"
-                          variant="contained"
-                          style={{ marginTop: "0.5rem", width: "100%" }}
-                          className={classes.RegisterButton}
-                        >
-                          Register
-                        </Button>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <Grid
-                          container
-                          direction="row"
-                          alignItems="baseline"
-                          style={{ marginLeft: "1.2rem", width: "100%" }}
-                        >
-                          <Grid item xs={5}>
-                            <div className={classes.line} />
-                          </Grid>
-                          <Grid item xs={1}>
-                            <Typography className={classes.lineText}>
-                              OR
-                            </Typography>
-                          </Grid>
-                          <Grid item xs={5}>
-                            <div className={classes.line} />
-                          </Grid>
-                        </Grid>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <Button
-                          href="https://www.instagram.com/lifit.magazine/"
-                          target="_blank"
-                          variant="contained"
-                          style={{ marginTop: "1.5rem", width: "100%" }}
-                          className={classes.SCButton}
-                        >
-                          <Grid container alignItems="center" spacing={2}>
-                            <Grid item>
-                              <img
-                                className={classes.SCIcon}
-                                src="./fb_icon.png"
-                              />
-                            </Grid>
-                            <Grid item>Login with Facebook</Grid>
-                          </Grid>
-                        </Button>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <Button
-                          href="https://www.instagram.com/lifit.magazine/"
-                          target="_blank"
-                          variant="contained"
-                          style={{ marginTop: "0.5rem" }}
-                          className={classes.SCButton}
-                        >
-                          <Grid container alignItems="center" spacing={2}>
-                            <Grid item>
-                              <img
-                                className={classes.SCIcon}
-                                src="./google.png"
-                              />
-                            </Grid>
-                            <Grid item>Login with Google</Grid>
-                          </Grid>
-                        </Button>
-                      </Grid>
-                    </Grid>
-                  </Grid>
                 </Grid>
               </form>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="space-between"
+                alignItems="center"
+                style={{ width: "90%", marginTop: "1.5rem" }}
+              >
+                <Grid item>
+                  <Grid
+                    container
+                    direction="row"
+                    alignContent="center"
+                    alignItems="center"
+                  >
+                    <Checkbox />
+                    <Typography className={classes.formText}>
+                      Remember me
+                    </Typography>
+                  </Grid>
+                </Grid>
+                <Grid item>
+                  <Typography className={classes.formText}>
+                    Forgot Password?
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item xs={12}>
+                <Button
+                  href="https://www.instagram.com/lifit.magazine/"
+                  target="_blank"
+                  variant="contained"
+                  className={classes.LoginButton}
+                >
+                  Login
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button
+                  href="https://www.instagram.com/lifit.magazine/"
+                  target="_blank"
+                  variant="contained"
+                  style={{ marginTop: "1rem" }}
+                  className={classes.RegisterButton}
+                >
+                  Register
+                </Button>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Grid
+                container
+                direction="row"
+                justify="space-around"
+                alignItems="baseline"
+              >
+                <Grid item xs={5}>
+                  <div className={classes.line} />
+                </Grid>
+                <Grid item xs={1}>
+                  <Typography className={classes.lineText}>OR</Typography>
+                </Grid>
+                <Grid item xs={5}>
+                  <div className={classes.line} />
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Button
+                href="https://www.instagram.com/lifit.magazine/"
+                target="_blank"
+                variant="contained"
+                style={{ marginTop: "1rem" }}
+                className={classes.SCButton}
+              >
+                <Grid container alignItems="center" spacing={2}>
+                  <Grid item>
+                    <img className={classes.SCIcon} src="./fb_icon.png" />
+                  </Grid>
+                  <Grid item>Login with Facebook</Grid>
+                </Grid>
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button
+                href="https://www.instagram.com/lifit.magazine/"
+                target="_blank"
+                variant="contained"
+                style={{ marginTop: "1rem" }}
+                className={classes.SCButton}
+              >
+                <Grid container alignItems="center" spacing={2}>
+                  <Grid item>
+                    <img className={classes.SCIcon} src="./google.png" />
+                  </Grid>
+                  <Grid item>Login with Google</Grid>
+                </Grid>
+              </Button>
             </Grid>
           </Grid>
         </>
@@ -759,7 +740,6 @@ function login() {
                     </Button>
                   </Grid>
                   <Grid item>
-                    {" "}
                     <Button
                       href="https://www.instagram.com/lifit.magazine/"
                       target="_blank"
