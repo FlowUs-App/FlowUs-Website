@@ -16,6 +16,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     width: "100%",
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      height: "800px !important",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      height: "500px !important",
+    },
   },
   root2: {
     zIndex: 1,
@@ -159,7 +165,6 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "1.5rem",
     },
     ["@media (max-width: 350px)"]: {
-
       marginRight: theme.spacing(-5),
       marginLeft: "1.5rem",
     },
@@ -226,6 +231,26 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "1.5rem",
     },
     ["@media (max-width: 350px)"]: {
+      marginRight: theme.spacing(-5),
+      marginLeft: "1.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      marginRight: theme.spacing(-5),
+      marginLeft: "1.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      marginRight: theme.spacing(-5),
+      marginLeft: "1.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      marginRight: theme.spacing(-5),
+      marginLeft: "1.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      marginRight: theme.spacing(-5),
+      marginLeft: "1.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
       marginRight: theme.spacing(-5),
       marginLeft: "1.5rem",
     },
@@ -357,7 +382,11 @@ function navbar({ tos }) {
                       TERMS OF SERVICES
                     </Typography>
                   </a>
-                  <Button href="login" className={classes.loginButton} disableElevation>
+                  <Button
+                    href="login"
+                    className={classes.loginButton}
+                    disableElevation
+                  >
                     Login
                   </Button>
                 </>
@@ -416,7 +445,11 @@ function navbar({ tos }) {
                       TERMS OF SERVICES
                     </Typography>
                   </a>
-                  <Button href="login" className={classes.loginButton} disableElevation>
+                  <Button
+                    href="login"
+                    className={classes.loginButton}
+                    disableElevation
+                  >
                     Login
                   </Button>
                 </>

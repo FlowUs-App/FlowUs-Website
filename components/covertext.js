@@ -196,7 +196,7 @@ const useStyles = makeStyles((theme) => ({
       width: "80%",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
-      fontSize: "1rem",
+      marginTop: "4rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
       fontSize: "1rem",
