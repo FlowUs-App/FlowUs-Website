@@ -1,10 +1,16 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 import Grid from "@material-ui/core/Grid";
-import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, TextField, Button } from "@material-ui/core";
 import useWindowDimensions from "../hooks/windowsize";
 import Checkbox from "@material-ui/core/Checkbox";
+import { useRouter } from "next/router";
+import firebase from "firebase/app";
+import initFirebase from "../res/ApiKey";
+
+initFirebase();
+
+const provider = new firebase.auth.GoogleAuthProvider();
 
 const useStyles = makeStyles((theme) => ({
   grid: {
@@ -292,13 +298,81 @@ const useStyles = makeStyles((theme) => ({
     width: "35px",
     height: "35px",
   },
-  SCButton: {
-    backgroundColor: "#9E4EBD",
+  FacebookButton: {
+    backgroundColor: "#2476D4",
     position: "center",
     fontFamily:
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     color: "#FFF",
     height: "4rem",
+    borderRadius: "30px",
+    transitionDuration: "0.3s",
+    transitionProperty: "transform",
+    ["@media (max-width: 4000px)"]: {
+      height: "11rem",
+      width: "43rem",
+      fontSize: "3rem",
+    },
+    ["@media (max-width: 3500px)"]: {
+      height: "10rem",
+      width: "40rem",
+    },
+    ["@media (max-width: 3000px)"]: {
+      height: "9rem",
+      width: "35rem",
+      fontSize: "2.5rem",
+    },
+    ["@media (max-width: 2500px)"]: {
+      height: "7rem",
+      width: "25rem",
+      fontSize: "2rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      height: "4rem",
+      width: "100%",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 500px)"]: {
+      height: "4rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 400px)"]: {
+      height: "3.5rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      height: "3rem",
+      fontSize: "0.5rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
+      fontSize: "1rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
+      fontSize: "0.8rem",
+    },
+    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
+      fontSize: "0.2rem",
+    },
+    "&:hover": {
+      transform: "scale(1.05)",
+      backgroundColor: "#2476D4",
+    },
+  },
+  GoogleButton: {
+    backgroundColor: "#F10606",
+    position: "center",
+    fontFamily:
+      "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
+    color: "#FFF",
+    height: "4rem",
+    transitionDuration: "0.3s",
+    transitionProperty: "transform",
     borderRadius: "30px",
     ["@media (max-width: 4000px)"]: {
       height: "11rem",
@@ -352,7 +426,8 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "0.2rem",
     },
     "&:hover": {
-      background: "#56377E",
+      transform: "scale(1.05)",
+      backgroundColor: "#F10606",
     },
   },
   mobImageLogo: {
@@ -360,20 +435,48 @@ const useStyles = makeStyles((theme) => ({
     padding: 8,
     width: "50%",
   },
+  ERROR: {
+    color: "red",
+    position: "center",
+    fontFamily:
+      "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
+    marginBottom: "0.2rem",
+  },
 }));
 
 function login() {
   const classes = useStyles();
-  const history = useHistory();
   const [emailAddress, setEmailAddress] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
+  const router = useRouter();
+  const [authorizing, setAuthorizing] = useState(false);
+  const [errorMSG, setErrorMSG] = useState("");
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
   const [touchDevice, setTouchDevice] = useState(false);
   const { height } = useWindowDimensions();
+
+  const handleSignIn = async () => {
+    setAuthorizing(true);
+    try {
+      const result = await firebase
+        .auth()
+        .signInWithEmailAndPassword(emailAddress, password);
+
+      const { user, credentials } = result;
+
+      if (!user) {
+        throw new Error("The was an issue authorizing");
+      }
+
+      router.push("/dashboard");
+    } catch (error) {
+      setAuthorizing(false);
+    }
+  };
 
   return (
     <>
@@ -463,10 +566,14 @@ function login() {
                     id="outlined-basic"
                     label="PASSWORD"
                     variant="outlined"
+                    type="password"
                     style={{ width: "100%" }}
                   />
                 </Grid>
               </form>
+              <Grid item>
+                <Typography className={classes.ERROR}>{errorMSG}</Typography>
+              </Grid>
             </Grid>
             <Grid item xs={12}>
               <Grid
@@ -497,10 +604,9 @@ function login() {
               </Grid>
               <Grid item xs={12}>
                 <Button
-                  href="https://www.instagram.com/lifit.magazine/"
-                  target="_blank"
                   variant="contained"
                   className={classes.LoginButton}
+                  onClick={() => handleSignIn()}
                 >
                   Login
                 </Button>
@@ -540,8 +646,8 @@ function login() {
                 href="https://www.instagram.com/lifit.magazine/"
                 target="_blank"
                 variant="contained"
-                style={{ marginTop: "1rem" }}
-                className={classes.SCButton}
+                style={{ marginTop: "1rem", backgroundColor: "#2476D4" }}
+                className={classes.FacebookButton}
               >
                 <Grid container alignItems="center" spacing={2}>
                   <Grid item>
@@ -557,7 +663,7 @@ function login() {
                 target="_blank"
                 variant="contained"
                 style={{ marginTop: "1rem" }}
-                className={classes.SCButton}
+                className={classes.GoogleButton}
               >
                 <Grid container alignItems="center" spacing={2}>
                   <Grid item>
@@ -658,14 +764,21 @@ function login() {
                         label="E-MAIL"
                         variant="outlined"
                         style={{ width: "90%" }}
+                        value={emailAddress}
+                        onChange={(event) =>
+                          setEmailAddress(event.target.value)
+                        }
                       />
                     </Grid>
                     <Grid item style={{ marginTop: "1.5rem" }}>
                       <TextField
                         id="outlined-basic"
                         label="PASSWORD"
+                        type="password"
                         variant="outlined"
                         style={{ width: "90%" }}
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
                       />
                       <Grid item>
                         <Grid
@@ -698,12 +811,17 @@ function login() {
                     </Grid>
                   </form>
                   <Grid item>
+                    <Typography className={classes.ERROR}>
+                      {errorMSG}
+                    </Typography>
+                  </Grid>
+                  <Grid item>
                     <Button
-                      href="https://www.instagram.com/lifit.magazine/"
                       target="_blank"
                       variant="contained"
                       style={{ width: "90%" }}
                       className={classes.LoginButton}
+                      onClick={() => handleSignIn()}
                     >
                       Login
                     </Button>
@@ -738,7 +856,7 @@ function login() {
                       target="_blank"
                       variant="contained"
                       style={{ width: "90%", marginTop: "1rem" }}
-                      className={classes.SCButton}
+                      className={classes.FacebookButton}
                     >
                       <Grid container alignItems="center" spacing={2}>
                         <Grid item>
@@ -754,7 +872,7 @@ function login() {
                       target="_blank"
                       variant="contained"
                       style={{ width: "90%", marginTop: "1rem" }}
-                      className={classes.SCButton}
+                      className={classes.GoogleButton}
                     >
                       <Grid container alignItems="center" spacing={2}>
                         <Grid item>
