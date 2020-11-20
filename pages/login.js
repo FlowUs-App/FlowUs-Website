@@ -166,21 +166,20 @@ const useStyles = makeStyles((theme) => ({
     height: "4rem",
     borderRadius: "30px",
     ["@media (max-width: 2000px)"]: {
-      height: "4rem",
+      height: "3rem",
       width: "100%",
       fontSize: "1rem",
     },
     ["@media (max-width: 500px)"]: {
-      height: "4rem",
+      height: "3.5rem",
       fontSize: "1rem",
     },
     ["@media (max-width: 400px)"]: {
-      height: "3.5rem",
-      width: "100%",
+      height: "3rem",
       fontSize: "1rem",
     },
     ["@media (max-width: 300px)"]: {
-      height: "3rem",
+      height: "2.5rem",
       fontSize: "0.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
@@ -211,20 +210,20 @@ const useStyles = makeStyles((theme) => ({
     height: "4rem",
     borderRadius: "30px",
     ["@media (max-width: 2000px)"]: {
-      height: "4rem",
+      height: "3rem",
       width: "100%",
       fontSize: "1rem",
     },
     ["@media (max-width: 500px)"]: {
-      height: "4rem",
-      fontSize: "1rem",
-    },
-    ["@media (max-width: 400px)"]: {
       height: "3.5rem",
       fontSize: "1rem",
     },
-    ["@media (max-width: 300px)"]: {
+    ["@media (max-width: 400px)"]: {
       height: "3rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      height: "2.5rem",
       fontSize: "0.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
@@ -262,14 +261,6 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "0.5rem",
     width: "35px",
     height: "35px",
-    ["@media (max-width: 250px)"]: {
-      width: "35px",
-      height: "35px",
-    },
-    ["@media (max-width: 800px)"]: {
-      width: "30px",
-      height: "30px",
-    },
   },
   FacebookButton: {
     backgroundColor: "#2476D4",
@@ -280,22 +271,24 @@ const useStyles = makeStyles((theme) => ({
     height: "4rem",
     borderRadius: "30px",
     transitionDuration: "0.3s",
+    "-webkit-transition-duration": "0.3s",
+    "-webkit-transition-property": "transform",
     transitionProperty: "transform",
     ["@media (max-width: 2000px)"]: {
-      height: "4rem",
+      height: "3rem",
       width: "100%",
       fontSize: "1rem",
     },
     ["@media (max-width: 500px)"]: {
-      height: "4rem",
-      fontSize: "1rem",
-    },
-    ["@media (max-width: 400px)"]: {
       height: "3.5rem",
       fontSize: "1rem",
     },
-    ["@media (max-width: 300px)"]: {
+    ["@media (max-width: 400px)"]: {
       height: "3rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      height: "2.5rem",
       fontSize: "0.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
@@ -315,6 +308,7 @@ const useStyles = makeStyles((theme) => ({
     },
     "&:hover": {
       transform: "scale(1.05)",
+      "-webkit-transform": "scale(1.1)",
       backgroundColor: "#2476D4",
     },
   },
@@ -326,23 +320,25 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFF",
     height: "4rem",
     transitionDuration: "0.3s",
+    "-webkit-transition-duration": "0.3s",
+    "-webkit-transition-property": "transform",
     transitionProperty: "transform",
     borderRadius: "30px",
     ["@media (max-width: 2000px)"]: {
-      height: "4rem",
+      height: "3rem",
       width: "100%",
       fontSize: "1rem",
     },
     ["@media (max-width: 500px)"]: {
-      height: "4rem",
-      fontSize: "1rem",
-    },
-    ["@media (max-width: 400px)"]: {
       height: "3.5rem",
       fontSize: "1rem",
     },
-    ["@media (max-width: 300px)"]: {
+    ["@media (max-width: 400px)"]: {
       height: "3rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 300px)"]: {
+      height: "2.5rem",
       fontSize: "0.5rem",
     },
     ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
@@ -362,6 +358,7 @@ const useStyles = makeStyles((theme) => ({
     },
     "&:hover": {
       transform: "scale(1.05)",
+      "-webkit-transform": "scale(1.1)",
       backgroundColor: "#F10606",
     },
   },
@@ -840,7 +837,7 @@ function login() {
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                       />
-                      <Grid item>
+                      <Grid item xs={12}>
                         <Grid
                           container
                           direction="row"
@@ -848,7 +845,7 @@ function login() {
                           alignItems="center"
                           style={{ width: "90%", marginTop: "1.5rem" }}
                         >
-                          <Grid item>
+                          <Grid item xs={8}>
                             <Grid
                               container
                               direction="row"
@@ -861,7 +858,7 @@ function login() {
                               </Typography>
                             </Grid>
                           </Grid>
-                          <Grid item>
+                          <Grid item xs={4}>
                             <Typography className={classes.formText}>
                               Forgot Password?
                             </Typography>
