@@ -256,6 +256,12 @@ const useStyles = makeStyles((theme) => ({
     color: "#56377E",
     marginTop: "3rem",
     fontWeight: "bold",
+    ["@media (max-width: 4000px)"]: {
+      marginTop: "3rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      marginTop: "1rem",
+    },
   },
   SCIcon: {
     marginTop: "0.5rem",
@@ -373,6 +379,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily:
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     marginBottom: "0.2rem",
+  },
+  distance: {
+    ["@media (max-width: 4000px)"]: {
+      marginTop: "7rem",
+    },
+    ["@media (max-width: 2000px)"]: {
+      marginTop: "4rem",
+    },
   },
 }));
 
@@ -608,7 +622,7 @@ function login() {
           >
             <Grid item xs={12}>
               <form className={classes.root} noValidate autoComplete="on">
-                <Grid item style={{ marginTop: "7rem" }}>
+                <Grid item className={classes.distance}>
                   <TextField
                     id="outlined-basic"
                     label="E-MAIL"
