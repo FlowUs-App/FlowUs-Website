@@ -165,25 +165,6 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFF",
     height: "4rem",
     borderRadius: "30px",
-    ["@media (max-width: 4000px)"]: {
-      height: "11rem",
-      width: "43rem",
-      fontSize: "3rem",
-    },
-    ["@media (max-width: 3500px)"]: {
-      height: "10rem",
-      width: "40rem",
-    },
-    ["@media (max-width: 3000px)"]: {
-      height: "9rem",
-      width: "35rem",
-      fontSize: "2.5rem",
-    },
-    ["@media (max-width: 2500px)"]: {
-      height: "7rem",
-      width: "25rem",
-      fontSize: "2rem",
-    },
     ["@media (max-width: 2000px)"]: {
       height: "4rem",
       width: "100%",
@@ -229,25 +210,6 @@ const useStyles = makeStyles((theme) => ({
     color: "#56377E",
     height: "4rem",
     borderRadius: "30px",
-    ["@media (max-width: 4000px)"]: {
-      height: "11rem",
-      width: "43rem",
-      fontSize: "3rem",
-    },
-    ["@media (max-width: 3500px)"]: {
-      height: "10rem",
-      width: "40rem",
-    },
-    ["@media (max-width: 3000px)"]: {
-      height: "9rem",
-      width: "35rem",
-      fontSize: "2.5rem",
-    },
-    ["@media (max-width: 2500px)"]: {
-      height: "7rem",
-      width: "25rem",
-      fontSize: "2rem",
-    },
     ["@media (max-width: 2000px)"]: {
       height: "4rem",
       width: "100%",
@@ -300,6 +262,14 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "0.5rem",
     width: "35px",
     height: "35px",
+    ["@media (max-width: 250px)"]: {
+      width: "35px",
+      height: "35px",
+    },
+    ["@media (max-width: 800px)"]: {
+      width: "30px",
+      height: "30px",
+    },
   },
   FacebookButton: {
     backgroundColor: "#2476D4",
@@ -311,25 +281,6 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "30px",
     transitionDuration: "0.3s",
     transitionProperty: "transform",
-    ["@media (max-width: 4000px)"]: {
-      height: "11rem",
-      width: "43rem",
-      fontSize: "3rem",
-    },
-    ["@media (max-width: 3500px)"]: {
-      height: "10rem",
-      width: "40rem",
-    },
-    ["@media (max-width: 3000px)"]: {
-      height: "9rem",
-      width: "35rem",
-      fontSize: "2.5rem",
-    },
-    ["@media (max-width: 2500px)"]: {
-      height: "7rem",
-      width: "25rem",
-      fontSize: "2rem",
-    },
     ["@media (max-width: 2000px)"]: {
       height: "4rem",
       width: "100%",
@@ -377,25 +328,6 @@ const useStyles = makeStyles((theme) => ({
     transitionDuration: "0.3s",
     transitionProperty: "transform",
     borderRadius: "30px",
-    ["@media (max-width: 4000px)"]: {
-      height: "11rem",
-      width: "43rem",
-      fontSize: "3rem",
-    },
-    ["@media (max-width: 3500px)"]: {
-      height: "10rem",
-      width: "40rem",
-    },
-    ["@media (max-width: 3000px)"]: {
-      height: "9rem",
-      width: "35rem",
-      fontSize: "2.5rem",
-    },
-    ["@media (max-width: 2500px)"]: {
-      height: "7rem",
-      width: "25rem",
-      fontSize: "2rem",
-    },
     ["@media (max-width: 2000px)"]: {
       height: "4rem",
       width: "100%",
@@ -476,6 +408,9 @@ function login() {
         setErrorMSG("The was an issue authorizing");
       }
 
+      if (typeof window !== "undefined") {
+        localStorage.setItem("userdata", JSON.stringify(user));
+      }
       router.push("/dashboard");
     } catch (error) {
       setErrorMSG(error.message);
@@ -883,7 +818,7 @@ function login() {
                   style={{ padding: 20 }}
                 >
                   <form className={classes.root} noValidate autoComplete="on">
-                    <Grid item style={{ marginTop: "7rem" }}>
+                    <Grid item style={{ marginTop: "4rem" }}>
                       <TextField
                         id="outlined-basic"
                         label="E-MAIL"
