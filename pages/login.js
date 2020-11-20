@@ -582,6 +582,8 @@ function login() {
                     label="E-MAIL"
                     variant="outlined"
                     style={{ width: "100%" }}
+                    value={emailAddress}
+                    onChange={(event) => setEmailAddress(event.target.value)}
                   />
                 </Grid>
                 <Grid item style={{ marginTop: "1.5rem" }}>
@@ -591,6 +593,8 @@ function login() {
                     variant="outlined"
                     type="password"
                     style={{ width: "100%" }}
+                    value={password}
+                    onChange={(event) => setPassword(event.target.value)}
                   />
                 </Grid>
               </form>
