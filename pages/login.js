@@ -11,6 +11,9 @@ import initFirebase from "../res/ApiKey";
 initFirebase();
 
 const provider = new firebase.auth.GoogleAuthProvider();
+const GoogleProvider = new firebase.auth.GoogleAuthProvider();
+const FacebookProvider = new firebase.auth.FacebookAuthProvider();
+firebase.auth().useDeviceLanguage();
 
 const useStyles = makeStyles((theme) => ({
   grid: {
@@ -501,6 +504,103 @@ function login() {
     }
   };
 
+  const handleGoogleSignIn = async () => {
+    setAuthorizing(true);
+    try {
+      const result = await firebase.auth().signInWithPopup(GoogleProvider);
+
+      const { user, credentials } = result;
+
+      if (!user) {
+        throw new Error("The was an issue authorizing");
+        setErrorMSG("The was an issue authorizing");
+      }
+
+      router.push("/dashboard");
+    } catch (error) {
+      setErrorMSG(error.message);
+      setAuthorizing(false);
+      if (error.code === "auth/account-exists-with-different-credential") {
+        const pendingCred = error.credential;
+        const email = error.email;
+        auth.fetchSignInMethodsForEmail(email).then(function (methods) {
+          if (methods[0] === "password") {
+            const ThisPassword = promptUserForPassword();
+            auth
+              .signInWithEmailAndPassword(email, ThisPassword)
+              .then(function (user) {
+                return user.linkWithCredential(pendingCred);
+              })
+              .then(function () {
+                setErrorMSG("");
+                setAuthorizing(true);
+                router.push("/dashboard");
+              });
+            return;
+          }
+        });
+        const NewProvider = getProviderForProviderId(methods[0]);
+        auth.signInWithPopup(provider).then(function (result) {
+          result.user
+            .linkAndRetrieveDataWithCredential(pendingCred)
+            .then(function (usercred) {
+              setErrorMSG("");
+              setAuthorizing(true);
+              router.push("/dashboard");
+            });
+        });
+      }
+    }
+  };
+
+  const handleFacebookLogin = async () => {
+    setAuthorizing(true);
+    try {
+      const result = await firebase.auth().signInWithPopup(FacebookProvider);
+
+      const { user, credentials } = result;
+
+      if (!user) {
+        throw new Error("The was an issue authorizing");
+        setErrorMSG("The was an issue authorizing");
+      }
+      router.push("/dashboard");
+    } catch (error) {
+      setErrorMSG(error.message);
+      setAuthorizing(false);
+      if (error.code === "auth/account-exists-with-different-credential") {
+        const pendingCred = error.credential;
+        const email = error.email;
+        auth.fetchSignInMethodsForEmail(email).then(function (methods) {
+          if (methods[0] === "password") {
+            const ThisPassword = promptUserForPassword();
+            auth
+              .signInWithEmailAndPassword(email, ThisPassword)
+              .then(function (user) {
+                return user.linkWithCredential(pendingCred);
+              })
+              .then(function () {
+                setErrorMSG("");
+                setAuthorizing(true);
+                router.push("/dashboard");
+              });
+            return;
+          }
+        });
+        const NewProvider = getProviderForProviderId(methods[0]);
+        auth.signInWithPopup(provider).then(function (result) {
+          result.user
+            .linkAndRetrieveDataWithCredential(pendingCred)
+            .then(function (usercred) {
+              setErrorMSG("");
+              setAuthorizing(true);
+              router.push("/dashboard");
+            });
+        });
+      }
+    }
+  };
+
   return (
     <>
       {touchDevice ? (
@@ -670,8 +770,7 @@ function login() {
             </Grid>
             <Grid item>
               <Button
-                href="https://www.instagram.com/lifit.magazine/"
-                target="_blank"
+                onClick={() => handleFacebookLogin()}
                 variant="contained"
                 style={{ marginTop: "1rem", backgroundColor: "#2476D4" }}
                 className={classes.FacebookButton}
@@ -686,8 +785,7 @@ function login() {
             </Grid>
             <Grid item>
               <Button
-                href="https://www.instagram.com/lifit.magazine/"
-                target="_blank"
+                onClick={() => handleGoogleSignIn()}
                 variant="contained"
                 style={{ marginTop: "1rem" }}
                 className={classes.GoogleButton}
@@ -879,11 +977,10 @@ function login() {
                   </Grid>
                   <Grid item>
                     <Button
-                      href="https://www.instagram.com/lifit.magazine/"
-                      target="_blank"
                       variant="contained"
                       style={{ width: "90%", marginTop: "1rem" }}
                       className={classes.FacebookButton}
+                      onClick={() => handleFacebookLogin()}
                     >
                       <Grid container alignItems="center" spacing={2}>
                         <Grid item>
@@ -895,11 +992,10 @@ function login() {
                   </Grid>
                   <Grid item>
                     <Button
-                      href="https://www.instagram.com/lifit.magazine/"
-                      target="_blank"
                       variant="contained"
                       style={{ width: "90%", marginTop: "1rem" }}
                       className={classes.GoogleButton}
+                      onClick={() => handleGoogleSignIn()}
                     >
                       <Grid container alignItems="center" spacing={2}>
                         <Grid item>
