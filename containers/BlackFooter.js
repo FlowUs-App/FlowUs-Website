@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: "#56377E",
+    background: "#232323",
     marginTop: "3rem",
     overflow: "hidden",
   },
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   grid: { marginTop: "3rem" },
   botgrid: { marginTop: "3rem", marginBottom: "3rem" },
-  gridnav: { marginTop: "3rem", color: "#D9F0FF" },
+  gridnav: { marginTop: "3rem", color: "#232323" },
   smullgrid: { marginTop: "1rem" },
   fItemDescr: {
     color: "white",
@@ -30,11 +30,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "5rem",
   },
   fNav: {
-    color: "#D9F0FF",
+    color: "#232323",
   },
 }));
 
-function Footer() {
+function BlackFooter() {
   const classes = useStyles();
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
@@ -389,4 +389,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default BlackFooter;

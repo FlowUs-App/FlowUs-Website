@@ -11,7 +11,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   MuiDrawer: {
-    background: "#56377E",
+    background: "#9E4EBD",
   },
   list: {
     width: 250,
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   TheIconButton: {
     marginTop: "3rem",
-    color: "white",
+    color: "#9E4EBD",
     marginLeft: "20rem",
     ["@media (max-width: 1000px)"]: {
       marginLeft: "28rem",
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const SideDrawer = ({ navLinks }) => {
+const DashboardSideDrawer = ({ navLinks }) => {
   const classes = useStyles();
   const [state, setState] = useState({ right: false });
   const toggleDrawer = (anchor, open) => (event) => {

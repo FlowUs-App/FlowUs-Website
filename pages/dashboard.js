@@ -4,7 +4,7 @@ import { Typography, TextField, Button } from "@material-ui/core";
 import DashboardNavbar from "../components/dashboard_navbar";
 import useWindowDimensions from "../hooks/windowsize";
 import BulletPoints from "../components/BulletPoints";
-import Footer from "../containers/Footer";
+import BlackFooter from "../containers/BlackFooter";
 
 function dashboard() {
   const [user, setUser] = useState("");
@@ -136,7 +136,7 @@ function dashboard() {
       </div>
       <div style={{ backgroundColor: "#FAFAFA" }}>
         <BulletPoints />
-        <Footer black={"#232323"} />
+        <BlackFooter />
       </div>
     </>
   );

@@ -3,10 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import CoverText from "./covertext";
-import SideDrawer from "./sidedrawer";
 import useWindowDimensions from "../hooks/windowsize";
+import DashboardSideDrawer from "./dashboard_sidedrawer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily:
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     fontWeight: "200",
-    color: "#D9F0FF",
+    color: "#9E4EBD",
     marginRight: "0.8rem",
     whiteSpace: "nowrap",
     fontSize: "1rem",
@@ -236,7 +234,7 @@ function DashboardNavbar() {
 
             {touchDevice ? (
               <>
-                <SideDrawer navLinks={navLinks} />
+                <DashboardSideDrawer navLinks={navLinks} />
               </>
             ) : (
               <>
