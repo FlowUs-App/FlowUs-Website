@@ -384,8 +384,8 @@ const useStyles = makeStyles((theme) => ({
     ["@media (max-width: 4000px)"]: {
       marginTop: "7rem",
     },
-    ["@media (max-width: 2000px)"]: {
-      marginTop: "4rem",
+    ["@media (max-width: 2500px)"]: {
+      marginTop: "3rem",
     },
   },
 }));
