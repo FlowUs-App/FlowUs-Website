@@ -20,21 +20,24 @@ const useStyles = makeStyles((theme) => ({
     ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
       height: "500px !important",
     },
+    "& .MuiAppBar-colorPrimary": {
+      backgroundColor: "transparent",
+    },
   },
   root2: {
     zIndex: 1,
-    backgroundColor: "#232323",
+    "& .MuiAppBar-colorPrimary": {
+      backgroundColor: "transparent",
+    },
     position: "relative",
   },
   appbar: {
-    backgroundColor: "#232323",
     boxShadow: "none",
     width: "100%",
     display: "flex",
     alignItems: "center",
   },
   navtext: {
-    backgroundColor: "#232323",
     marginTop: "3rem",
     fontFamily:
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
@@ -99,7 +102,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imageLogo: {
-    backgroundColor: "#232323",
     marginTop: "3rem",
     width: "20%",
     minWidth: "0.3rem",

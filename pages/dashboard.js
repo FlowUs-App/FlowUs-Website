@@ -8,7 +8,23 @@ import BlackFooter from "../containers/BlackFooter";
 import { useRouter } from "next/router";
 import firebase from "firebase/app";
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    background: "#FAFAFA",
+  },
+  main: {},
+  layout: {
+    position: "absolute",
+    width: "100%",
+    height: "100px",
+  },
+  canvas: {
+    position: "absolute",
+  },
+}));
+
 function dashboard() {
+  const classes = useStyles();
   const [user, setUser] = useState("");
   const [touchDevice, setTouchDevice] = useState(false);
   const { height } = useWindowDimensions();
@@ -130,22 +146,19 @@ function dashboard() {
 
   return (
     <>
-      <div style={{ backgroundColor: "#232323" }}>
-        <DashboardNavbar style={{ zIndex: 2 }} />
-
+      <div className={classes.main}>
         <canvas
           id="canvas"
           style={{
             background: "#232323",
             width: "100%",
-            display: "block",
-            position: "relative",
+            height: height,
+            position: "absolute",
           }}
-        ></canvas>
-      </div>
-      <div style={{ backgroundColor: "#FAFAFA" }}>
-        <BulletPoints />
-        <BlackFooter />
+        />
+        <div className={classes.layout}>
+          <DashboardNavbar />
+        </div>
       </div>
     </>
   );
