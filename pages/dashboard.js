@@ -5,14 +5,23 @@ import DashboardNavbar from "../components/dashboard_navbar";
 import useWindowDimensions from "../hooks/windowsize";
 import BulletPoints from "../components/BulletPoints";
 import BlackFooter from "../containers/BlackFooter";
+import { useRouter } from "next/router";
+import firebase from "firebase/app";
 
 function dashboard() {
   const [user, setUser] = useState("");
   const [touchDevice, setTouchDevice] = useState(false);
   const { height } = useWindowDimensions();
+  const router = useRouter();
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
-    setUser(JSON.parse(localStorage.getItem("userdata")));
+
+    if (localStorage.getItem("userdata") === null) {
+      router.push("/login");
+    } else {
+      setUser(JSON.parse(localStorage.getItem("userdata")));
+    }
+
     //{user.uid}
 
     var canvas = document.getElementById("canvas"),
