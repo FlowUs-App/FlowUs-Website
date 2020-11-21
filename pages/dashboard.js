@@ -2,10 +2,16 @@ import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, TextField, Button } from "@material-ui/core";
 import DashboardNavbar from "../components/dashboard_navbar";
+import useWindowDimensions from "../hooks/windowsize";
+import BulletPoints from "../components/BulletPoints";
+import Footer from "../containers/Footer";
 
 function dashboard() {
   const [user, setUser] = useState("");
+  const [touchDevice, setTouchDevice] = useState(false);
+  const { height } = useWindowDimensions();
   useEffect(() => {
+    setTouchDevice("ontouchstart" in document.documentElement);
     setUser(JSON.parse(localStorage.getItem("userdata")));
     //{user.uid}
 
@@ -16,7 +22,7 @@ function dashboard() {
     canvas.height = window.innerHeight;
     var stars = [], // Array that contains the stars
       FPS = 60, // Frames per second
-      x = 150, // Number of stars
+      x = "ontouchstart" in document.documentElement ? 50 : 150, // Number of stars
       mouse = {
         x: 0,
         y: 0,
@@ -117,10 +123,20 @@ function dashboard() {
     <>
       <div style={{ backgroundColor: "#232323" }}>
         <DashboardNavbar style={{ zIndex: 2 }} />
+
         <canvas
           id="canvas"
-          style={{ background: "#232323", width: "100%", zIndex: 1 }}
+          style={{
+            background: "#232323",
+            width: "100%",
+            display: "block",
+            position: "relative",
+          }}
         ></canvas>
+      </div>
+      <div style={{ backgroundColor: "#FAFAFA" }}>
+        <BulletPoints />
+        <Footer black={"#232323"} />
       </div>
     </>
   );
