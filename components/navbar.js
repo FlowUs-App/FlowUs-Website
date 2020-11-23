@@ -39,15 +39,16 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "3rem",
     fontFamily:
       "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
-    fontWeight: "200",
+    fontWeight: "bold",
     color: "#D9F0FF",
-    marginRight: "0.8rem",
+    marginRight: "1.5rem",
     whiteSpace: "nowrap",
     fontSize: "1rem",
     textDecoration: "none",
     ["@media (max-width: 4000px)"]: {
       marginTop: "10rem",
       fontSize: "3.5rem",
+      marginRight: "2rem",
     },
     ["@media (max-width: 3500px)"]: {
       marginTop: "10rem",
@@ -60,10 +61,16 @@ const useStyles = makeStyles((theme) => ({
     ["@media (max-width: 2500px)"]: {
       marginTop: "10rem",
       fontSize: "2rem",
+      marginRight: "1.5rem",
     },
     ["@media (max-width: 2000px)"]: {
       marginTop: "3rem",
       fontSize: "1rem",
+    },
+    ["@media (max-width: 1910px)"]: {
+      marginTop: "3rem",
+      fontSize: "1rem",
+      marginRight: "0.8rem",
     },
     ["@media (max-width: 800px)"]: {
       fontSize: "0.9rem",
@@ -196,7 +203,7 @@ const useStyles = makeStyles((theme) => ({
     },
     ["@media (max-width: 2000px)"]: {
       marginTop: "3rem",
-      marginRight: theme.spacing(60),
+      marginRight: theme.spacing(100),
     },
     ["@media (max-width: 1500px)"]: {
       marginRight: theme.spacing(50),
@@ -266,10 +273,10 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "none",
     width: "8rem",
     letterSpacing: "0em",
-    color: "#405FB1",
+    color: "#9564c0",
     background: "#D9F0FF",
     fontSize: "1rem",
-    fontWeight: "200",
+    fontWeight: "bold",
     border: "0px solid",
     borderRadius: "20px",
     fontFamily:
