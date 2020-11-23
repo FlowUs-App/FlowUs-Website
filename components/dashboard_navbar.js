@@ -51,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
     ["@media (max-width: 4000px)"]: {
       marginTop: "10rem",
       fontSize: "3.5rem",
+      marginRight: "2rem",
     },
     ["@media (max-width: 3500px)"]: {
       marginTop: "10rem",
@@ -66,7 +67,12 @@ const useStyles = makeStyles((theme) => ({
     },
     ["@media (max-width: 2000px)"]: {
       marginTop: "3rem",
-      marginRight: "1rem",
+      marginRight: "1.5rem",
+      fontSize: "1rem",
+    },
+    ["@media (max-width: 1900px)"]: {
+      marginTop: "3rem",
+      marginRight: "0.8rem",
       fontSize: "1rem",
     },
     ["@media (max-width: 800px)"]: {
@@ -129,7 +135,7 @@ const useStyles = makeStyles((theme) => ({
     },
     ["@media (max-width: 2000px)"]: {
       marginTop: "3rem",
-      marginRight: theme.spacing(60),
+      marginRight: theme.spacing(100),
     },
     ["@media (max-width: 1500px)"]: {
       marginRight: theme.spacing(50),
