@@ -133,7 +133,7 @@ const useStyles = makeStyles((theme) => ({
     ["@media (max-width: 2000px)"]: {
       transform: "scale(1)",
       marginTop: "3rem",
-      marginRight: theme.spacing(60),
+      marginRight: theme.spacing(100),
     },
     ["@media (max-width: 1500px)"]: {
       marginRight: theme.spacing(50),
