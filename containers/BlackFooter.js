@@ -180,6 +180,7 @@ function BlackFooter() {
                       <a
                         href="https://www.instagram.com/lifit.magazine/"
                         target="_blank"
+                        rel="noreferrer noopener"
                       >
                         <svg
                           width="216"
@@ -340,6 +341,7 @@ function BlackFooter() {
                   <a
                     href="https://www.instagram.com/lifit.magazine/"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     <svg
                       width="216"
