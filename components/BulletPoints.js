@@ -246,7 +246,7 @@ function BulletPoints() {
                       elevation={0}
                     >
                       <img
-                        src="../market_icon.png"
+                        src="../market_icon.webp"
                         className={classes.paperImg}
                       />
                       <Typography variant="h3" className={classes.paperTitle}>
@@ -268,7 +268,7 @@ function BulletPoints() {
                       elevation={0}
                     >
                       <img
-                        src="../analytics_icon.png"
+                        src="../analytics_icon.webp"
                         className={classes.paperImg}
                       />
 
@@ -291,7 +291,7 @@ function BulletPoints() {
                       elevation={0}
                     >
                       <img
-                        src="../advertisments_icon.png"
+                        src="../advertisments_icon.webp"
                         className={classes.paperImg}
                       />
                       <Typography variant="h3" className={classes.paperTitle}>
@@ -313,7 +313,10 @@ function BulletPoints() {
                       variant="outlined"
                       elevation={0}
                     >
-                      <img src="../new_icon.png" className={classes.paperImg} />
+                      <img
+                        src="../new_icon.webp"
+                        className={classes.paperImg}
+                      />
                       <Typography variant="h3" className={classes.paperTitle}>
                         News
                       </Typography>
@@ -333,7 +336,7 @@ function BulletPoints() {
                       elevation={0}
                     >
                       <img
-                        src="../profile_icon.png"
+                        src="../profile_icon.webp"
                         className={classes.paperImg}
                       />
                       <Typography variant="h3" className={classes.paperTitle}>
@@ -355,7 +358,7 @@ function BulletPoints() {
                       elevation={0}
                     >
                       <img
-                        src="../support_icon.png"
+                        src="../support_icon.webp"
                         className={classes.paperImg}
                       />
 
@@ -384,7 +387,7 @@ function BulletPoints() {
                       elevation={0}
                     >
                       <img
-                        src="../market_icon.png"
+                        src="../market_icon.webp"
                         className={classes.paperImg}
                       />
                       <Typography variant="h3" className={classes.paperTitle}>
@@ -406,7 +409,7 @@ function BulletPoints() {
                       elevation={0}
                     >
                       <img
-                        src="../analytics_icon.png"
+                        src="../analytics_icon.webp"
                         className={classes.paperImg}
                       />
 
@@ -429,7 +432,7 @@ function BulletPoints() {
                       elevation={0}
                     >
                       <img
-                        src="../advertisments_icon.png"
+                        src="../advertisments_icon.webp"
                         className={classes.paperImg}
                       />
 
@@ -452,7 +455,10 @@ function BulletPoints() {
                       variant="outlined"
                       elevation={0}
                     >
-                      <img src="../new_icon.png" className={classes.paperImg} />
+                      <img
+                        src="../new_icon.webp"
+                        className={classes.paperImg}
+                      />
                       <Typography variant="h3" className={classes.paperTitle}>
                         News
                       </Typography>
@@ -472,7 +478,7 @@ function BulletPoints() {
                       elevation={0}
                     >
                       <img
-                        src="../profile_icon.png"
+                        src="../profile_icon.webp"
                         className={classes.paperImg}
                       />
                       <Typography variant="h3" className={classes.paperTitle}>
@@ -494,7 +500,7 @@ function BulletPoints() {
                       elevation={0}
                     >
                       <img
-                        src="../support_icon.png"
+                        src="../support_icon.webp"
                         className={classes.paperImg}
                       />
                       <Typography variant="h3" className={classes.paperTitle}>

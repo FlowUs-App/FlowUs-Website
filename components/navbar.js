@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     zIndex: 1,
     position: "relative",
-    backgroundImage: "url(./mountain.jpg)",
+    backgroundImage: "url(./mountain.webp)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     width: "100%",

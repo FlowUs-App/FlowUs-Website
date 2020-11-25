@@ -723,7 +723,7 @@ function login() {
               >
                 <Grid container alignItems="center" spacing={2}>
                   <Grid item>
-                    <img className={classes.SCIcon} src="./fb_icon.png" />
+                    <img className={classes.SCIcon} src="./fb_icon.webp" />
                   </Grid>
                   <Grid item>Login with Facebook</Grid>
                 </Grid>
@@ -738,7 +738,7 @@ function login() {
               >
                 <Grid container alignItems="center" spacing={2}>
                   <Grid item>
-                    <img className={classes.SCIcon} src="./google.png" />
+                    <img className={classes.SCIcon} src="./google.webp" />
                   </Grid>
                   <Grid item>Login with Google</Grid>
                 </Grid>
@@ -930,7 +930,10 @@ function login() {
                     >
                       <Grid container alignItems="center" spacing={2}>
                         <Grid item>
-                          <img className={classes.SCIcon} src="./fb_icon.png" />
+                          <img
+                            className={classes.SCIcon}
+                            src="./fb_icon.webp"
+                          />
                         </Grid>
                         <Grid item>Login with Facebook</Grid>
                       </Grid>
@@ -945,7 +948,7 @@ function login() {
                     >
                       <Grid container alignItems="center" spacing={2}>
                         <Grid item>
-                          <img className={classes.SCIcon} src="./google.png" />
+                          <img className={classes.SCIcon} src="./google.webp" />
                         </Grid>
                         <Grid item>Login with Google</Grid>
                       </Grid>

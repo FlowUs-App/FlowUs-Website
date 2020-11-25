@@ -350,7 +350,7 @@ function PageTwo() {
             >
               <img
                 className={classes.basketballImg}
-                src="./sport.jpg"
+                src="./sport.webp"
                 style={{ height: imgHeight }}
               />
             </Grid>

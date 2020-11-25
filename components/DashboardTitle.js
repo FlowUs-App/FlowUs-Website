@@ -544,7 +544,7 @@ function DashboardTitle() {
               <Typography align="center" className={classes.MobCoverTitle}>
                 We help you find the right people
               </Typography>
-              <img className={classes.BigPic} src="../InfAndAdv.png" />
+              <img className={classes.BigPic} src="../InfAndAdv.webp" />
               <Button
                 variant="contained"
                 className={classes.coverButton}
@@ -567,7 +567,7 @@ function DashboardTitle() {
               <Typography align="center" className={classes.coverTitle}>
                 We help you find the right people
               </Typography>
-              <img className={classes.BigPic} src="../InfAndAdv.png" />
+              <img className={classes.BigPic} src="../InfAndAdv.webp" />
               <div
                 style={{
                   display: "flex",
