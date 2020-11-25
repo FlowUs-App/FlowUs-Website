@@ -181,6 +181,7 @@ function Footer() {
                         href="https://www.instagram.com/lifit.magazine/"
                         target="_blank"
                         rel="noreferrer noopener"
+                        aria-label="Instagram"
                       >
                         <svg
                           width="216"
@@ -342,6 +343,7 @@ function Footer() {
                     href="https://www.instagram.com/lifit.magazine/"
                     target="_blank"
                     rel="noreferrer noopener"
+                    aria-label="Instagram"
                   >
                     <svg
                       width="216"
