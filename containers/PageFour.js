@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    backgroundImage: "url(./DSC_5350.jpeg)",
+    backgroundImage: "url(./DSC_5350.webp)",
     backgroundPosition: "center",
   },
   slideTitle: {

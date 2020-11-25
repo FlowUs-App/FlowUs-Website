@@ -339,9 +339,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   sportImg: {
-    top: "-700px",
+    top: "-350px",
     left: "-px",
-    right: "-1000px",
+    right: "-400px",
     bottom: "-px",
     margin: "auto",
     position: "absolute",
@@ -606,7 +606,7 @@ function PageFive() {
             >
               <img
                 className={classes.basketballImg}
-                src="./veggie.jpg"
+                src="./veggie.webp"
                 style={{ height: imgHeight }}
               />
             </Grid>
@@ -715,7 +715,7 @@ function PageFive() {
             <Grid item xs={6} className={classes.basketballcontainer}>
               <img
                 className={classes.sportImg}
-                src="./skate.jpg"
+                src="./skate.webp"
                 style={{ backgroundPosition: "bottom" }}
               />
             </Grid>
@@ -831,7 +831,7 @@ function PageFive() {
             <Grid item xs={6} className={classes.basketballcontainer}>
               <img
                 className={classes.basketImg}
-                src="./basket.jpg"
+                src="./basket.webp"
                 style={{ backgroundPosition: "bottom" }}
               />
             </Grid>
