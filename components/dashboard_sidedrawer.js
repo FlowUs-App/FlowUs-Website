@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   TheIconButton: {
     marginTop: "3rem",
-    color: "#9E4EBD",
+    color: "white",
     marginLeft: "20rem",
     ["@media (max-width: 1000px)"]: {
       marginLeft: "28rem",

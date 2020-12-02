@@ -354,7 +354,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFF",
     width: "20rem",
     height: "4rem",
-    marginTop: "1rem",
+    marginTop: "0.5rem",
     borderRadius: "30px",
     ["@media (max-width: 4000px)"]: {
       height: "11rem",
