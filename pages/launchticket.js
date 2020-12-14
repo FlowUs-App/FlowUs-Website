@@ -175,13 +175,18 @@ function launchticket() {
         setSuccess("error");
       }
     } else {
+      if (info.length > 5) {
+        setSuccess("success");
+      } else {
+        setSuccess("error");
+      }
     }
     setOpen(true);
   };
 
-  function validateEmail(info) {
+  function validateEmail(input) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(info).toLowerCase());
+    return re.test(String(input).toLowerCase());
   }
 
   const handleClose = (event, reason) => {
@@ -492,7 +497,7 @@ function launchticket() {
           </Alert>
         ) : (
           <Alert onClose={handleClose} severity={success}>
-            Please fill out the Inputfield before submiting!
+            Please fill out the Inputfield correctly before submiting!
           </Alert>
         )}
       </Snackbar>
