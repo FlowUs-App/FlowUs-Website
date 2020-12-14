@@ -168,20 +168,23 @@ function launchticket() {
   const [touchDevice, setTouchDevice] = useState(false);
   const [open, setOpen] = useState(false);
   const [success, setSuccess] = useState("error");
+  const [registered, setRegistered] = useState(false);
 
   const handleClick = () => {
     if (info.includes("@")) {
       const mail = validateEmail(info);
       if (mail) {
+        handleInfoDocumentCreation(info, true);
         setSuccess("success");
-        handleInfoDocumentCreation(mail, true);
+        setRegistered(true);
       } else {
         setSuccess("error");
       }
     } else {
       if (info.length > 5) {
-        setSuccess("success");
         handleInfoDocumentCreation(info, false);
+        setSuccess("success");
+        setRegistered(true);
       } else {
         setSuccess("error");
       }
@@ -189,10 +192,11 @@ function launchticket() {
     setOpen(true);
   };
 
-  function handleInfoDocumentCreation(input, mail) {
+  function handleInfoDocumentCreation(input, type) {
     const db = firebase.firestore();
 
-    if (mail) {
+    if (type) {
+      console.log(input);
       db.collection("launchtickets")
         .add({
           mail: input,
@@ -361,7 +365,11 @@ function launchticket() {
               <Button
                 className={classes.launchButton}
                 size="large"
-                onClick={() => handleClick()}
+                onClick={
+                  !registered
+                    ? () => handleClick()
+                    : console.log("already registered")
+                }
               >
                 Receive a ticket at launch
               </Button>
@@ -502,7 +510,11 @@ function launchticket() {
                       <Button
                         className={classes.launchButton}
                         size="large"
-                        onClick={() => handleClick()}
+                        onClick={
+                          !registered
+                            ? () => handleClick()
+                            : console.log("already registered")
+                        }
                       >
                         Receive a ticket at launch
                       </Button>
