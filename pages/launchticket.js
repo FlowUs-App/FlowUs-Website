@@ -1,5 +1,5 @@
-import { Button, Grid } from "@material-ui/core";
-import React from "react";
+import { Button, Grid, TextField, Typography } from "@material-ui/core";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -8,6 +8,27 @@ const useStyles = makeStyles((theme) => ({
   },
   grid: {
     marginTop: "1rem",
+    overflowX: "hidden",
+    "& label.Mui-focused": {
+      color: "purple",
+    },
+    "& .MuiInput-underline:after": {
+      borderBottomColor: "purple",
+    },
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "purple",
+      },
+      "&:hover fieldset": {
+        borderColor: "purple",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "purple",
+      },
+    },
+    "& .MuiCheckbox-colorSecondary.Mui-checked": {
+      color: "purple",
+    },
   },
   mainButton: {
     backgroundColor: "#56377E",
@@ -19,18 +40,43 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "3rem",
     borderRadius: "30px",
   },
+  launchButton: {
+    marginTop: "2rem",
+    backgroundColor: "#56377E",
+    position: "center",
+    fontFamily:
+      "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
+    color: "#FFF",
+    width: "30rem",
+    marginRight: "3rem",
+    borderRadius: "30px",
+  },
+  title: {
+    fontSize: "3rem",
+    color: "#56377E",
+    fontFamily:
+      "Open Sans, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif, Arial",
+    fontWeight: "bold",
+  },
+  descr: {
+    fontSize: "1.5rem",
+    color: "#56377E",
+    fontFamily:
+      "Open Sans, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif, Arial",
+    fontWeight: "lighter",
+  },
+  InputField: {
+    marginTop: "5rem",
+    width: "30rem",
+  },
 }));
 
 function launchticket() {
   const classes = useStyles();
+  const [info, setInfo] = useState();
   return (
     <>
-      <Grid
-        container
-        direction="column"
-        alignItems="center"
-        className={classes.grid}
-      >
+      <Grid container direction="column" className={classes.grid}>
         <Grid item className={classes.width}>
           <Grid
             container
@@ -121,10 +167,44 @@ function launchticket() {
             justify="center"
             alignItems="center"
           >
-            <Grid item xl={6}>
-              yo
+            <Grid item md={6}>
+              <Grid
+                container
+                alignItems="flex-start"
+                alignContent="center"
+                direction="column"
+              >
+                <Grid item>
+                  <Typography component="h1" className={classes.title}>
+                    LiFit App Launch Ticket
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography component="h2" className={classes.descr}>
+                    The first Social Media Fitness App on the market! <br />{" "}
+                    <br />
+                    Compare with your friends, create sport
+                    <br /> communities, use fitness tools and much more
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <TextField
+                    label="Email / Phone number"
+                    variant="outlined"
+                    type="email"
+                    className={classes.InputField}
+                    value={info}
+                    onChange={(event) => setInfo(event.target.value)}
+                  />
+                </Grid>
+                <Grid item>
+                  <Button className={classes.launchButton} size="large">
+                    Receive a ticket at launch
+                  </Button>
+                </Grid>
+              </Grid>
             </Grid>
-            <Grid item xl={6}>
+            <Grid item md={6}>
               <img
                 src="./launchticket.svg"
                 alt="Two Phones with Screenshots of the LiFit App"
