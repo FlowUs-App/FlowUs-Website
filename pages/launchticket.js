@@ -2,6 +2,8 @@ import { Button, Grid, TextField, Typography } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Footer from "../containers/Footer";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
 
 const useStyles = makeStyles((theme) => ({
   width: {
@@ -10,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
   grid: {
     marginTop: "1rem",
     overflow: "hidden",
+    "& > * + *": {
+      marginTop: theme.spacing(2),
+    },
     "& label.Mui-focused": {
       color: "purple",
     },
@@ -43,6 +48,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("md")]: {
       marginRight: "1rem",
     },
+    "&:hover": {
+      background: "#56377E",
+    },
   },
   launchButton: {
     marginTop: "2rem",
@@ -57,6 +65,14 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("md")]: {
       width: "25rem",
       marginLeft: "3rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "20rem",
+      marginLeft: "3rem",
+    },
+
+    "&:hover": {
+      background: "#56377E",
     },
   },
   title: {
@@ -84,6 +100,9 @@ const useStyles = makeStyles((theme) => ({
     width: "30rem",
     [theme.breakpoints.down("md")]: {
       width: "25rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "20rem",
     },
   },
   note: {
@@ -133,6 +152,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
+
 function launchticket() {
   const classes = useStyles();
   const [info, setInfo] = useState();
@@ -140,11 +163,25 @@ function launchticket() {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
   const [touchDevice, setTouchDevice] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [success, setSuccess] = useState("");
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
   return (
     <>
       {touchDevice ? (
         <>
-          {" "}
           <Grid
             container
             direction="column"
@@ -265,7 +302,11 @@ function launchticket() {
               />
             </Grid>
             <Grid item>
-              <Button className={classes.launchButton} size="large">
+              <Button
+                className={classes.launchButton}
+                size="large"
+                onClick={() => handleClick()}
+              >
                 Receive a ticket at launch
               </Button>
             </Grid>
@@ -281,149 +322,162 @@ function launchticket() {
           </Grid>
         </>
       ) : (
-        <Grid container direction="column" className={classes.grid}>
-          <Grid item className={classes.width}>
-            <Grid
-              container
-              justify="space-between"
-              alignContent="center"
-              alignItems="center"
-            >
-              <Grid item>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="193"
-                  height="41"
-                  viewBox="0 0 193 41"
-                >
-                  <rect
-                    id="Rechteck_1062"
-                    data-name="Rechteck 1062"
-                    width="41"
-                    height="8"
-                    transform="translate(0 41) rotate(-90)"
-                    fill="#56377e"
-                  />
-                  <g
-                    id="Gruppe_70166"
-                    data-name="Gruppe 70166"
-                    transform="translate(-58 -53)"
+        <>
+          <Grid container direction="column" className={classes.grid}>
+            <Grid item className={classes.width}>
+              <Grid
+                container
+                justify="space-between"
+                alignContent="center"
+                alignItems="center"
+              >
+                <Grid item>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="193"
+                    height="41"
+                    viewBox="0 0 193 41"
                   >
                     <rect
-                      id="Rechteck_1060"
-                      data-name="Rechteck 1060"
-                      width="29"
-                      height="7"
-                      transform="translate(61 87)"
-                      fill="#56377e"
-                    />
-                    <rect
-                      id="Rechteck_1061"
-                      data-name="Rechteck 1061"
-                      width="21"
-                      height="7"
-                      transform="translate(69 70)"
-                      fill="#56377e"
-                    />
-                    <rect
-                      id="Rechteck_1063"
-                      data-name="Rechteck 1063"
-                      width="28"
-                      height="7"
-                      transform="translate(69 53)"
-                      fill="#56377e"
-                    />
-                    <rect
-                      id="Rechteck_1064"
-                      data-name="Rechteck 1064"
+                      id="Rechteck_1062"
+                      data-name="Rechteck 1062"
                       width="41"
                       height="8"
-                      transform="translate(93 94) rotate(-90)"
+                      transform="translate(0 41) rotate(-90)"
                       fill="#56377e"
                     />
-                    <text
-                      id="LiFit_App"
-                      data-name="LiFit App"
-                      transform="translate(119 85)"
-                      fill="#56377e"
-                      fontSize="30"
-                      fontFamily="OpenSans-Bold, Open Sans, Arial"
-                      fontWeight="700"
+                    <g
+                      id="Gruppe_70166"
+                      data-name="Gruppe 70166"
+                      transform="translate(-58 -53)"
                     >
-                      <tspan x="0" y="0">
-                        LiFit App
-                      </tspan>
-                    </text>
-                  </g>
-                </svg>
-              </Grid>
-              <Grid item>
-                <Button size="medium" className={classes.mainButton}>
-                  Main
-                </Button>
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item>
-            <Grid container direction="row" alignItems="center">
-              <Grid item md={6}>
-                <Grid
-                  container
-                  alignItems="flex-start"
-                  alignContent="center"
-                  direction="column"
-                >
-                  <Grid item>
-                    <Typography component="h1" className={classes.title}>
-                      LiFit App Launch Ticket
-                    </Typography>
-                  </Grid>
-                  <Grid item>
-                    <Typography component="h2" className={classes.descr}>
-                      The first Social Media Fitness App on the market! <br />{" "}
-                      <br />
-                      Compare with your friends, create sport
-                      <br /> communities, use fitness tools and much more
-                    </Typography>
-                  </Grid>
-                  <Grid item>
-                    <TextField
-                      label="Email / Phone number"
-                      variant="outlined"
-                      type="email"
-                      className={classes.InputField}
-                      value={info}
-                      onChange={(event) => setInfo(event.target.value)}
-                    />
-                  </Grid>
-                  <Grid item>
-                    <Button className={classes.launchButton} size="large">
-                      Receive a ticket at launch
-                    </Button>
-                  </Grid>
-                  <Grid item>
-                    <Typography component="h2" className={classes.note}>
-                      <span className={classes.bold}>Info:</span> The first 100
-                      people that sign up, will receive a prototype
-                      <br /> launch ticket. You can help to create the best app
-                      on the market by
-                      <br /> giving your feedback and voting for the best
-                      features.
-                    </Typography>
-                  </Grid>
+                      <rect
+                        id="Rechteck_1060"
+                        data-name="Rechteck 1060"
+                        width="29"
+                        height="7"
+                        transform="translate(61 87)"
+                        fill="#56377e"
+                      />
+                      <rect
+                        id="Rechteck_1061"
+                        data-name="Rechteck 1061"
+                        width="21"
+                        height="7"
+                        transform="translate(69 70)"
+                        fill="#56377e"
+                      />
+                      <rect
+                        id="Rechteck_1063"
+                        data-name="Rechteck 1063"
+                        width="28"
+                        height="7"
+                        transform="translate(69 53)"
+                        fill="#56377e"
+                      />
+                      <rect
+                        id="Rechteck_1064"
+                        data-name="Rechteck 1064"
+                        width="41"
+                        height="8"
+                        transform="translate(93 94) rotate(-90)"
+                        fill="#56377e"
+                      />
+                      <text
+                        id="LiFit_App"
+                        data-name="LiFit App"
+                        transform="translate(119 85)"
+                        fill="#56377e"
+                        fontSize="30"
+                        fontFamily="OpenSans-Bold, Open Sans, Arial"
+                        fontWeight="700"
+                      >
+                        <tspan x="0" y="0">
+                          LiFit App
+                        </tspan>
+                      </text>
+                    </g>
+                  </svg>
+                </Grid>
+                <Grid item>
+                  <Button size="medium" className={classes.mainButton}>
+                    Main
+                  </Button>
                 </Grid>
               </Grid>
-              <Grid item md={6}>
-                <img
-                  className={classes.pic}
-                  src="./launchticket.svg"
-                  alt="Two Phones with Screenshots of the LiFit App"
-                />
+            </Grid>
+            <Grid item>
+              <Grid container direction="row" alignItems="center">
+                <Grid item md={6}>
+                  <Grid
+                    container
+                    alignItems="flex-start"
+                    alignContent="center"
+                    direction="column"
+                  >
+                    <Grid item>
+                      <Typography component="h1" className={classes.title}>
+                        LiFit App Launch Ticket
+                      </Typography>
+                    </Grid>
+                    <Grid item>
+                      <Typography component="h2" className={classes.descr}>
+                        The first Social Media Fitness App on the market! <br />{" "}
+                        <br />
+                        Compare with your friends, create sport
+                        <br /> communities, use fitness tools and much more
+                      </Typography>
+                    </Grid>
+                    <Grid item>
+                      <TextField
+                        label="Email / Phone number"
+                        variant="outlined"
+                        type="email"
+                        className={classes.InputField}
+                        value={info}
+                        onChange={(event) => setInfo(event.target.value)}
+                      />
+                    </Grid>
+                    <Grid item>
+                      <Button
+                        className={classes.launchButton}
+                        size="large"
+                        onClick={() => handleClick()}
+                      >
+                        Receive a ticket at launch
+                      </Button>
+                    </Grid>
+                    <Grid item>
+                      <Typography component="h2" className={classes.note}>
+                        <span className={classes.bold}>Info:</span> The first
+                        100 people that sign up, will receive a prototype
+                        <br /> launch ticket. You can help to create the best
+                        app on the market by
+                        <br /> giving your feedback and voting for the best
+                        features.
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item md={6}>
+                  <img
+                    className={classes.pic}
+                    src="./launchticket.svg"
+                    alt="Two Phones with Screenshots of the LiFit App"
+                  />
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
-        </Grid>
+        </>
       )}
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="error">
+          Please fill out the Inputfield before submiting!
+        </Alert>
+      </Snackbar>
+
+      {/* <Alert severity="success">Successfully registered!</Alert> */}
       <Footer />
     </>
   );
