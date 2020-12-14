@@ -1,6 +1,7 @@
 import { Button, Grid, TextField, Typography } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import Footer from "../containers/Footer";
 
 const useStyles = makeStyles((theme) => ({
   width: {
@@ -423,6 +424,7 @@ function launchticket() {
           </Grid>
         </Grid>
       )}
+      <Footer />
     </>
   );
 }
