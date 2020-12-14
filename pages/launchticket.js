@@ -556,7 +556,7 @@ function launchticket() {
           </Alert>
         ) : (
           <Alert onClose={handleClose} severity={success}>
-            Please fill out the Inputfield correctly before submiting!
+            Please fill out the Inputfield correctly before submitting!
           </Alert>
         )}
       </Snackbar>
