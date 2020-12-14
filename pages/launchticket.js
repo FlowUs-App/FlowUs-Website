@@ -65,15 +65,12 @@ const useStyles = makeStyles((theme) => ({
       "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
     color: "#FFF",
     width: "30rem",
-    marginRight: "3rem",
     borderRadius: "30px",
     [theme.breakpoints.down("md")]: {
       width: "25rem",
-      marginLeft: "3rem",
     },
     [theme.breakpoints.down("sm")]: {
       width: "20rem",
-      marginLeft: "3rem",
     },
 
     "&:hover": {
@@ -177,18 +174,48 @@ function launchticket() {
       const mail = validateEmail(info);
       if (mail) {
         setSuccess("success");
+        handleInfoDocumentCreation(mail, true);
       } else {
         setSuccess("error");
       }
     } else {
       if (info.length > 5) {
         setSuccess("success");
+        handleInfoDocumentCreation(info, false);
       } else {
         setSuccess("error");
       }
     }
     setOpen(true);
   };
+
+  function handleInfoDocumentCreation(input, mail) {
+    const db = firebase.firestore();
+
+    if (mail) {
+      db.collection("launchtickets")
+        .add({
+          mail: input,
+        })
+        .then(function (docRef) {
+          console.log("Document written with ID: ", docRef.id);
+        })
+        .catch(function (error) {
+          console.error("Error adding document: ", error);
+        });
+    } else {
+      db.collection("launchtickets")
+        .add({
+          number: input,
+        })
+        .then(function (docRef) {
+          console.log("Document written with ID: ", docRef.id);
+        })
+        .catch(function (error) {
+          console.error("Error adding document: ", error);
+        });
+    }
+  }
 
   function validateEmail(input) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
