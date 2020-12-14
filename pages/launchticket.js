@@ -152,6 +152,11 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     marginTop: "3rem",
   },
+  lefty: {
+    [theme.breakpoints.up("md")]: {
+      marginLeft: "1.5rem",
+    },
+  },
 }));
 
 function Alert(props) {
@@ -482,6 +487,7 @@ function launchticket() {
                     alignItems="flex-start"
                     alignContent="center"
                     direction="column"
+                    className={classes.lefty}
                   >
                     <Grid item>
                       <Typography component="h1" className={classes.title}>
