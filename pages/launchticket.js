@@ -4,6 +4,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import Footer from "../containers/Footer";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
+import { useRouter } from "next/router";
+import firebase from "firebase/app";
+import initFirebase from "../res/ApiKey";
+
+initFirebase();
 
 const useStyles = makeStyles((theme) => ({
   width: {
@@ -158,6 +163,7 @@ function Alert(props) {
 
 function launchticket() {
   const classes = useStyles();
+  const router = useRouter();
   const [info, setInfo] = useState("");
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
@@ -285,7 +291,11 @@ function launchticket() {
                   </svg>
                 </Grid>
                 <Grid item>
-                  <Button size="medium" className={classes.mainButton}>
+                  <Button
+                    size="medium"
+                    className={classes.mainButton}
+                    onClick={() => router.push("/")}
+                  >
                     Main
                   </Button>
                 </Grid>
@@ -419,7 +429,11 @@ function launchticket() {
                   </svg>
                 </Grid>
                 <Grid item>
-                  <Button size="medium" className={classes.mainButton}>
+                  <Button
+                    size="medium"
+                    className={classes.mainButton}
+                    onClick={() => router.push("/")}
+                  >
                     Main
                   </Button>
                 </Grid>
