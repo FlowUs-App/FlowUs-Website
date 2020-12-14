@@ -158,17 +158,31 @@ function Alert(props) {
 
 function launchticket() {
   const classes = useStyles();
-  const [info, setInfo] = useState();
+  const [info, setInfo] = useState("");
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
   const [touchDevice, setTouchDevice] = useState(false);
   const [open, setOpen] = useState(false);
-  const [success, setSuccess] = useState("");
+  const [success, setSuccess] = useState("error");
 
   const handleClick = () => {
+    if (info.includes("@")) {
+      const mail = validateEmail(info);
+      if (mail) {
+        setSuccess("success");
+      } else {
+        setSuccess("error");
+      }
+    } else {
+    }
     setOpen(true);
   };
+
+  function validateEmail(info) {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(info).toLowerCase());
+  }
 
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
@@ -472,12 +486,17 @@ function launchticket() {
         </>
       )}
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-        <Alert onClose={handleClose} severity="error">
-          Please fill out the Inputfield before submiting!
-        </Alert>
+        {success === "success" ? (
+          <Alert onClose={handleClose} severity={success}>
+            Successfully registered!
+          </Alert>
+        ) : (
+          <Alert onClose={handleClose} severity={success}>
+            Please fill out the Inputfield before submiting!
+          </Alert>
+        )}
       </Snackbar>
 
-      {/* <Alert severity="success">Successfully registered!</Alert> */}
       <Footer />
     </>
   );
