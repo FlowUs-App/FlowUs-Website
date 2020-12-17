@@ -382,7 +382,7 @@ function launchticket() {
             <Grid item>
               <Typography component="h2" className={classes.moblieNote}>
                 <span className={classes.bold}>Info:</span> The first 100 people
-                that sign up, will receive a prototype
+                who sign up, will receive a prototype
                 <br /> launch ticket. You can help to create the best app on the
                 market by
                 <br /> giving your feedback and voting for the best features.
