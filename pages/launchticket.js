@@ -185,7 +185,7 @@ function launchticket() {
   const getDocuments = async () => {
     const snapshot = await db.collection("launchtickets").get();
     console.log(snapshot.docs.length);
-    setCount(snapshot.docs.length);
+    setCount((old) => (old < 100 ? 100 - snapshot.docs.length : 0));
   };
 
   const handleClick = () => {
