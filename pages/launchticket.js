@@ -157,6 +157,10 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "1.5rem",
     },
   },
+  count: {
+    marginTop: "2rem",
+    color: "#56377E",
+  },
 }));
 
 function Alert(props) {
@@ -167,13 +171,22 @@ function launchticket() {
   const classes = useStyles();
   const router = useRouter();
   const [info, setInfo] = useState("");
+  const db = firebase.firestore();
+  const [count, setCount] = useState(50);
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
+    getDocuments();
   }, []);
   const [touchDevice, setTouchDevice] = useState(false);
   const [open, setOpen] = useState(false);
   const [success, setSuccess] = useState("error");
   const [registered, setRegistered] = useState(false);
+
+  const getDocuments = async () => {
+    const snapshot = await db.collection("launchtickets").get();
+    console.log(snapshot.docs.length);
+    setCount(snapshot.docs.length);
+  };
 
   const handleClick = () => {
     if (info.includes("@")) {
@@ -198,8 +211,6 @@ function launchticket() {
   };
 
   function handleInfoDocumentCreation(input, type) {
-    const db = firebase.firestore();
-
     if (type) {
       console.log(input);
       db.collection("launchtickets")
@@ -388,6 +399,11 @@ function launchticket() {
                 <br /> giving your feedback and voting for the best features.
               </Typography>
             </Grid>
+            <Grid item>
+              <Typography component="p" variant="h3" className={classes.count}>
+                {count} Spots left
+              </Typography>
+            </Grid>
           </Grid>
         </>
       ) : (
@@ -533,6 +549,15 @@ function launchticket() {
                         app on the market by
                         <br /> giving your feedback and voting for the best
                         features.
+                      </Typography>
+                    </Grid>
+                    <Grid item>
+                      <Typography
+                        component="p"
+                        variant="h4"
+                        className={classes.count}
+                      >
+                        {count} Spots left
                       </Typography>
                     </Grid>
                   </Grid>
