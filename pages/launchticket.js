@@ -216,6 +216,7 @@ function launchticket() {
       db.collection("launchtickets")
         .add({
           mail: input,
+          date: new Date(),
         })
         .then(function (docRef) {
           console.log("Document written with ID: ", docRef.id);
@@ -227,6 +228,7 @@ function launchticket() {
       db.collection("launchtickets")
         .add({
           number: input,
+          date: new Date(),
         })
         .then(function (docRef) {
           console.log("Document written with ID: ", docRef.id);
