@@ -216,7 +216,7 @@ function launchticket() {
       db.collection("launchtickets")
         .add({
           mail: input,
-          date: firebase.firestore.FieldValue.serverTimestamp,
+          date: firebase.firestore.Timestamp,
         })
         .then(function (docRef) {
           console.log("Document written with ID: ", docRef.id);
@@ -228,7 +228,7 @@ function launchticket() {
       db.collection("launchtickets")
         .add({
           number: input,
-          date: firebase.firestore.FieldValue.serverTimestamp,
+          date: firebase.firestore.Timestamp,
         })
         .then(function (docRef) {
           console.log("Document written with ID: ", docRef.id);
