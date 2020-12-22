@@ -168,6 +168,7 @@ function Alert(props) {
 }
 
 function launchticket() {
+  const date = new Date();
   const classes = useStyles();
   const router = useRouter();
   const [info, setInfo] = useState("");
@@ -216,7 +217,7 @@ function launchticket() {
       db.collection("launchtickets")
         .add({
           mail: input,
-          date: firebase.firestore.Timestamp,
+          date: date,
         })
         .then(function (docRef) {
           console.log("Document written with ID: ", docRef.id);
@@ -228,7 +229,7 @@ function launchticket() {
       db.collection("launchtickets")
         .add({
           number: input,
-          date: firebase.firestore.Timestamp,
+          date: date,
         })
         .then(function (docRef) {
           console.log("Document written with ID: ", docRef.id);
