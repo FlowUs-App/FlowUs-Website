@@ -1,11 +1,10 @@
 import "../styles/globals.scss";
 import "../index.scss";
-import Head from "next/head";
+import "swiper/swiper.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head></Head>
       <Component {...pageProps} />
     </>
   );
