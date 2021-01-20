@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CounterItem from "./CounterItem";
 
+import initFirebase from "../utils/firebase";
+import firebase from "firebase/app";
+
+initFirebase();
+
 function Numbers() {
+  const db = firebase.firestore();
+  const [tickets, setTickets] = useState(0);
+  useEffect(() => {
+    getDocuments();
+  }, []);
+
+  const getDocuments = async () => {
+    const snapshot = await db.collection("launchtickets").get();
+    setTickets(snapshot.docs.length);
+    console.log(tickets);
+  };
+
   return (
     <div className="bk-number-speaks section-ptb-100">
       <Container>
@@ -13,8 +30,10 @@ function Numbers() {
                 <div className="title--creative text-left">
                   <h3 className="heading">NUMBER SPEAKS</h3>
                   <h2>
-                    Always ready <br /> for{" "}
-                    <span className="theme-creative">a challenge.</span>
+                    Current Metrics representing{" "}
+                    <span className="lightBlueTextColor removeFancyStylings">
+                      FlowUs
+                    </span>
                   </h2>
                   <p>
                     Nothing is more important than having a <br /> desire deep
@@ -28,7 +47,7 @@ function Numbers() {
           <Col lg={7} className={"mt_md--40 mt_sm--40"}>
             <div className="speakers-number-wrap counter-grid">
               <CounterItem
-                count={2034}
+                count={tickets}
                 title={"Unique designs"}
                 iconClass={"ion-ios-eye-outline"}
               />
