@@ -1,0 +1,211 @@
+/*==========================
+List Area 
+===========================*/
+
+.bk-list {
+  .list-header {
+    padding-left: 36px;
+
+    .marker {
+      display: inline-block;
+      float: left;
+      position: relative;
+
+      &::before {
+        content: "\f058";
+        position: absolute;
+        top: 0;
+        left: -36px;
+        display: block;
+        font-size: 18px;
+        color: #7ed321;
+        font-family: 'FontAwesome';
+        font-weight: 900;
+      }
+    }
+
+    p {
+      &.bk_pra {
+        margin-top: 13px;
+        margin-bottom: 0;
+        font-weight: 500;
+        line-height: 1.58;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+// List Style 2
+.bk-list--2 {
+  counter-reset: li;
+
+  .list-header {
+    padding-left: 14px;
+    margin-bottom: 20px;
+
+    .marker {
+      display: inline-block;
+      float: left;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: -14px;
+      }
+    }
+
+    .title-wrap {
+      .heading {
+        color: inherit;
+        font-weight: 500;
+      }
+    }
+
+    &.with-dot {
+      .marker {
+        &::before {
+          display: block;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: #999;
+        }
+      }
+    }
+
+    &.with-check {
+      padding-left: 26px;
+
+      .marker {
+        &::before {
+          content: "\f00c";
+          display: block;
+          font-size: 13px;
+          font-family: 'FontAwesome';
+          font-weight: 900;
+          color: $theme-color;
+          top: -4px;
+          left: -26px;
+        }
+
+        &.dark-color {
+          &::before {
+            color: $heading-color !important;
+          }
+        }
+      }
+
+      &.item-available {
+        .marker {
+          &::before {
+            color: #7ed321;
+          }
+        }
+      }
+
+      &.item-not-available {
+        .marker {
+          &::before {
+            color: $bodyColor;
+          }
+        }
+      }
+
+      &.check-yellow-color-2 {
+        .marker {
+          &::before {
+            color: $yellow-color-2;
+          }
+        }
+      }
+    }
+
+    &.with-number {
+      padding-left: 25px;
+      position: relative;
+      counter-increment: li;
+
+      .marker {
+        position: relative;
+
+        &:before {
+          content: counter(li);
+          vertical-align: middle;
+          position: absolute;
+          left: -20px;
+          top: -4px;
+        }
+      }
+
+      &.theme {
+        .marker {
+          &:before {
+            color: $theme-color;
+            font-size: 15px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      &--body {
+        padding-left: 30px;
+        margin-bottom: 3px;
+
+        .marker {
+          color: $bodyColor;
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 0;
+          line-height: 1.38;
+          font-family: $heading-font;
+        }
+
+        .heading {
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 0;
+          line-height: 1.38;
+          color: $bodyColor;
+          font-family: $heading-font;
+        }
+      }
+    }
+  }
+}
+
+
+.brook-what-do-area {
+  .list-header {
+    .heading {
+      color: $theme-color;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

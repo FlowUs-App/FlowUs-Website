@@ -1,0 +1,160 @@
+/*============================
+    Accordion Area 
+==============================*/
+
+
+.bk-accordion {
+  .card {
+    border: 0 none;
+    margin-bottom: 30px;
+    overflow: visible;
+  }
+
+  .card-header {
+    position: relative;
+    background: transparent;
+    padding: 0;
+    border: 0 none;
+
+    button {
+      border-radius: 5px 5px 0 0;
+      background: #f7f7f7;
+      border: 0 none;
+      color: #111;
+      display: block;
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 600;
+      font-family: $bodyFont;
+      -webkit-appearance: none;
+      padding: 20px 26px;
+      margin: -1px -1px 0;
+      position: relative;
+      width: 100%;
+      text-align: left;
+      box-shadow: none;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        content: "\f107";
+        right: 16px;
+        font-size: 16px;
+      }
+
+      &.show {
+        background: $theme-color;
+        color: #ffffff;
+
+        &::before {
+          content: "\f104";
+        }
+      }
+    }
+  }
+
+  .card-body {
+    padding: 27px 25px 39px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.58;
+    font-size: 14px;
+    font-family: $bodyFont;
+    border: 0 none;
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, .07);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .07);
+    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+/* Accordion Style 02 */
+
+.bk-accordion-style--2 {
+  .card {
+    border: 0 none;
+    margin-bottom: 7px;
+    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  }
+
+  .card-header {
+    position: relative;
+    background: transparent;
+    padding: 0;
+    border: 0 none;
+
+    button {
+      box-shadow: none;
+      color: #111;
+      font-weight: 600;
+      border: 0 none;
+      font-family: $bodyFont;
+      -webkit-appearance: none;
+      display: block;
+      position: relative;
+      font-size: 18px;
+      line-height: 1.2;
+      padding: 14px 0 14px 26px;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-family: 'FontAwesome';
+        content: "+";
+        left: 0;
+        font-size: 18px;
+        color: #222222;
+        font-weight: 700;
+      }
+
+      &[aria-expanded="true"] {
+        background: transparent;
+        color: $theme-color;
+
+        &::before {
+          content: "-";
+          color: $theme-color;
+        }
+      }
+    }
+  }
+
+  .card-body {
+    padding: 5px 0 21px 26px;
+    font-weight: 500;
+    line-height: 1.58;
+    font-size: 14px;
+    font-family: $bodyFont;
+    border: 0 none;
+    box-shadow: inherit;
+    border-radius: inherit
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,233 @@
+/* ======================
+    Brand Area
+==========================*/
+
+.brook-brand-area {
+  &.bg-shape {
+    background-image: url(../../img/slider/revolution/slider-4.png);
+    background-repeat: no-repeat;
+    background-position: top 80px right;
+  }
+}
+
+
+// Brand Default
+.brand-default {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+
+    a {
+      img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: .3;
+        -webkit-transition: all .3s linear;
+        transition: all .3s linear;
+        display: inline-block;
+      }
+
+      &:hover {
+        img {
+          -webkit-filter: none;
+          filter: none;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &.brand-style--3 {
+    grid-template-columns: repeat(3, 1fr);
+    display: -ms-grid;
+    display: grid;
+
+  }
+
+  &.brand-style--2 {
+    grid-template-columns: repeat(3, 1fr);
+    display: -ms-grid;
+    display: grid;
+    @media #{$large-mobile} {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .brand {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 15px;
+      min-height: 200px;
+
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        left: -1px;
+        top: -1px;
+        right: 0;
+        bottom: 0;
+        border: 1px solid #eee;
+        pointer-events: none;
+      }
+    }
+
+    &.no-border {
+      .brand {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Navigation & Pagination
+  .swiper {
+    &-pagination {
+      margin-top: 50px;
+    }
+
+    &-next, &-prev {
+      border: none;
+      font-size: 30px;
+      color: $headings-color;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: -25px;
+
+      &:hover {
+        color: $theme-color;
+      }
+    }
+
+    &-prev {
+      left: -70px;
+
+      @media #{$md-layout} {
+        left: 0;
+      }
+
+      @media #{$sm-layout} {
+        left: 0;
+      }
+    }
+
+    &-next {
+      right: -70px;
+
+
+      @media #{$md-layout} {
+        right: 0;
+      }
+
+      @media #{$sm-layout} {
+        right: 0;
+      }
+    }
+  }
+}
+
+
+// Social Media client
+.social-client {
+  grid-template-columns: repeat(4, 1fr);
+  display: -ms-grid;
+  display: grid;
+
+  @media #{$sm-layout} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .client-grid {
+    .grid-inner {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 15px;
+      min-height: 115px;
+      height: 100%;
+
+      .inner {
+        a {
+          -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+          transition: all .3s cubic-bezier(.645, .045, .355, 1);
+
+          img {
+            -webkit-transition: all .3s linear;
+            transition: all .3s linear;
+            height: auto;
+            max-width: 100%;
+          }
+        }
+
+        &:hover {
+          a {
+            img {
+              -webkit-transform: translateY(-5px);
+              -ms-transform: translateY(-5px);
+              transform: translateY(-5px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Brnad Dots
+.swiper-pagination {
+  &-bullets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      background: #d8d8d8;
+      border-radius: 100%;
+      border: 0;
+      cursor: pointer;
+      display: block;
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      outline: none;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      &.swiper-pagination-bullet-active {
+        background: $heading-color;
+      }
+    }
+  }
+}
+

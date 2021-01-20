@@ -1,0 +1,124 @@
+/* ==========================
+Progress Charts 
+==============================*/
+
+.progress-wrapper {
+  h3 {
+    &.heading {
+      font-size: 24px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.progress-charts {
+  h6 {
+    &.heading {
+      margin-bottom: 13px;
+      text-transform: uppercase;
+
+      span {
+        &.percent-label {
+          color: #222;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .progress {
+    height: 4px;
+    overflow: visible;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    border-radius: 0;
+
+    .progress-bar {
+      overflow: visible;
+      position: relative;
+      background: $theme-color;
+
+      &.custom-color--2 {
+        background-color: rgb(126, 211, 33);
+      }
+
+      &.custom-color--3 {
+        background-color: rgb(242, 182, 54);
+      }
+
+      &.custom-color--4 {
+        background-color: rgb(245, 93, 78);
+      }
+
+      span {
+        &.percent-label {
+          position: absolute;
+          color: #222;
+          right: -7px;
+          top: -25px;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+
+  }
+
+
+}
+
+.progress-circle-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  .CircularProgressbar {
+    width: 200px;
+    margin: 15px;
+
+    @media #{$sm-layout,$md-layout} {
+      width: 150px;
+    }
+
+    &-text {
+      font-weight: 600;
+    }
+  }
+}
+
+.radial-progress-single {
+  &.progress-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+
+    @media #{$large-mobile} {
+      display: block;
+    }
+  }
+
+  .CircularProgressbar {
+    @media #{$sm-layout,$md-layout} {
+      width: 150px;
+    }
+
+    &-text {
+      font-weight: 600;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

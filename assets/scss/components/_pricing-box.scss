@@ -1,0 +1,104 @@
+/* =====================
+Pricing Box 
+========================*/
+
+
+.pricing-wrap{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-box{
+    padding: 62px 40px 60px;
+    position: relative;
+    background-color: #fff;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    height: 100%;
+    margin-bottom: 0;
+    &.active{
+        padding: 106px 40px 80px;
+    }
+    .header{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 38px;
+    
+        .feature-mark{
+            background-color: $theme-color;
+            display: block;
+            padding: 5px 18px 5px 10px;
+            position: absolute;
+            top: 44px;
+            left: -4px;
+            text-transform: uppercase;
+            font-size: 10px;
+            line-height: 1.4;
+            font-weight: 600;
+            color: #fff;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-right: 9px solid #fff;
+                border-top: 12px solid transparent;
+                border-bottom: 12px solid transparent;
+            }
+        }
+        .price{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            h3{
+                &.currency{
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+                &.heading{
+                    font-size: 48px;
+                    line-height: .9;
+                    margin: 0 4px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .content{
+        h5{
+            &.heading{
+                margin-bottom: 21px;
+            }
+        }
+    }
+    .footer{
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+/* ==========================
+    Brook Pagination 
+=============================*/
+
+
+.brook-pagination-wrapper {
+  .brook-pagination {
+    padding: 0;
+    margin: -5px;
+    font-size: 14px;
+    font-weight: 500;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+      padding: 5px;
+
+      a,button {
+        padding: 0 5px;
+        display: block;
+        text-align: center;
+        line-height: 39px;
+        min-width: 41px;
+        height: 41px;
+        border: 1px solid #eee;
+        background: #fff;
+        color: $bodyColor;
+        transition: 0.2s ease-in;
+
+        &:hover {
+          background: $theme-color;
+          color: #fff;
+        }
+      }
+
+      &.active {
+        a,button {
+          background: $theme-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

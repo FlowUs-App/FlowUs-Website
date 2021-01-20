@@ -1,0 +1,114 @@
+/*==========================
+    About Area 
+===========================*/
+
+
+.brook-about-area {
+  &.bg-shape {
+    background-image: url(../../img/slider/revolution/slider-5.png);
+    background-repeat: no-repeat;
+    background-position: bottom 20px left 128px;
+  }
+}
+
+.about--creative {
+  .content {
+    .title--creative {
+      h3 {
+        &.heading {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          line-height: 1.43;
+          margin-bottom: 0;
+          word-wrap: break-word;
+          font-family: 'Montserrat', sans-serif;
+          margin-bottom: 34px;
+        }
+      }
+
+      h2 {
+        font-size: 48px;
+        line-height: 1.21;
+        color: #fff;
+        margin-bottom: 47px;
+        max-width: 470px;
+        font-family: 'Montserrat', sans-serif;
+
+        @media #{$md-layout} {
+          font-size: 35px;
+          margin-bottom: 17px;
+
+        }
+
+        @media #{$sm-layout} {
+          font-size: 30px;
+          margin-bottom: 17px;
+        }
+
+        span {
+          font-family: 'Playfair Display', serif;
+          font-style: italic;
+          font-weight: 700;
+        }
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.67;
+      color: #ffffff;
+      margin-bottom: 45px;
+      word-wrap: break-word;
+      max-width: 100%;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    a {
+      &.about-btn {
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 14px;
+        color: #fff;
+        font-family: $bodyFont;
+        white-space: nowrap;
+        line-height: 1.2;
+
+        i {
+          padding-left: 20px;
+          -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+          transition: all .3s cubic-bezier(.645, .045, .355, 1);
+          font-size: 12px;
+        }
+
+        &:hover {
+          i {
+            -webkit-transform: translate(5px, -0);
+            -ms-transform: translate(5px, -0);
+            transform: translate(5px, -0);
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+.about-accordion {
+  .thumb {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.brook-icon-boxes-area {
+  .poss_relative {
+    z-index: 2;
+  }
+}
+
+

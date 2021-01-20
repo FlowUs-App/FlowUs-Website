@@ -1,0 +1,642 @@
+/* ===========================
+    Color Two Variation 
+=============================*/
+@for $i from 1 through length($colorList) {
+  .template-color-#{$i} {
+
+    // Minicart Color Variation
+    & .mini-cart {
+      .shopping-cart {
+        border-bottom: 2px solid nth($colorList, $i);
+
+        .shop-inner {
+          ul {
+            &.product-list {
+              li {
+                .content {
+                  .inner {
+                    h4 {
+                      a {
+                        &:hover {
+                          color: nth($colorList, $i);
+                        }
+
+                      }
+                    }
+                  }
+
+                  .delete-btn {
+                    &:hover {
+                      color: nth($colorList, $i);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .footer {
+          a {
+            &.cart-btn {
+              border-color: nth($colorList, $i);
+              background-color: nth($colorList, $i);
+            }
+          }
+        }
+      }
+    }
+
+    // Book ToolBar
+    & .brook__toolbar {
+      .inner {
+        a {
+          &:hover {
+            color: nth($colorList, $i);
+          }
+        }
+      }
+    }
+
+    // Blog Grid
+    .blog-grid {
+      .post-inner {
+        h5 {
+          &.heading {
+            &:hover {
+              color: nth($colorList, $i);
+
+              a {
+                color: nth($colorList, $i);
+              }
+            }
+          }
+        }
+
+        .post-meta {
+          .post-category {
+            &:hover {
+              a {
+                color: nth($colorList, $i);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .theme-color {
+      color: nth($colorList, $i);
+    }
+
+    .bg_color--2 {
+      background: nth($colorList, $i);
+    }
+
+    // Button Color
+    a,
+    button {
+      &.brook-btn {
+        &.bk-btn-theme {
+          background: nth($colorList, $i);
+          color: #fff;
+        }
+      }
+    }
+
+
+    // Read More Button
+    a {
+      &.more-details-btn {
+        &:hover {
+          color: nth($colorList, $i);
+        }
+
+        i {
+          color: nth($colorList, $i);
+        }
+      }
+    }
+
+    // Mesonry Button Color
+    .masonry-button {
+      button {
+        &.is-checked {
+          span {
+            &.filter-text {
+              color: nth($colorList, $i);
+            }
+          }
+        }
+
+        &:hover {
+          span {
+            &.filter-text {
+              color: nth($colorList, $i);
+            }
+          }
+        }
+      }
+
+      button {
+        span {
+          &.filter-counter {
+            background-color: nth($colorList, $i);
+
+            &::before {
+              border-top: 4px solid nth($colorList, $i);
+              border-top-color: nth($colorList, $i);
+            }
+          }
+        }
+
+        &:hover {
+          span {
+            &.filter-text {
+              color: nth($colorList, $i);
+            }
+          }
+        }
+
+        &.is-checked {
+          span {
+            &.filter-text {
+              color: nth($colorList, $i);
+            }
+          }
+        }
+      }
+    }
+
+    // Portfolio Color Overlay
+    .portfolio {
+      &.portfolio_style--1 {
+        .port-overlay-info {
+          background-color: nth($colorList, $i);
+        }
+      }
+    }
+
+    // testimonial Quote
+    .testimonial_style--2 {
+      .content {
+        .testimonial-info {
+          .testimonial-quote {
+            color: nth($colorList, $i);
+          }
+        }
+      }
+    }
+
+    .testimonial_style--1 {
+      .content {
+        .testimonial-quote {
+          span {
+            color: nth($colorList, $i);
+          }
+        }
+      }
+
+      &:hover {
+        background: nth($colorList, $i);
+
+        .testimonial-quote {
+          span {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    // Contact Form
+    .contact-form {
+      &.contact-form--4 {
+        .input-box {
+          button {
+            color: nth($colorList, $i);
+
+            &:hover {
+              color: #fff;
+              background: nth($colorList, $i);
+            }
+          }
+        }
+      }
+
+      &.contact-form--3 {
+        .input-box {
+          button {
+            color: nth($colorList, $i);
+          }
+        }
+      }
+    }
+
+    // Goggle Map Dot
+    .animated-dot {
+      background-color: nth($colorList, $i);
+
+      .middle-dot {
+        background-color: nth($colorList, $i);
+      }
+
+      .signal {
+        background-color: nth($colorList, $i);
+      }
+
+      .signal2 {
+        background-color: nth($colorList, $i);
+      }
+    }
+
+    // Counter Up
+    .brook-counter {
+      .icon {
+        i {
+          color: nth($colorList, $i);
+        }
+      }
+    }
+
+    // Social Share
+    .social-share {
+      a {
+        &:hover {
+          color: nth($colorList, $i);
+        }
+      }
+    }
+
+    .social-icon {
+      &.tooltip-layout {
+        li {
+          a {
+            &.hint--theme[aria-label]::after {
+              background: nth($colorList, $i);
+            }
+
+            &.hint--theme[aria-label]::before {
+              border-top-color: nth($colorList, $i);
+            }
+          }
+        }
+      }
+    }
+
+    // Video Button
+    .video-btn {
+      &.video-icon,
+      .video-icon {
+        background: nth($colorList, $i);
+      }
+    }
+
+    .video-btn-2 {
+      .icon-gradient {
+        &::before {
+          background-color: nth($colorList, $i);
+          background-image: -webkit-linear-gradient(223deg, #899664 0, nth($colorList, $i) 100%);
+          background-image: -o-linear-gradient(223deg, #899664 0, nth($colorList, $i) 100%);
+          background-image: linear-gradient(-133deg, #899664 0, nth($colorList, $i) 100%);
+        }
+
+        &::after {
+          background-color: nth($colorList, $i);
+          background-image: -webkit-linear-gradient(223deg, #899664 0, nth($colorList, $i) 100%);
+          background-image: -o-linear-gradient(223deg, #899664 0, nth($colorList, $i) 100%);
+          background-image: linear-gradient(-133deg, #899664 0, nth($colorList, $i) 100%);
+        }
+      }
+    }
+
+    .single-motive-speech {
+      .icon {
+        i {
+          color: nth($colorList, $i);
+        }
+      }
+    }
+
+    // Accordion
+    .bk-accordion-style--2 {
+      .card-header {
+        h5 {
+          a {
+            &.acc-btn {
+              &[aria-expanded="true"] {
+                color: nth($colorList, $i);
+
+                &::before {
+                  color: nth($colorList, $i);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contact-form {
+      input,
+      textarea {
+        &:focus {
+          border-color: nth($colorList, $i);
+        }
+
+        &[type="submit"] {
+          border-color: nth($colorList, $i);
+          background-color: nth($colorList, $i);
+        }
+      }
+
+
+    }
+
+    // Product Color
+    .product {
+      .product-thumbnail {
+        .product-action {
+          .action-list {
+            &.tooltip-layout {
+              li {
+                a {
+                  &:hover {
+                    background-color: nth($colorList, $i);
+                    color: #fff;
+                    border-color: nth($colorList, $i);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Gallery Css
+    .gallery {
+      .hover-overlay {
+        background-color: nth($colorList, $i);
+      }
+    }
+
+    // Slick Arrow
+    .slick-dots-bottom {
+      .slick-dots {
+        li {
+          &.slick-active {
+            button {
+              background: nth($colorList, $i);
+            }
+          }
+        }
+      }
+    }
+
+    // Blog Grid
+    .blog-grid {
+      .post-content {
+        &::before {
+          background-color: nth($colorList, $i);
+        }
+      }
+    }
+
+    .blog-grid-no-flex {
+      .post-quote {
+        &::before {
+          color: nth($colorList, $i);
+        }
+      }
+    }
+
+    .brook-pagination-wrapper {
+      .brook-pagination {
+        li {
+          a {
+            border: 1px solid nth($colorList, $i);
+
+            &:hover {
+              background: nth($colorList, $i);
+            }
+          }
+
+          &.active {
+            a {
+              background: nth($colorList, $i);
+
+            }
+          }
+        }
+      }
+    }
+
+    .bl-sidebar {
+      &.search {
+        button {
+          &:hover {
+            background-color: nth($colorList, $i);
+          }
+
+          span {
+            color: nth($colorList, $i);
+          }
+        }
+      }
+
+      &.category {
+        .category-list {
+          li {
+            a {
+              &:hover {
+                color: nth($colorList, $i);
+              }
+            }
+          }
+        }
+      }
+
+      &.tag {
+        .inner {
+          .tagcloud {
+            li {
+              a {
+                &:hover {
+                  color: nth($colorList, $i);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .social-icon {
+      &.icon-solid-rounded {
+        li {
+          a {
+            &:hover {
+              background-color: nth($colorList, $i);
+            }
+          }
+        }
+      }
+    }
+
+    // Icon Box
+    .icon-box {
+      .inner {
+        .icon {
+          color: nth($colorList, $i);
+        }
+      }
+    }
+
+    .basic-thick-line-theme-4 {
+      border-top: 4px solid nth($colorList, $i);
+    }
+
+    .pricing-box {
+      .header {
+        .feature-mark {
+          background-color: nth($colorList, $i);
+        }
+      }
+    }
+
+    a {
+      &.brook-btn {
+        &.bk-btn-dark {
+          &:hover {
+            background: nth($colorList, $i);
+          }
+        }
+      }
+    }
+
+    .bk-list--2 {
+      .list-header {
+        &.with-ckeck {
+          .marker {
+            &::before {
+              color: nth($colorList, $i);
+            }
+          }
+
+        }
+      }
+    }
+
+    .ht-pricing-list-view {
+      thead {
+        tr {
+          th {
+            &.pricing-header {
+              .feature-park {
+                background: nth($colorList, $i);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .testimonial-color-variation {
+      .slick-center {
+        .testimonial_style--1 {
+          &.bg-dark {
+            background: nth($colorList, $i) !important;
+          }
+        }
+      }
+    }
+
+    .basic-modern-dots {
+      .dot {
+        background-color: nth($colorList, $i);
+      }
+    }
+
+    .bk-accordion {
+      .card-header {
+        h5 {
+          a {
+            &.acc-btn {
+              &[aria-expanded="true"] {
+                background: nth($colorList, $i);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    a,
+    button {
+      &.brook-btn {
+        &.bk-btn-theme-border {
+          border-color: nth($colorList, $i);
+          color: nth($colorList, $i);
+
+          &:hover {
+            background: nth($colorList, $i);
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .brook-quote {
+      &::before {
+        color: nth($colorList, $i);
+      }
+    }
+
+    .bk-text-box {
+      &.bg-theme-color {
+        background: nth($colorList, $i);
+      }
+    }
+
+    .bk-list--2 {
+      .list-header {
+        &.with-number--theme {
+          .marker {
+            color: nth($colorList, $i);
+          }
+        }
+      }
+    }
+
+    .view-more-btn {
+      a {
+        span {
+          &.btn-arrow {
+            color: nth($colorList, $i);
+          }
+        }
+      }
+    }
+
+    #fp-nav {
+      ul {
+        li {
+          a {
+            &.active {
+              background-color: nth($colorList, $i);
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.template-color-5 .bg_color--13 .single-motive-speech .icon i {
+  color: #fff;
+}
+
+
+// Minicart Font Family Variation
+
