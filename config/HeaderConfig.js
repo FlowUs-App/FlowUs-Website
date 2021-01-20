@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function HeaderConfig() {
-  const body = document.querySelector("body");
-  const html = document.querySelector("html");
+  useEffect(() => {
+    const body = document.querySelector("body");
+    const html = document.querySelector("html");
+  }, []);
 
   const searchHandler = () => {
     body.classList.add("page-search-popup-opened");

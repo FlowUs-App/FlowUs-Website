@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import DefaultLayout from "../layout/DefaultLayout";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import HeroBanner from "../components/HeroBanner";
 
 function LandingPage() {
   return (
@@ -16,6 +17,7 @@ function LandingPage() {
           revealFooter={true}
         >
           <Header />
+          <HeroBanner />
         </DefaultLayout>
         <Footer />
       </Fragment>
