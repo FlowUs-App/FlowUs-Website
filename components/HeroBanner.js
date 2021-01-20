@@ -16,7 +16,7 @@ function HeroBanner() {
     <div
       className="hero-banner-wrapper"
       style={{
-        backgroundImage: "url(/slider-bg.jpg)",
+        backgroundImage: "url(/hero.jpg)",
       }}
     >
       <Container>
@@ -28,9 +28,7 @@ function HeroBanner() {
                 gradient={true}
                 gradientClass="color-pink"
               />
-              <h2>
-                Flow<span>Us</span>
-              </h2>
+              <h2>FlowUs</h2>
               <img src={"/slider.png"} alt="separator" />
               <p>
                 Introducing the Fitness Social Media App for you and your

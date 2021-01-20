@@ -2,7 +2,6 @@
     Video Area 
 -----------------------------*/
 
-
 .comp-video {
   &.line--between,
   .line--between {
@@ -50,7 +49,6 @@
   }
 }
 
-
 // Video Button
 
 .video-btn {
@@ -62,7 +60,8 @@
     bottom: 30px;
   }
 
-  a, button {
+  a,
+  button {
     border: none;
     outline: none;
 
@@ -75,9 +74,9 @@
       height: 72px;
       border-radius: 50%;
       background: $theme-color;
-      -webkit-transition: all 1s cubic-bezier(0, 0, .2, 1);
-      transition: all 1s cubic-bezier(0, 0, .2, 1);
-      box-shadow: 0 20px 30px rgba(0, 0, 0, .2);
+      -webkit-transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+      transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 
       &::before {
         content: "";
@@ -93,7 +92,6 @@
         border-bottom: 9px solid transparent;
         border-left: 15px solid #fff;
       }
-
 
       &.second-icon {
         width: 90px;
@@ -162,10 +160,10 @@
         transform: scale3d(1.15, 1.15, 1.15);
       }
     }
-
   }
 
-  a, button {
+  a,
+  button {
     &.watch-text,
     .watch-text {
       color: $bodyColor;
@@ -175,20 +173,17 @@
       padding: 0;
       display: block;
       font-weight: 600;
-      -webkit-transition: all 1s cubic-bezier(0, 0, .2, 1);
-      transition: all 1s cubic-bezier(0, 0, .2, 1);
+      -webkit-transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+      transition: all 1s cubic-bezier(0, 0, 0.2, 1);
 
       &:hover {
         color: $theme-color;
       }
-
     }
   }
 }
 
-
 .video-btn-2 {
-
   button {
     border: none;
   }
@@ -200,31 +195,65 @@
     background: none;
     display: block;
     margin: 0 auto;
-    -webkit-transition: all 1s cubic-bezier(0, 0, .2, 1) !important;
-    transition: all 1s cubic-bezier(0, 0, .2, 1) !important;
+    -webkit-transition: all 1s cubic-bezier(0, 0, 0.2, 1) !important;
+    transition: all 1s cubic-bezier(0, 0, 0.2, 1) !important;
     border-radius: 50%;
     position: relative;
     z-index: 2;
 
     &::before {
-      -webkit-transition: all .5s;
-      transition: all .5s;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
       z-index: 1;
-      opacity: .15;
+      opacity: 0.15;
       position: absolute;
       content: "";
       border-radius: 50%;
-      background-color: #0038E3;
-      background-image: linear-gradient(-133deg, #899664 0, #0038E3 100%)
+      background-color: rgb(22, 66, 105);
+      background-image: -webkit-linear-gradient(
+        90deg,
+        rgba(22, 66, 105, 1) 0%,
+        rgba(0, 122, 255, 1) 35%,
+        rgba(148, 194, 233, 1) 100%
+      );
+      background-image: -o-linear-gradient(
+        90deg,
+        rgba(22, 66, 105, 1) 0%,
+        rgba(0, 122, 255, 1) 35%,
+        rgba(148, 194, 233, 1) 100%
+      );
+      background-image: linear-gradient(
+        90deg,
+        rgba(22, 66, 105, 1) 0%,
+        rgba(0, 122, 255, 1) 35%,
+        rgba(148, 194, 233, 1) 100%
+      );
     }
 
     &::after {
-      background-color: #0038E3;
-      background-image: linear-gradient(-133deg, #899664 0, #0038E3 100%);
+      background-color: rgb(22, 66, 105);
+      background-image: -webkit-linear-gradient(
+        90deg,
+        rgba(22, 66, 105, 1) 0%,
+        rgba(0, 122, 255, 1) 35%,
+        rgba(148, 194, 233, 1) 100%
+      );
+      background-image: -o-linear-gradient(
+        90deg,
+        rgba(22, 66, 105, 1) 0%,
+        rgba(0, 122, 255, 1) 35%,
+        rgba(148, 194, 233, 1) 100%
+      );
+      background-image: linear-gradient(
+        90deg,
+        rgba(22, 66, 105, 1) 0%,
+        rgba(0, 122, 255, 1) 35%,
+        rgba(148, 194, 233, 1) 100%
+      );
       width: 90px;
       height: 90px;
       top: 20px;
@@ -237,13 +266,23 @@
 
     &.color-pink {
       &::before {
-        background-color: #FE378C;
-        background-image: linear-gradient(-133deg, #FE5B34 0, #FE378C 100%)
+        background: rgb(22, 66, 105);
+        background-image: linear-gradient(
+          90deg,
+          rgba(22, 66, 105, 1) 0%,
+          rgba(0, 122, 255, 1) 35%,
+          rgba(148, 194, 233, 1) 100%
+        );
       }
 
       &::after {
-        background-color: #FE378C;
-        background-image: linear-gradient(-133deg, #FE5B34 0, #FE378C 100%);
+        background: rgb(22, 66, 105);
+        background-image: linear-gradient(
+          90deg,
+          rgba(22, 66, 105, 1) 0%,
+          rgba(0, 122, 255, 1) 35%,
+          rgba(148, 194, 233, 1) 100%
+        );
       }
     }
 
@@ -295,7 +334,6 @@
   }
 }
 
-
 // Video With Images
 
 .video-with-thumb {
@@ -311,20 +349,6 @@
   }
 }
 
-
 .slider-business .video-btn a .video-icon.secondary-color {
-  background: #FF5EE1 !important;
+  background: #ff5ee1 !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

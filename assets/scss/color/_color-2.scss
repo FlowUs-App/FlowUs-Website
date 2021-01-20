@@ -3,7 +3,6 @@
 =============================*/
 @for $i from 1 through length($colorList) {
   .template-color-#{$i} {
-
     // Minicart Color Variation
     & .mini-cart {
       .shopping-cart {
@@ -20,7 +19,6 @@
                         &:hover {
                           color: nth($colorList, $i);
                         }
-
                       }
                     }
                   }
@@ -103,7 +101,6 @@
         }
       }
     }
-
 
     // Read More Button
     a {
@@ -294,17 +291,47 @@
     .video-btn-2 {
       .icon-gradient {
         &::before {
-          background-color: nth($colorList, $i);
-          background-image: -webkit-linear-gradient(223deg, #899664 0, nth($colorList, $i) 100%);
-          background-image: -o-linear-gradient(223deg, #899664 0, nth($colorList, $i) 100%);
-          background-image: linear-gradient(-133deg, #899664 0, nth($colorList, $i) 100%);
+          background-color: rgb(22, 66, 105);
+          background-image: -webkit-linear-gradient(
+            90deg,
+            rgba(22, 66, 105, 1) 0%,
+            rgba(0, 122, 255, 1) 35%,
+            rgba(148, 194, 233, 1) 100%
+          );
+          background-image: -o-linear-gradient(
+            90deg,
+            rgba(22, 66, 105, 1) 0%,
+            rgba(0, 122, 255, 1) 35%,
+            rgba(148, 194, 233, 1) 100%
+          );
+          background-image: linear-gradient(
+            90deg,
+            rgba(22, 66, 105, 1) 0%,
+            rgba(0, 122, 255, 1) 35%,
+            rgba(148, 194, 233, 1) 100%
+          );
         }
 
         &::after {
-          background-color: nth($colorList, $i);
-          background-image: -webkit-linear-gradient(223deg, #899664 0, nth($colorList, $i) 100%);
-          background-image: -o-linear-gradient(223deg, #899664 0, nth($colorList, $i) 100%);
-          background-image: linear-gradient(-133deg, #899664 0, nth($colorList, $i) 100%);
+          background-color: rgb(22, 66, 105);
+          background-image: -webkit-linear-gradient(
+            90deg,
+            rgba(22, 66, 105, 1) 0%,
+            rgba(0, 122, 255, 1) 35%,
+            rgba(148, 194, 233, 1) 100%
+          );
+          background-image: -o-linear-gradient(
+            90deg,
+            rgba(22, 66, 105, 1) 0%,
+            rgba(0, 122, 255, 1) 35%,
+            rgba(148, 194, 233, 1) 100%
+          );
+          background-image: linear-gradient(
+            90deg,
+            rgba(22, 66, 105, 1) 0%,
+            rgba(0, 122, 255, 1) 35%,
+            rgba(148, 194, 233, 1) 100%
+          );
         }
       }
     }
@@ -348,8 +375,6 @@
           background-color: nth($colorList, $i);
         }
       }
-
-
     }
 
     // Product Color
@@ -424,7 +449,6 @@
           &.active {
             a {
               background: nth($colorList, $i);
-
             }
           }
         }
@@ -522,7 +546,6 @@
               color: nth($colorList, $i);
             }
           }
-
         }
       }
     }
@@ -629,7 +652,6 @@
         }
       }
     }
-
   }
 }
 
@@ -637,6 +659,4 @@
   color: #fff;
 }
 
-
 // Minicart Font Family Variation
-
