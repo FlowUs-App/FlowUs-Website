@@ -7,7 +7,7 @@ import HeaderConfig from "../config/HeaderConfig";
 function Header() {
   return (
     <HeaderContainer logoVersion={"light"} transparent={true} sticky={true}>
-      <div className="header-left flex-20">
+      <div className="header">
         <Logo logo={"/logoweis.png"} />
       </div>
 

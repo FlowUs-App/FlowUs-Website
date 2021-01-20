@@ -13,11 +13,9 @@
   }
 }
 
-
 /* ============================
     Header Default Area 
 ================================*/
-
 
 /* Maninmenu Area */
 
@@ -30,7 +28,6 @@
         margin: 0;
 
         li {
-
           &.label-1 {
             display: inline-block;
             padding: 41px 9px 41px 0;
@@ -45,8 +42,8 @@
               font-family: $bodyFont;
               color: $theme-color;
               padding: 41px 15px;
-              -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-              transition: all .3s cubic-bezier(.645, .045, .355, 1);
+              -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+              transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
               span {
                 position: relative;
@@ -61,8 +58,9 @@
                   left: auto;
                   right: 0;
                   z-index: -1;
-                  -webkit-transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
-                  transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+                  -webkit-transition: width 0.6s
+                    cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+                  transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
                   background: currentColor;
                 }
               }
@@ -99,7 +97,7 @@
                   -webkit-transform: translateY(-50%);
                   -ms-transform: translateY(-50%);
                   transform: translateY(-50%);
-                  font-family: 'FontAwesome';
+                  font-family: "FontAwesome";
                   font-weight: 900;
                 }
               }
@@ -113,17 +111,17 @@
 
 .lg-not-transparent {
   // Responsive
-  @media #{$lg-layout}{
+  @media #{$lg-layout} {
     position: fixed !important;
     background-color: $white !important;
     padding-top: 0px !important;
   }
-  @media #{$md-layout}{
+  @media #{$md-layout} {
     position: fixed !important;
     background-color: $white !important;
     padding-top: 0px !important;
   }
-  @media #{$sm-layout}{
+  @media #{$sm-layout} {
     position: fixed !important;
     background-color: $white !important;
     padding-top: 10px !important;
@@ -133,7 +131,6 @@
 header.br_header.header-default.vertical-slide-portfolio {
   background: #fff;
 }
-
 
 .header-default {
   position: relative;
@@ -169,7 +166,6 @@ header.br_header.header-default.vertical-slide-portfolio {
           padding-left: 20px;
           padding-right: 20px;
         }
-
       }
     }
 
@@ -197,7 +193,6 @@ header.br_header.header-default.vertical-slide-portfolio {
           padding-left: 20px;
           padding-right: 20px;
         }
-
       }
     }
 
@@ -224,7 +219,6 @@ header.br_header.header-default.vertical-slide-portfolio {
         padding-left: 20px;
         padding-right: 20px;
       }
-
     }
   }
 
@@ -287,7 +281,7 @@ header.br_header.header-default.vertical-slide-portfolio {
         flex-basis: 50%;
       }
 
-      &.flex-80{
+      &.flex-80 {
         flex-basis: 80%;
       }
 
@@ -310,7 +304,6 @@ header.br_header.header-default.vertical-slide-portfolio {
           }
         }
       }
-
     }
 
     // Mainmenu
@@ -383,7 +376,6 @@ header.br_header.header-default.vertical-slide-portfolio {
       // Not Flex Header
       &.have-not-flex {
         flex-basis: inherit;
-
       }
 
       &.flex-20 {
@@ -396,7 +388,6 @@ header.br_header.header-default.vertical-slide-portfolio {
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
       }
-
     }
   }
 
@@ -482,7 +473,6 @@ header.br_header.header-default.vertical-slide-portfolio {
         }
       }
 
-
       .popup-search-wrap {
         button {
           &.btn-search-click {
@@ -491,12 +481,11 @@ header.br_header.header-default.vertical-slide-portfolio {
           }
         }
       }
-
     }
   }
 
-
-  &.black-logo--version, &.dark-logo--version {
+  &.black-logo--version,
+  &.dark-logo--version {
     .mainmenu-wrapper {
       .page_nav {
         ul {
@@ -583,25 +572,39 @@ header.br_header.header-default.vertical-slide-portfolio {
   flex-shrink: 0;
 }
 
-.header-left--align.header-default .header__wrapper .mainmenu-wrapper.have-not-flex .page_nav ul.mainmenu {
+.header-left--align.header-default
+  .header__wrapper
+  .mainmenu-wrapper.have-not-flex
+  .page_nav
+  ul.mainmenu {
   justify-content: flex-start;
 }
 
-.header-left--align .mainmenu-wrapper .page_nav ul.mainmenu li.label-1.with--drop > a::before {
+.header-left--align
+  .mainmenu-wrapper
+  .page_nav
+  ul.mainmenu
+  li.label-1.with--drop
+  > a::before {
   display: none;
 }
 
-.header-left--align .mainmenu-wrapper .page_nav ul.mainmenu li.label-1.with--drop > a {
+.header-left--align
+  .mainmenu-wrapper
+  .page_nav
+  ul.mainmenu
+  li.label-1.with--drop
+  > a {
   margin-left: 8px;
   padding-right: 8px;
 }
-
 
 /* ============================
     Sticky Header Css 
 ================================*/
 
-.black-logo--version, .dark-logo--version {
+.black-logo--version,
+.dark-logo--version {
   &.is-sticky {
     &.sticky {
       background-color: rgba(255, 255, 255, 0.9);
@@ -626,9 +629,9 @@ header.br_header.header-default.vertical-slide-portfolio {
     left: 0;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1);
-    -webkit-animation: headerSlideDown .95s ease forwards;
-    animation: headerSlideDown .95s ease forwards;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+    -webkit-animation: headerSlideDown 0.95s ease forwards;
+    animation: headerSlideDown 0.95s ease forwards;
   }
 }
 
@@ -646,14 +649,18 @@ header.br_header.header-default.vertical-slide-portfolio {
   width: 150px;
 }
 
-.header-default.header-architecture.sticky .header__wrapper .header-left .logo a img {
+.header-default.header-architecture.sticky
+  .header__wrapper
+  .header-left
+  .logo
+  a
+  img {
   width: auto;
 }
 
 .header-default.header-portfolio-slide.sticky .header__wrapper {
   padding: 16px 0;
 }
-
 
 /* =================================
     Header One Page 
@@ -731,12 +738,8 @@ header.br_header.header-default.vertical-slide-portfolio {
         align-items: center;
         height: 30px;
         cursor: pointer;
-
-
       }
-
     }
-
 
     // Header Right
     .header-right-wrapper {
@@ -777,7 +780,6 @@ header.br_header.header-default.vertical-slide-portfolio {
   }
 }
 
-
 /*==========================
 Hamburger Style Two
 ============================*/
@@ -794,8 +796,8 @@ Hamburger Style Two
 
     i {
       height: 3px;
-      -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-      transition: all .3s cubic-bezier(.645, .045, .355, 1);
+      -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       position: absolute;
       top: 50%;
       left: 0;
@@ -811,8 +813,8 @@ Hamburger Style Two
         height: 100%;
         background: inherit;
         content: "";
-        -webkit-transition: width .3s cubic-bezier(.645, .045, .355, 1);
-        transition: width .3s cubic-bezier(.645, .045, .355, 1);
+        -webkit-transition: width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
         -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
         transform: translate(-50%);

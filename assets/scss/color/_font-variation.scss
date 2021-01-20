@@ -2,7 +2,6 @@
 Font Variation 
 ========================*/
 
-
 @for $i from 1 through length($fontList) {
   .template-font-#{$i} {
     .heading,
@@ -23,7 +22,7 @@ Font Variation
 
     .heading {
       &.font-reenie {
-        font-family: 'Reenie Beanie', cursive;
+        font-family: "Reenie Beanie", cursive;
       }
     }
 
@@ -48,7 +47,6 @@ Font Variation
       }
     }
 
-
     .mega__width--fullscreen {
       .mega__list {
         li {
@@ -68,10 +66,10 @@ Font Variation
           &.mainmenu {
             li {
               &.label-1 {
-                > a {
-                  span {
-                    font-family: nth($fontList, $i);
-                  }
+                span {
+                  color: white;
+                  font-family: nth($fontList, $i);
+                  margin-left: 3rem;
                 }
               }
             }
@@ -94,7 +92,6 @@ Font Variation
         }
       }
     }
-
 
     // Copyright
     .copyright {

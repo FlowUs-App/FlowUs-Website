@@ -7,16 +7,21 @@
   {
     "id": 1,
     "title": "Launch Ticket",
-    "link": "/"
+    "link": "/launchticket"
   },
   {
     "id": 2,
     "title": "Terms of Service",
-    "link": "/"
+    "link": "/tos"
   },
   {
     "id": 3,
     "title": "Contact",
-    "link": "/"
+    "link": "/contact"
+  },
+  {
+    "id": 4,
+    "title": "TestFlight",
+    "link": "/testflight"
   }
 ]
