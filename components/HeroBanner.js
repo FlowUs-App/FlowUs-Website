@@ -16,7 +16,9 @@ function HeroBanner() {
     <div
       className="hero-banner-wrapper"
       style={{
-        backgroundImage: "url(/hero.jpg)",
+        backgroundImage: "url(/hero2.jpg)",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <Container>
