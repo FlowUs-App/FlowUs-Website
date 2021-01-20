@@ -15,7 +15,6 @@
   }
 }
 
-
 .popup-mobile-menu {
   position: fixed;
   top: 0;
@@ -24,8 +23,8 @@
   height: 100%;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-  transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   z-index: 99999;
 
   .overlay {
@@ -34,7 +33,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, .9);
+    background: rgba(0, 0, 0, 0.9);
     cursor: url(../../img/icons/light-close.png) 16 16, pointer;
   }
 
@@ -45,8 +44,8 @@
     max-width: 80%;
     height: 100%;
     text-align: left;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     overflow-y: auto;
     padding-top: 85px;
     -webkit-transform: translateX(-100%);
@@ -109,8 +108,8 @@
             -webkit-transform-origin: 50% 50%;
             -ms-transform-origin: 50% 50%;
             transform-origin: 50% 50%;
-            -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
           }
 
           &::before {
@@ -136,16 +135,12 @@
         }
       }
     }
-
-
   }
 }
-
 
 /* =======================
     Header menu 
 ==========================*/
-
 
 .object-custom-menu {
   padding: 0;
@@ -175,7 +170,7 @@
           right: 0;
           width: 40px;
           height: 40px;
-          background: hsla(0, 0%, 100%, .1);
+          background: hsla(0, 0%, 100%, 0.1);
           color: #fff;
           text-align: center;
           line-height: 40px;
@@ -183,10 +178,10 @@
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
           content: "\f107";
-          font-family: 'FontAwesome';
+          font-family: "FontAwesome";
           font-weight: 900;
-          -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-          transition: all .3s cubic-bezier(.645, .045, .355, 1);
+          -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+          transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
         }
 
         &.active {
@@ -216,7 +211,6 @@
             padding-bottom: 10px;
             display: block;
 
-
             span {
               font-size: 14px;
               color: #999999;
@@ -234,14 +228,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.whiteColor {
+  color: white;
+}

@@ -68,7 +68,7 @@ function PopupMobileMenu() {
           />
         </div>
         <div className="menu-content">
-          <ul className="menulist object-custom-menu">
+          <ul className="whiteColor menulist object-custom-menu">
             {menuData.map((menuItem) => (
               <li
                 key={menuItem.id}
