@@ -1,3 +1,16 @@
+// .gitnignore
+# next.js build output
+.next
+# dotenv environment variables file (build for Zeit Now)
+.env
+.env.build
+# Dependency directories
+node_modules/
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 # dependencies
 /node_modules
 /.pnp
@@ -8,6 +21,7 @@
 
 # next.js
 /.next/
+.next
 /out/
 
 # misc
