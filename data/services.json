@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Design",
+    "content": "Brook embraces a modern look with various enhanced pre-defined page elements.",
+    "thumb": "home-creative-agency-box-image-01.png"
+  },
+  {
+    "id": 2,
+    "title": "Multi-purpose Use",
+    "content": "This is the theme for businesses & companies operating in a wide range of areas.",
+    "thumb": "home-creative-agency-box-image-02.png"
+  },
+  {
+    "id": 3,
+    "title": "Responsive Design",
+    "content": "Brook is highly responsive thanks to built-in WPBakery Page Builder & Slider Revolution.",
+    "thumb": "home-creative-agency-box-image-03.png"
+  }
+]
