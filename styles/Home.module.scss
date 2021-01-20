@@ -1,3 +1,5 @@
+$color-primary: blueviolet;
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -36,7 +38,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: $color-primary;
   text-decoration: none;
 }
 
