@@ -20,7 +20,7 @@ function PopupSearch() {
       />
       <div className="inner">
         <div className="search-header">
-          <Logo logo={"/Logo.png"} />
+          <Logo logo={"/logoweis.png"} />
           <button
             className="search-close"
             onClick={() => {

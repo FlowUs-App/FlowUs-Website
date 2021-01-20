@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import SectionTitle from "./ServiceItem";
+import SectionTitle from "./SectionTitle";
 import SliderSwiper from "./Swiper";
 import projects from "../data/projects.json";
 import CommunityProjectItem from "./CommunityProjectItem";

@@ -59,7 +59,7 @@ function PopupMobileMenu() {
       />
       <div className="inner">
         <div className="mobileheader">
-          <Logo logo={"/Logo.png"} />
+          <Logo logo={"/logoweis.png"} />
           <button
             onClick={() => {
               closeMobileMenu();
