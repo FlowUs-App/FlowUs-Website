@@ -2,26 +2,16 @@
   {
     "id": 1,
     "title": "Shootings",
-    "thumb": "portfolio-1.jpg"
+    "thumb": "shootings.jpg"
   },
   {
     "id": 2,
     "title": "Interviews",
-    "thumb": "portfolio-2.jpg"
+    "thumb": "interview.jpg"
   },
   {
     "id": 3,
     "title": "Cooking",
-    "thumb": "portfolio-3.jpg"
-  },
-  {
-    "id": 4,
-    "title": "Recipe",
-    "thumb": "portfolio-4.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Workouts",
-    "thumb": "portfolio-5.jpg"
+    "thumb": "cooking.jpg"
   }
 ]
