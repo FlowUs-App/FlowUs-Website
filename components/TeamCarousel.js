@@ -43,13 +43,14 @@ function TeamCarousel() {
   };
 
   return (
-    <div className="brook-team-area bg_color--1 mt--180 mt_sm--100">
+    <div className="blackBG brook-team-area bg_color--1 mt--180 mt_sm--100">
       <Container>
         <Row>
           <Col lg={12}>
             <div className="breadcrumb-inner text-center mb--100 mb_sm--60">
-              <h1 className="heading heading-h1 line-height-1-5">
-                The A-team of <span className="theme-color">awesomeness</span>
+              <h1 className="textColorWhite heading heading-h1 line-height-1-5">
+                The A-team of{" "}
+                <span className="lightBlueTextColor">awesomeness</span>
                 <br /> & creative people
               </h1>
             </div>

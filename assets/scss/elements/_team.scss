@@ -2,7 +2,6 @@
     Team Area 
 ========================*/
 
-
 .team-heading {
   .heading-left {
     h3 {
@@ -16,7 +15,8 @@
   }
 
   .heading-right {
-    button, a {
+    button,
+    a {
       padding: 0;
       border: 0;
       background-color: transparent;
@@ -37,9 +37,7 @@
   }
 }
 
-
 .team {
-
   // Team Style 1
   &.team_style--1 {
     margin-top: 40px;
@@ -64,12 +62,12 @@
           bottom: 0;
           border-radius: inherit;
           padding: 30px;
-          opacity: .3;
+          opacity: 0.3;
           background-blend-mode: multiply;
           background-size: cover;
           background-color: $theme-color;
-          -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-          transition: all .3s cubic-bezier(.645, .045, .355, 1);
+          -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+          transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
           &.red-color {
             background-color: $red-color;
@@ -82,8 +80,8 @@
             width: auto;
             visibility: hidden;
             opacity: 0;
-            -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
             &.shape-01 {
               top: 0;
@@ -109,7 +107,6 @@
               transform: translateY(10px);
             }
           }
-
         }
       }
 
@@ -132,17 +129,17 @@
             font-size: 18px;
             padding: 5px 10px;
             color: #fff;
-            -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             position: relative;
 
-            &[class*=hint--] &[class*=hint--] {
+            &[class*="hint--"] &[class*="hint--"] {
               position: relative;
               display: inline-block;
             }
 
-            &[class*=hint--]:after,
-            &[class*=hint--]:before {
+            &[class*="hint--"]:after,
+            &[class*="hint--"]:before {
               position: absolute;
               -webkit-transform: translateZ(0);
               transform: translateZ(0);
@@ -150,13 +147,13 @@
               opacity: 0;
               z-index: 1000000;
               pointer-events: none;
-              -webkit-transition: .3s ease;
-              transition: .3s ease;
+              -webkit-transition: 0.3s ease;
+              transition: 0.3s ease;
               -webkit-transition-delay: 0ms;
               transition-delay: 0ms;
             }
 
-            &[class*=hint--]:before {
+            &[class*="hint--"]:before {
               content: "";
               position: absolute;
               background: transparent;
@@ -164,32 +161,34 @@
               z-index: 1000001;
             }
 
-            &[class*=hint--]:after {
+            &[class*="hint--"]:after {
               color: #fff;
               padding: 8px 10px;
               font-size: 14px;
               line-height: 14px;
               white-space: nowrap;
               border-radius: 5px;
-              box-shadow: 4px 4px 8px rgba(0, 0, 0, .3);
+              box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
               content: attr(aria-label);
-              background-color: #0038E3;
+              background-color: #0038e3;
             }
 
             &.hint--bounce {
-
               &::before,
               &::after {
-                -webkit-transition: opacity .3s ease, visibility .3s ease, -webkit-transform .3s cubic-bezier(.71, 1.7, .77, 1.24);
-                transition: opacity .3s ease, visibility .3s ease, -webkit-transform .3s cubic-bezier(.71, 1.7, .77, 1.24);
-                transition: opacity .3s ease, visibility .3s ease, transform .3s cubic-bezier(.71, 1.7, .77, 1.24);
-                transition: opacity .3s ease, visibility .3s ease, transform .3s cubic-bezier(.71, 1.7, .77, 1.24), -webkit-transform .3s cubic-bezier(.71, 1.7, .77, 1.24);
+                -webkit-transition: opacity 0.3s ease, visibility 0.3s ease,
+                  -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+                transition: opacity 0.3s ease, visibility 0.3s ease,
+                  -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+                transition: opacity 0.3s ease, visibility 0.3s ease,
+                  transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+                transition: opacity 0.3s ease, visibility 0.3s ease,
+                  transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24),
+                  -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
               }
-
             }
 
             &.hint--top {
-
               &::before,
               &::after {
                 bottom: 100%;
@@ -198,7 +197,7 @@
 
               &::before {
                 margin-bottom: -13px;
-                border-top-color: #0038E3;
+                border-top-color: #0038e3;
                 left: calc(50% - 7px);
               }
 
@@ -211,30 +210,29 @@
               }
             }
 
-            &[class*=hint--]:hover:after,
-            &[class*=hint--]:hover:before {
+            &[class*="hint--"]:hover:after,
+            &[class*="hint--"]:hover:before {
               visibility: visible;
               opacity: 1;
-              -webkit-transition-delay: .1s;
-              transition-delay: .1s;
+              -webkit-transition-delay: 0.1s;
+              transition-delay: 0.1s;
             }
 
             &:hover {
-              &[class*=hint--]:after {
+              &[class*="hint--"]:after {
                 visibility: visible;
                 opacity: 1;
-                -webkit-transition-delay: .1s;
-                transition-delay: .1s;
+                -webkit-transition-delay: 0.1s;
+                transition-delay: 0.1s;
               }
 
               &.hint--top {
-
                 &::before,
                 &::after {
                   visibility: visible;
                   opacity: 1;
-                  -webkit-transition-delay: .1s;
-                  transition-delay: .1s;
+                  -webkit-transition-delay: 0.1s;
+                  transition-delay: 0.1s;
                 }
 
                 &::before {
@@ -282,8 +280,16 @@
 
           .overlay {
             opacity: 1;
-            background: -webkit-linear-gradient(bottom, #000, transparent 50%) !important;
-            background: linear-gradient(0deg, #000 0, transparent 50%) !important;
+            background: -webkit-linear-gradient(
+              bottom,
+              #000,
+              transparent 50%
+            ) !important;
+            background: linear-gradient(
+              0deg,
+              #000 0,
+              transparent 50%
+            ) !important;
             background-blend-mode: normal;
           }
 
@@ -295,7 +301,6 @@
               visibility: visible;
               opacity: 1;
             }
-
           }
         }
 
@@ -311,13 +316,14 @@
   }
 
   // Team Style 2
+
   &.team__style--2 {
     .thumb {
       position: relative;
       border-radius: 50%;
       border: 20px solid transparent;
-      -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-      transition: all .3s cubic-bezier(.645, .045, .355, 1);
+      -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
       img {
         border-radius: inherit;
@@ -325,7 +331,7 @@
       }
 
       .overlay {
-        background-color: #0038E3;
+        background-color: #0038e3;
         position: absolute;
         top: 0;
         left: 0;
@@ -335,8 +341,8 @@
         padding: 30px;
         opacity: 0;
         visibility: hidden;
-        -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-        transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
         &.red-color {
           background-color: $red-color;
@@ -367,10 +373,10 @@
             height: 40px;
             line-height: 40px;
             border-radius: 50%;
-            background: hsla(0, 0%, 100%, .2);
+            background: hsla(0, 0%, 100%, 0.2);
             margin: 7px;
-            -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
             &:hover {
               background: #fff;
@@ -398,10 +404,10 @@
         bottom: 58px;
         left: 0;
         width: 100%;
-        color: hsla(0, 0%, 100%, .5);
+        color: hsla(0, 0%, 100%, 0.5);
         text-align: center;
-        -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-        transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
         @media #{$large-mobile} {
           bottom: 20px;
         }
@@ -424,7 +430,7 @@
           }
 
           span {
-            color: hsla(0, 0%, 100%, .5);
+            color: hsla(0, 0%, 100%, 0.5);
             text-align: center;
             font-weight: 500;
             line-height: 1.58;
@@ -439,7 +445,7 @@
         border-color: rgba(0, 56, 227, 0.1);
 
         .overlay {
-          opacity: .85;
+          opacity: 0.85;
           visibility: visible;
         }
 
@@ -451,7 +457,6 @@
         .team-info {
           opacity: 1;
           visibility: visible;
-
         }
       }
     }
@@ -479,9 +484,9 @@
         visibility: hidden;
         background-blend-mode: multiply;
         background-size: cover;
-        background-color: #0038E3;
-        -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-        transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        background-color: #0038e3;
+        -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
         &.red-color {
           background-color: $red-color;
@@ -507,8 +512,8 @@
           margin: 0;
 
           a {
-            -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             display: inline-block;
             font-size: 18px;
             color: #222;
@@ -524,7 +529,6 @@
           }
         }
       }
-
     }
 
     .team-info {
@@ -562,9 +566,7 @@
           -webkit-transform: translateY(0);
           -ms-transform: translateY(0);
           transform: translateY(0);
-
         }
-
       }
     }
   }
@@ -578,7 +580,6 @@
         margin-bottom: 23px;
 
         .thumb {
-
         }
 
         .social-network {
@@ -588,8 +589,8 @@
           transform: translateY(10px);
           opacity: 0;
           visibility: hidden;
-          -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-          transition: all .3s cubic-bezier(.645, .045, .355, 1);
+          -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+          transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
           .social-list {
             padding: 11px 10px;
@@ -597,15 +598,15 @@
             border-radius: 5px;
             display: inline-block;
             background: #fff;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, .06);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.06);
 
             a {
               display: inline-block;
               padding: 5px 10px;
               line-height: 1.15;
               font-size: 16px;
-              -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-              transition: all .3s cubic-bezier(.645, .045, .355, 1);
+              -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+              transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
               color: #999999;
 
               &:hover {
@@ -624,7 +625,6 @@
             margin-bottom: 2px;
             color: #222222;
             font-family: $bodyFont;
-
           }
         }
 
@@ -649,10 +649,7 @@
       }
     }
   }
-
-
 }
-
 
 .team-bottom-text-image {
   background-image: url(../../img/icons/team.png);
@@ -666,21 +663,3 @@
     background-size: 90%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

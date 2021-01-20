@@ -2,13 +2,11 @@
 Typography Area 
 ===============================*/
 
-
 .brook-heading {
   .spacing {
     height: 40px;
   }
 }
-
 
 .heading {
   color: $heading-color;
@@ -45,7 +43,7 @@ Typography Area
   }
 
   &.font-reenie {
-    font-family: 'Reenie Beanie', cursive;
+    font-family: "Reenie Beanie", cursive;
   }
 
   &.font-bold {
@@ -135,7 +133,6 @@ Typography Area
   &.line-height-1-39 {
     line-height: 1.39;
   }
-
 }
 
 .heading-h1 {
@@ -188,7 +185,6 @@ Typography Area
       font-size: 30px;
       line-height: 48px;
     }
-
   }
 
   &.font-80 {
@@ -207,7 +203,6 @@ Typography Area
         display: none;
       }
     }
-
 
     @media #{$sm-layout} {
       font-size: 45px;
@@ -269,8 +264,8 @@ Typography Area
   }
 }
 
-
-h2, .heading-h2 {
+h2,
+.heading-h2 {
   font-size: 48px;
 
   @media #{$lg-layout} {
@@ -320,8 +315,8 @@ h2, .heading-h2 {
   }
 }
 
-
-h3, .heading-h3 {
+h3,
+.heading-h3 {
   font-size: 36px;
   @media #{$md-layout} {
     font-size: 32px;
@@ -338,7 +333,6 @@ h3, .heading-h3 {
     @media #{$sm-layout} {
       font-size: 30px;
     }
-
   }
 
   &.font-32 {
@@ -355,7 +349,6 @@ h3, .heading-h3 {
     }
   }
 }
-
 
 h4 {
   &.heading-h4 {
@@ -407,7 +400,6 @@ h6 {
     height: 40px;
   }
 }
-
 
 p {
   &.bk_pra {
@@ -479,7 +471,6 @@ p {
       font-family: $heading-font;
     }
 
-
     &.font-bold {
       font-weight: 700;
     }
@@ -501,7 +492,6 @@ p {
     }
   }
 }
-
 
 .dropcaps {
   .spacing {
@@ -530,7 +520,6 @@ p {
   }
 }
 
-
 // Start Text Box
 
 .bk-text-box {
@@ -544,7 +533,6 @@ p {
 
   &.box-solid-border {
     border: 1px solid #ddd;
-
   }
 
   &.text-box--2 {
@@ -587,7 +575,6 @@ p {
   }
 }
 
-
 .brook-quote {
   position: relative;
   margin: 37px 0 44px !important;
@@ -605,7 +592,7 @@ p {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     font-weight: 900;
     color: $theme-color;
   }
@@ -619,4 +606,3 @@ p {
     font-style: normal;
   }
 }
-

@@ -6,16 +6,26 @@ function TeamMemberItem({ data }) {
       <div className="thumb">
         <img src={"./team-2/" + data.thumb} alt={data.name} />
         <div className="overlay" />
-        <ul className="social-icon icon-solid-rounded icon-size-medium text-center">
+        <ul className="socialBarLeft social-icon icon-solid-rounded icon-size-medium text-center">
           {data.socials.map((social) => (
             <li key={social.id} className={social.media}>
-              <a
-                href={`https://${social.media}.com/${social.username}`}
-                className="link"
-                aria-label={social.media}
-              >
-                <i className={`fa fa-${social.media}`} />
-              </a>
+              {social.media === "linkedin" ? (
+                <a
+                  href={`https://${social.media}.com/in/${social.username}`}
+                  className="link"
+                  aria-label={social.media}
+                >
+                  <i className={`fa fa-${social.media}`} />
+                </a>
+              ) : (
+                <a
+                  href={`https://${social.media}.com/${social.username}`}
+                  className="link"
+                  aria-label={social.media}
+                >
+                  <i className={`fa fa-${social.media}`} />
+                </a>
+              )}
             </li>
           ))}
         </ul>

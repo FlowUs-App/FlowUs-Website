@@ -33,7 +33,6 @@ breadcrumb Area
             font-size: 30px;
           }
         }
-
       }
 
       .breadcrumb-inside {
@@ -54,8 +53,9 @@ breadcrumb Area
                 position: relative;
                 overflow: hidden;
                 z-index: 1;
-                -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-                transition: all .3s cubic-bezier(.645, .045, .355, 1);
+                -webkit-transition: all 0.3s
+                  cubic-bezier(0.645, 0.045, 0.355, 1);
+                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                 font-family: $bodyFont;
 
                 &::after {
@@ -67,8 +67,9 @@ breadcrumb Area
                   left: auto;
                   right: 0;
                   z-index: -1;
-                  -webkit-transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
-                  transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+                  -webkit-transition: width 0.6s
+                    cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+                  transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
                   background: currentColor;
                 }
 
@@ -94,7 +95,7 @@ breadcrumb Area
                   -webkit-transform: translateY(-50%);
                   -ms-transform: translateY(-50%);
                   transform: translateY(-50%);
-                  font-family: 'FontAwesome';
+                  font-family: "FontAwesome";
                   font-weight: 900;
                 }
               }
@@ -119,7 +120,7 @@ breadcrumb Area
               color: #ffffff;
 
               &::before {
-                color: #ffffff
+                color: #ffffff;
               }
 
               a {
@@ -135,32 +136,4 @@ breadcrumb Area
       }
     }
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -10,6 +10,7 @@ import CommunityProjects from "../components/CommunityProjects";
 import Numbers from "../components/Numbers";
 import Reviews from "../components/Reviews";
 import ContactUs from "../components/ContactUs";
+import Spacer from "../components/Spacer";
 
 function LandingPage() {
   return (
@@ -25,6 +26,7 @@ function LandingPage() {
           <Header />
           <HeroBanner />
           <TeamCarousel />
+          <Spacer />
           <Service />
           <CommunityProjects />
           <Numbers />

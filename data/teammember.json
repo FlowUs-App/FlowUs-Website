@@ -1,139 +1,88 @@
 [
   {
     "id": 1,
-    "name": "Caroline Roses",
-    "designation": "Designer",
-    "thumb": "team-1.jpg",
+    "name": "Jan Swoboda",
+    "designation": "CEO",
+    "thumb": "jan.png",
     "socials": [
       {
         "id": 1,
-        "media": "facebook",
-        "username": "rajuahammadfans"
+        "media": "instagram",
+        "username": "janovic.s"
       },
       {
         "id": 2,
         "media": "github",
-        "username": "rajuahammadfans"
+        "username": "AXVAL123"
       },
       {
         "id": 3,
         "media": "twitter",
-        "username": "rajuahammadfans"
+        "username": "thereolod"
       }
     ]
   },
   {
     "id": 2,
-    "name": "Blake Hamilton",
-    "designation": "Engineer",
-    "thumb": "team-2.jpg",
+    "name": "Lucas Goldner",
+    "designation": "IT-Leader",
+    "thumb": "lucas.jpg",
     "socials": [
       {
         "id": 1,
-        "media": "facebook",
-        "username": "rajuahammadfans"
+        "media": "linkedin",
+        "username": "lucas-goldner"
       },
       {
         "id": 2,
         "media": "github",
-        "username": "rajuahammadfans"
+        "username": "lucas-goldner"
       },
       {
         "id": 3,
         "media": "twitter",
-        "username": "rajuahammadfans"
+        "username": "LucasGoldner"
       }
     ]
   },
   {
     "id": 3,
-    "name": "Kasahara May",
-    "designation": "Founder",
+    "name": "Philipp Storz",
+    "designation": "Programer/Designer",
     "thumb": "team-3.jpg",
     "socials": [
       {
         "id": 1,
-        "media": "facebook",
-        "username": "rajuahammadfans"
+        "media": "linkedin",
+        "username": "philipp-storz-a670a7201"
       },
       {
         "id": 2,
         "media": "github",
-        "username": "rajuahammadfans"
+        "username": "Stoorrzi"
       },
       {
         "id": 3,
-        "media": "twitter",
-        "username": "rajuahammadfans"
+        "media": "instagram",
+        "username": "stoorrzi"
       }
     ]
   },
   {
     "id": 4,
-    "name": "Peter Parker",
-    "designation": "Marketing",
+    "name": "Lea Mahl",
+    "designation": "Designer",
     "thumb": "team-4.jpg",
     "socials": [
       {
         "id": 1,
-        "media": "facebook",
-        "username": "rajuahammadfans"
+        "media": "linkedin",
+        "username": "lea-mahl"
       },
       {
         "id": 2,
-        "media": "github",
-        "username": "rajuahammadfans"
-      },
-      {
-        "id": 3,
-        "media": "twitter",
-        "username": "rajuahammadfans"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Kasahara May",
-    "designation": "Founder",
-    "thumb": "team-5.jpg",
-    "socials": [
-      {
-        "id": 1,
-        "media": "facebook",
-        "username": "rajuahammadfans"
-      },
-      {
-        "id": 2,
-        "media": "github",
-        "username": "rajuahammadfans"
-      },
-      {
-        "id": 3,
-        "media": "twitter",
-        "username": "rajuahammadfans"
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Caroline Roses",
-    "designation": "Designer",
-    "thumb": "team-6.jpg",
-    "socials": [
-      {
-        "id": 1,
-        "media": "facebook",
-        "username": "rajuahammadfans"
-      },
-      {
-        "id": 2,
-        "media": "github",
-        "username": "rajuahammadfans"
-      },
-      {
-        "id": 3,
-        "media": "twitter",
-        "username": "rajuahammadfans"
+        "media": "instagram",
+        "username": "lea.shania"
       }
     ]
   }
