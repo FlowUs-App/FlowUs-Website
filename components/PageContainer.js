@@ -5,7 +5,7 @@ function PageContainer({ children, className, revealFooter }) {
   useEffect(() => {
     if (revealFooter) {
       const pageFooter = document.querySelector("footer");
-      const footerHeight = pageFooter.offsetHeight;
+      const footerHeight = 0; //pageFooter.offsetHeight;
       setFooterHeight(footerHeight);
     }
   }, [revealFooter]);
