@@ -1,15 +1,14 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-function ServiceItem({ data }) {
+function ServiceItem({ thumb, content, title }) {
   return (
     <div className="service service--2">
       <div className="thumb">
-        <img src={"./service/" + data.thumb} alt={data.title} />
+        <img src={"/service/" + thumb} alt={title} />
       </div>
       <div className="content">
-        <h4>{data.title}</h4>
-        <p>{data.content}</p>
+        <h4>{title}</h4>
+        <p>{content}</p>
       </div>
     </div>
   );

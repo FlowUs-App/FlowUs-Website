@@ -1,8 +1,14 @@
 import "../styles/globals.scss";
 import "../index.scss";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head></Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;

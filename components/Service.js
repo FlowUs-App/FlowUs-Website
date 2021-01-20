@@ -8,9 +8,9 @@ function Service() {
     <div className="bk-service-area section-pb-120">
       <Container>
         <Row>
-          {services.map((service) => (
-            <Col key={service.id} xs={12} md={4} className={"wow move-up"}>
-              <ServiceItem data={service} />
+          {services.map(({ thumb, title, id, content }) => (
+            <Col key={id} xs={12} md={4} className={"wow move-up"}>
+              <ServiceItem thumb={thumb} title={title} content={content} />
             </Col>
           ))}
         </Row>
