@@ -1,3 +1,4 @@
+import { urlObjectKeys } from "next/dist/next-server/lib/utils";
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import PopupVideo from "../components/PopUpVideo";
@@ -15,7 +16,7 @@ function HeroBanner() {
     <div
       className="hero-banner-wrapper"
       style={{
-        backgroundImage: "url('/slider-creative-agency-slide-01-bg.png')",
+        backgroundImage: "url(/slider-bg.jpg)",
       }}
     >
       <Container>
@@ -30,10 +31,7 @@ function HeroBanner() {
               <h2>
                 Flow<span>Us</span>
               </h2>
-              <img
-                src={"/slider-creative-agency-slide-01-image-01.png"}
-                alt="separator"
-              />
+              <img src={"/slider.png"} alt="separator" />
               <p>
                 Introducing the Fitness Social Media App for you and your
                 friends.

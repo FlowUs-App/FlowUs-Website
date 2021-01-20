@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 function HeaderConfig() {
+  const [body, setBody] = useState();
+  const [html, setHTML] = useState();
   useEffect(() => {
-    const body = document.querySelector("body");
-    const html = document.querySelector("html");
+    setBody(document.querySelector("body"));
+    setHTML(document.querySelector("html"));
   }, []);
 
   const searchHandler = () => {

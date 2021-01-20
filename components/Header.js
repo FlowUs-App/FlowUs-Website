@@ -8,7 +8,7 @@ function Header() {
   return (
     <HeaderContainer logoVersion={"light"} transparent={true} sticky={true}>
       <div className="header-left flex-20">
-        <Logo logo={"/Logo.png"} />
+        <Logo logo={"/logoweis.png"} />
       </div>
 
       <div className="header-flex-right flex-80">

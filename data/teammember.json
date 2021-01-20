@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "name": "Caroline Roses",
+    "designation": "Designer",
+    "thumb": "team-1.jpg",
+    "socials": [
+      {
+        "id": 1,
+        "media": "facebook",
+        "username": "rajuahammadfans"
+      },
+      {
+        "id": 2,
+        "media": "github",
+        "username": "rajuahammadfans"
+      },
+      {
+        "id": 3,
+        "media": "twitter",
+        "username": "rajuahammadfans"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Blake Hamilton",
+    "designation": "Engineer",
+    "thumb": "team-2.jpg",
+    "socials": [
+      {
+        "id": 1,
+        "media": "facebook",
+        "username": "rajuahammadfans"
+      },
+      {
+        "id": 2,
+        "media": "github",
+        "username": "rajuahammadfans"
+      },
+      {
+        "id": 3,
+        "media": "twitter",
+        "username": "rajuahammadfans"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Kasahara May",
+    "designation": "Founder",
+    "thumb": "team-3.jpg",
+    "socials": [
+      {
+        "id": 1,
+        "media": "facebook",
+        "username": "rajuahammadfans"
+      },
+      {
+        "id": 2,
+        "media": "github",
+        "username": "rajuahammadfans"
+      },
+      {
+        "id": 3,
+        "media": "twitter",
+        "username": "rajuahammadfans"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Peter Parker",
+    "designation": "Marketing",
+    "thumb": "team-4.jpg",
+    "socials": [
+      {
+        "id": 1,
+        "media": "facebook",
+        "username": "rajuahammadfans"
+      },
+      {
+        "id": 2,
+        "media": "github",
+        "username": "rajuahammadfans"
+      },
+      {
+        "id": 3,
+        "media": "twitter",
+        "username": "rajuahammadfans"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Kasahara May",
+    "designation": "Founder",
+    "thumb": "team-5.jpg",
+    "socials": [
+      {
+        "id": 1,
+        "media": "facebook",
+        "username": "rajuahammadfans"
+      },
+      {
+        "id": 2,
+        "media": "github",
+        "username": "rajuahammadfans"
+      },
+      {
+        "id": 3,
+        "media": "twitter",
+        "username": "rajuahammadfans"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Caroline Roses",
+    "designation": "Designer",
+    "thumb": "team-6.jpg",
+    "socials": [
+      {
+        "id": 1,
+        "media": "facebook",
+        "username": "rajuahammadfans"
+      },
+      {
+        "id": 2,
+        "media": "github",
+        "username": "rajuahammadfans"
+      },
+      {
+        "id": 3,
+        "media": "twitter",
+        "username": "rajuahammadfans"
+      }
+    ]
+  }
+]

@@ -4,6 +4,7 @@ import DefaultLayout from "../layout/DefaultLayout";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HeroBanner from "../components/HeroBanner";
+import TeamCarousel from "../components/TeamCarousel";
 
 function LandingPage() {
   return (
@@ -18,6 +19,7 @@ function LandingPage() {
         >
           <Header />
           <HeroBanner />
+          <TeamCarousel />
         </DefaultLayout>
         <Footer />
       </Fragment>
