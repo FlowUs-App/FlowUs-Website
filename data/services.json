@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "title": "Modern Design",
-    "content": "Brook embraces a modern look with various enhanced pre-defined page elements.",
-    "thumb": "home-creative-agency-box-image-01.png"
+    "title": "Social",
+    "content": "FlowUs keeps you in touch with your best friends and connects you with new people through sport.",
+    "thumb": "social.svg"
   },
   {
     "id": 2,
-    "title": "Multi-purpose Use",
-    "content": "This is the theme for businesses & companies operating in a wide range of areas.",
-    "thumb": "home-creative-agency-box-image-02.png"
+    "title": "Tools",
+    "content": "Classic and innovative tools help you reach your best form and push the boundaries of what is possible.",
+    "thumb": "settings.svg"
   },
   {
     "id": 3,
-    "title": "Responsive Design",
-    "content": "Brook is highly responsive thanks to built-in WPBakery Page Builder & Slider Revolution.",
-    "thumb": "home-creative-agency-box-image-03.png"
+    "title": "Free",
+    "content": "The App is and will remain free forever. You will never have to pay a single penny.",
+    "thumb": "free.svg"
   }
 ]
