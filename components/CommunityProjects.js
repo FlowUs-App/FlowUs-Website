@@ -36,7 +36,7 @@ function CommunityProjects() {
         <Row>
           <Col lg={12}>
             <SectionTitle
-              title={"Featured <span class='theme-creative'>Projects</span>"}
+              title={"Featured <span class='gradientFlow'>Projects</span>"}
               btnText={"View all projects"}
               btnLink={"/"}
             />

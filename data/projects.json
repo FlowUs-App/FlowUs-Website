@@ -1,27 +1,27 @@
 [
   {
     "id": 1,
-    "title": "A Golden Age of Design",
+    "title": "Shootings",
     "thumb": "portfolio-1.jpg"
   },
   {
     "id": 2,
-    "title": "New Age Design",
+    "title": "Interviews",
     "thumb": "portfolio-2.jpg"
   },
   {
     "id": 3,
-    "title": "Website Success Prospects",
+    "title": "Cooking",
     "thumb": "portfolio-3.jpg"
   },
   {
     "id": 4,
-    "title": "Web Comic Landscape",
+    "title": "Recipe",
     "thumb": "portfolio-4.jpg"
   },
   {
     "id": 5,
-    "title": "A Golden Age of Design",
+    "title": "Workouts",
     "thumb": "portfolio-5.jpg"
   }
 ]

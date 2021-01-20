@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Jan Swoboda",
-    "designation": "CEO",
+    "designation": "Execution-Leader",
     "thumb": "jan.png",
     "socials": [
       {
@@ -49,7 +49,7 @@
     "id": 3,
     "name": "Philipp Storz",
     "designation": "Programer/Designer",
-    "thumb": "team-3.jpg",
+    "thumb": "philipp.jpg",
     "socials": [
       {
         "id": 1,
@@ -72,7 +72,7 @@
     "id": 4,
     "name": "Lea Mahl",
     "designation": "Designer",
-    "thumb": "team-4.jpg",
+    "thumb": "lea.jpeg",
     "socials": [
       {
         "id": 1,
