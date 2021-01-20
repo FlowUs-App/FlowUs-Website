@@ -7,6 +7,9 @@ import HeroBanner from "../components/HeroBanner";
 import TeamCarousel from "../components/TeamCarousel";
 import Service from "../components/Service";
 import CommunityProjects from "../components/CommunityProjects";
+import Numbers from "../components/Numbers";
+import Reviews from "../components/Reviews";
+import ContactUs from "../components/ContactUs";
 
 function LandingPage() {
   return (
@@ -24,6 +27,9 @@ function LandingPage() {
           <TeamCarousel />
           <Service />
           <CommunityProjects />
+          <Numbers />
+          <Reviews />
+          <ContactUs />
         </DefaultLayout>
         <Footer />
       </Fragment>

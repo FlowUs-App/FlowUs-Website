@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "quote": "This is just the most powerful theme I’ve ever met. Love to talk with their staff about how to explore all the capabilities of the @Brook theme.",
+    "client": {
+      "photo": "client-1.jpg",
+      "name": "Rex Watson",
+      "designation": "Marketing"
+    },
+    "title": "Best product ever !",
+    "ratings": 5
+  },
+  {
+    "id": 2,
+    "quote": "This is just the most powerful theme I’ve ever met. Love to talk with their staff about how to explore all the capabilities of the @Brook theme.",
+    "client": {
+      "photo": "client-2.jpg",
+      "name": "Alex Tuntuni",
+      "designation": "Designer"
+    },
+    "title": "Best product ever !",
+    "ratings": 2
+  },
+  {
+    "id": 3,
+    "quote": "This is just the most powerful theme I’ve ever met. Love to talk with their staff about how to explore all the capabilities of the @Brook theme.",
+    "client": {
+      "photo": "client-3.jpg",
+      "name": "John Doe",
+      "designation": "Developer"
+    },
+    "title": "Best product ever !",
+    "ratings": 4
+  },
+  {
+    "id": 4,
+    "quote": "This is just the most powerful theme I’ve ever met. Love to talk with their staff about how to explore all the capabilities of the @Brook theme.",
+    "client": {
+      "photo": "client-4.jpg",
+      "name": "Dr. Sokina",
+      "designation": "UI/UX"
+    },
+    "title": "Best product ever !",
+    "ratings": 5
+  },
+  {
+    "id": 5,
+    "quote": "This is just the most powerful theme I’ve ever met. Love to talk with their staff about how to explore all the capabilities of the @Brook theme.",
+    "client": {
+      "photo": "client-5.jpg",
+      "name": "Mis Jarina",
+      "designation": "HR & Admin"
+    },
+    "title": "Best product ever !",
+    "ratings": 5
+  }
+]
