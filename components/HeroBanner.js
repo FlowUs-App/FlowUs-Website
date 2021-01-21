@@ -14,6 +14,7 @@ function HeroBanner() {
 
   return (
     <div
+      id=""
       className="hero-banner-wrapper"
       style={{
         backgroundImage: "url(/hero2.jpg)",

@@ -8,7 +8,9 @@ function ReviewItem({ data }) {
 
         <div className="testimonial-info">
           <div className="client-info">
-            <h6>{data.client.name}</h6>
+            <a href={data.link} target="_blank" rel="noopener noreferrer">
+              <h6 className="hoverLink">{data.client.name}</h6>
+            </a>
             <span>- {data.client.designation}</span>
           </div>
         </div>

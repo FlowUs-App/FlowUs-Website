@@ -316,9 +316,9 @@
   /* Create the gradient. */
   background-image: linear-gradient(
     90deg,
-    rgba(22, 66, 105, 1) 12%,
-    rgba(0, 122, 255, 1) 35%,
-    rgba(148, 194, 233, 1) 100%
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
   );
 
   /* Set the background size and repeat properties. */
@@ -333,44 +333,44 @@
   -moz-text-fill-color: transparent;
 }
 
-#contactGradient {
+#contact {
   overflow: hidden;
   position: relative;
   background: -webkit-gradient(
     90deg,
-    rgba(22, 66, 105, 1) 12%,
-    rgba(0, 122, 255, 1) 35%,
-    rgba(148, 194, 233, 1) 100%
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
   );
   background: -moz-linear-gradient(
     90deg,
-    rgba(22, 66, 105, 1) 12%,
-    rgba(0, 122, 255, 1) 35%,
-    rgba(148, 194, 233, 1) 100%
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
   );
   background: -webkit-linear-gradient(
     90deg,
-    rgba(22, 66, 105, 1) 12%,
-    rgba(0, 122, 255, 1) 35%,
-    rgba(148, 194, 233, 1) 100%
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
   );
   background: -o-linear-gradient(
     90deg,
-    rgba(22, 66, 105, 1) 12%,
-    rgba(0, 122, 255, 1) 35%,
-    rgba(148, 194, 233, 1) 100%
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
   );
   background: -ms-linear-gradient(
     90deg,
-    rgba(22, 66, 105, 1) 12%,
-    rgba(0, 122, 255, 1) 35%,
-    rgba(148, 194, 233, 1) 100%
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
   );
   background: linear-gradient(
     90deg,
-    rgba(22, 66, 105, 1) 12%,
-    rgba(0, 122, 255, 1) 35%,
-    rgba(148, 194, 233, 1) 100%
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
   );
 }
 
@@ -378,4 +378,8 @@
   padding: 10px;
   background-color: white;
   border-radius: 10px;
+}
+
+.hoverLink:hover {
+  text-decoration: underline;
 }

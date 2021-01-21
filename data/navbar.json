@@ -2,7 +2,7 @@
   {
     "id": 0,
     "title": "Home",
-    "link": "/"
+    "link": "#"
   },
   {
     "id": 1,
@@ -17,7 +17,7 @@
   {
     "id": 3,
     "title": "Contact",
-    "link": "/contact"
+    "link": "#contact"
   },
   {
     "id": 4,
