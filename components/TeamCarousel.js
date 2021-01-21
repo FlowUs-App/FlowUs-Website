@@ -49,9 +49,8 @@ function TeamCarousel() {
           <Col lg={12}>
             <div className="breadcrumb-inner text-center mb--100 mb_sm--60">
               <h1 className="textColorWhite heading heading-h1 line-height-1-5">
-                The A-team of{" "}
-                <span className="lightBlueTextColor">awesomeness</span>
-                <br /> & creative people
+                Our <span className="lightBlueTextColor">awesome </span>
+                team
               </h1>
             </div>
 

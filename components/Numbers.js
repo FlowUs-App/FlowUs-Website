@@ -38,10 +38,6 @@ function Numbers() {
                       FlowUs
                     </span>
                   </h2>
-                  <p>
-                    Nothing is more important than having a <br /> desire deep
-                    down to achieve goals.
-                  </p>
                 </div>
               </div>
             </div>
@@ -63,7 +59,7 @@ function Numbers() {
 
               <CounterItem
                 count={19.3}
-                title={"Average Founder"}
+                title={"Average Founder Age"}
                 iconClass={"age.svg"}
               />
             </div>
