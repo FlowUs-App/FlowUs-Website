@@ -11,8 +11,8 @@ testimonial Area
 .testimonial_style--1 {
   background: #fff;
   padding: 44px 40px;
-  -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-  transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
   @media #{$lg-layout} {
     padding: 44px 30px;
@@ -92,7 +92,7 @@ testimonial Area
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
     color: #fff;
     background: $theme-color;
 
@@ -147,7 +147,6 @@ testimonial Area
     @media #{$sm-layout} {
       padding: 45px 30px 50px;
     }
-
   }
 
   &.bg-dark {
@@ -186,7 +185,6 @@ testimonial Area
       }
     }
   }
-
 
   // Theme Color 2
   &.theme-color-2 {
@@ -248,16 +246,13 @@ testimonial Area
       }
     }
   }
-
-
 }
-
 
 .testimonial-color-variation {
   .slick-center {
     .testimonial_style--1 {
       &.bg-dark {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .07);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
         color: #fff;
         background: $theme-color !important;
 
@@ -305,13 +300,12 @@ testimonial Area
   }
 }
 
-
 // Testimonail Style 02
 .testimonial_style--2 {
   background: #fff;
   padding: 36px 30px 32px;
-  -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-  transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
   .content {
     h4 {
@@ -410,9 +404,8 @@ testimonial Area
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, .07);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
   }
-
 }
 
 /* testimonial Deffernt Css */
@@ -420,7 +413,6 @@ testimonial Area
 .testimonial-space-right .slick-list {
   padding-right: 140px !important;
 }
-
 
 .testimonial-fixed-width {
   width: 456px;
@@ -443,12 +435,12 @@ testimonial Area
 // testimonial Nav
 .testimonial-nav-style {
   .client-thumb {
-    -webkit-transform: scale(.6667);
-    -ms-transform: scale(.6667);
-    transform: scale(.6667);
+    -webkit-transform: scale(0.6667);
+    -ms-transform: scale(0.6667);
+    transform: scale(0.6667);
     background: none;
-    -webkit-transition: all .6s ease 0s;
-    transition: all .6s ease 0s;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
 
     img {
       border-radius: 50%;
@@ -464,9 +456,9 @@ testimonial Area
     }
 
     &:hover {
-      -webkit-transform: scale(.8);
-      -ms-transform: scale(.8);
-      transform: scale(.8);
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      transform: scale(0.8);
     }
   }
 
@@ -479,8 +471,18 @@ testimonial Area
       width: 132px !important;
       height: 132px;
       border-radius: 50%;
-      background-image: -webkit-linear-gradient(right, #fe5b34, #fe378c);
-      background-image: linear-gradient(270deg, #fe5b34 0, #fe378c);
+      background-image: -webkit-linear-gradient(
+        90deg,
+        rgba(22, 66, 105, 1) 12%,
+        rgba(0, 122, 255, 1) 35%,
+        rgba(148, 194, 233, 1) 100%
+      );
+      background-image: linear-gradient(
+        90deg,
+        rgba(22, 66, 105, 1) 12%,
+        rgba(0, 122, 255, 1) 35%,
+        rgba(148, 194, 233, 1) 100%
+      );
 
       @media #{$sm-layout} {
         margin: auto;
@@ -495,7 +497,6 @@ testimonial Area
       }
     }
   }
-
 }
 
 .testimonial-nav-content {
@@ -518,7 +519,6 @@ testimonial Area
           font-size: 26px;
           line-height: 1.5;
         }
-
       }
 
       .rating {
@@ -559,7 +559,6 @@ testimonial Area
     }
   }
 
-
   &.testimonial-content--2 {
     .testimonial-nav {
       .content {
@@ -597,7 +596,6 @@ testimonial Area
       }
     }
   }
-
 }
 
 /* Creative testimonial */
@@ -616,7 +614,6 @@ testimonial Area
   }
 }
 
-
 /* testimonial homes Variation */
 
 .bg-architecture--1 {
@@ -631,7 +628,6 @@ testimonial Area
   background-repeat: no-repeat;
 }
 
-
 .testimonial-style--3 {
   .quote {
     margin: 0 auto 49px;
@@ -639,14 +635,13 @@ testimonial Area
     width: 100px;
     height: 100px;
     line-height: 100px;
-    border: 2px solid #FCB72B;
+    border: 2px solid #fcb72b;
     border-radius: 50%;
     text-align: center;
 
     i {
-      color: #FCB72B;
+      color: #fcb72b;
     }
-
   }
 
   .testimonial-info {
@@ -692,7 +687,6 @@ testimonial Area
   }
 }
 
-
 /* ================================
  testimonial Horizontal Area
 ===================================*/
@@ -717,8 +711,8 @@ testimonial Area
   }
 }
 
-
-.testimonial--horizontal--active .swiper-pagination.swiper-pagination-progressbar {
+.testimonial--horizontal--active
+  .swiper-pagination.swiper-pagination-progressbar {
   position: absolute;
   bottom: -97px;
   left: 0;
@@ -733,8 +727,8 @@ testimonial Area
   top: auto;
 }
 
-
-.testimonial--horizontal--active .swiper-pagination.swiper-pagination-progressbar {
+.testimonial--horizontal--active
+  .swiper-pagination.swiper-pagination-progressbar {
   position: absolute;
   top: auto;
   bottom: 0;
@@ -748,14 +742,17 @@ testimonial Area
   background: #d8d8d8;
 }
 
-
-.testimonial--horizontal--active .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background: #0038E3;
+.testimonial--horizontal--active
+  .swiper-pagination-progressbar
+  .swiper-pagination-progressbar-fill {
+  background: #0038e3;
   height: 100%;
   position: absolute;
 }
 
-.testimonial--horizontal--active .swiper-pagination-progressbar .swiper-pagination-progressbar-fill:before {
+.testimonial--horizontal--active
+  .swiper-pagination-progressbar
+  .swiper-pagination-progressbar-fill:before {
   content: "";
   position: absolute;
   top: -6px;
@@ -766,8 +763,8 @@ testimonial Area
   background: inherit;
 }
 
-
-.testimonial--horizontal--active .swiper-pagination.swiper-pagination-progressbar {
+.testimonial--horizontal--active
+  .swiper-pagination.swiper-pagination-progressbar {
   position: absolute;
   bottom: -97px;
   left: 0;
@@ -781,7 +778,6 @@ testimonial Area
   outline: none;
   top: auto;
 }
-
 
 .testimonial--horizontal--active .swiper-pagination.swiper-pagination-custom {
   position: absolute;
@@ -797,14 +793,19 @@ testimonial Area
   background: #d8d8d8;
 }
 
-
-.testimonial--horizontal--active .swiper-pagination-custom .progressbar .filled {
-  background: #0038E3;
+.testimonial--horizontal--active
+  .swiper-pagination-custom
+  .progressbar
+  .filled {
+  background: #0038e3;
   height: 100%;
   position: absolute;
 }
 
-.testimonial--horizontal--active .swiper-pagination-custom .progressbar .filled:before {
+.testimonial--horizontal--active
+  .swiper-pagination-custom
+  .progressbar
+  .filled:before {
   content: "";
   position: absolute;
   top: -6px;
@@ -817,13 +818,11 @@ testimonial Area
 
 // Responsive Css
 
-@media #{$sm-layout}{
-
+@media #{$sm-layout} {
 }
 
-@media #{$large-mobile}{
+@media #{$large-mobile} {
   .testimonial-space-right .slick-list {
     padding-right: 0px !important;
   }
 }
-

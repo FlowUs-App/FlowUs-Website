@@ -7,41 +7,37 @@
       "name": "Rex Watson",
       "designation": "Marketing"
     },
-    "title": "Best product ever !",
-    "ratings": 5
+    "title": "Best product ever !"
   },
   {
     "id": 2,
-    "quote": "This is just the most powerful theme I’ve ever met. Love to talk with their staff about how to explore all the capabilities of the @Brook theme.",
+    "quote": "The competetive and playful aspects of FlowUs interest me the most. There are similar approaches in other fitness apps, but they fail to encourage intrinsic motivation, unlike FlowUs.",
     "client": {
-      "photo": "client-2.jpg",
-      "name": "Alex Tuntuni",
-      "designation": "Designer"
+      "photo": "julis.jpeg",
+      "name": "Julis Goerlich",
+      "designation": "Artist"
     },
-    "title": "Best product ever !",
-    "ratings": 2
+    "title": "Best product ever !"
   },
   {
     "id": 3,
-    "quote": "This is just the most powerful theme I’ve ever met. Love to talk with their staff about how to explore all the capabilities of the @Brook theme.",
+    "quote": "FlowUs is the perfect app for me to do workouts and jogging. It boosts my tennis game to another level.",
     "client": {
-      "photo": "client-3.jpg",
-      "name": "John Doe",
-      "designation": "Developer"
+      "photo": "reuter.jpg",
+      "name": "Jan Reuter",
+      "designation": "Semiprofessional tennisplayer"
     },
-    "title": "Best product ever !",
-    "ratings": 4
+    "title": "Best product ever !"
   },
   {
     "id": 4,
-    "quote": "This is just the most powerful theme I’ve ever met. Love to talk with their staff about how to explore all the capabilities of the @Brook theme.",
+    "quote": "This app fits to me perfectly: I love to be around. With my job I get to see many new places. In my free time i love cycling and this app lets me share my long tours and many interesting places that might br unknown for many.",
     "client": {
-      "photo": "client-4.jpg",
-      "name": "Dr. Sokina",
-      "designation": "UI/UX"
+      "photo": "ruben.jpg",
+      "name": "Ruben Bosio",
+      "designation": "Train driver"
     },
-    "title": "Best product ever !",
-    "ratings": 5
+    "title": "Best product ever !"
   },
   {
     "id": 5,
@@ -51,7 +47,6 @@
       "name": "Mis Jarina",
       "designation": "HR & Admin"
     },
-    "title": "Best product ever !",
-    "ratings": 5
+    "title": "Best product ever !"
   }
 ]
