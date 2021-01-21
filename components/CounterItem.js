@@ -16,7 +16,7 @@ function CounterItem({ iconClass, title, count }) {
       </div>
       <VisibilitySensor onChange={(e) => visibleHandler(e)}>
         <span className="count">
-          {title === "Average Founder" ? (
+          {title === "Average Founder Age" ? (
             <CountUp
               start={appear ? 0 : null}
               end={count}

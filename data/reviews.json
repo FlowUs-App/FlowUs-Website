@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "quote": "This is just the most powerful theme I’ve ever met. Love to talk with their staff about how to explore all the capabilities of the @Brook theme.",
+    "quote": "I am very satisfied with the FlowUs app, because it was a form of motivation to practice exercises in the middle of quarantine. As a facilitator, it encourages me to be more disciplined about physical activities. Excellent app to achieve good results!",
     "client": {
-      "photo": "client-1.jpg",
-      "name": "Rex Watson",
-      "designation": "Marketing"
+      "photo": "Isa.jpeg",
+      "name": "Isabella Martins Silvares",
+      "designation": "Future dentist"
     },
     "title": "Best product ever !"
   },
@@ -25,13 +25,13 @@
     "client": {
       "photo": "reuter.jpg",
       "name": "Jan Reuter",
-      "designation": "Semiprofessional tennisplayer"
+      "designation": "Semi-professional tennisplayer"
     },
     "title": "Best product ever !"
   },
   {
     "id": 4,
-    "quote": "This app fits to me perfectly: I love to be around. With my job I get to see many new places. In my free time i love cycling and this app lets me share my long tours and many interesting places that might br unknown for many.",
+    "quote": "This app fits to me perfectly: I love to be around. With my job I get to see many new places. In my free time I love cycling and this app lets me share my long tours and many interesting places that might be unknown for many.",
     "client": {
       "photo": "ruben.jpg",
       "name": "Ruben Bosio",
@@ -41,11 +41,11 @@
   },
   {
     "id": 5,
-    "quote": "This is just the most powerful theme I’ve ever met. Love to talk with their staff about how to explore all the capabilities of the @Brook theme.",
+    "quote": "Since I started using FlowUs, my routine has completely changed! I've always been looking for ways to exercise and take care of my health and for sure it has made everything available to me in the best possible way!",
     "client": {
-      "photo": "client-5.jpg",
-      "name": "Mis Jarina",
-      "designation": "HR & Admin"
+      "photo": "clara.jpeg",
+      "name": "Clara Piccinin",
+      "designation": "Future biomedical scientists"
     },
     "title": "Best product ever !"
   }
