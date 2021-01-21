@@ -65,7 +65,10 @@ function Reviews() {
   return (
     <div
       className="brook-testimonial-area ptb--150 ptb-md--80 ptb-sm--60 slick-arrow-hover"
-      style={{ backgroundImage: `url(/bg-image-5.jpg)` }}
+      style={{
+        backgroundImage: `url(/reviewBackground.jpg)`,
+        backgroundSize: "cover",
+      }}
     >
       <Container>
         <Row>
