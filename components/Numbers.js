@@ -20,7 +20,6 @@ function Numbers() {
   const getDocuments = async () => {
     const snapshot = await db.collection("launchtickets").get();
     setTickets(snapshot.docs.length);
-    console.log(tickets);
   };
 
   return (
