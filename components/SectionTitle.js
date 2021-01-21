@@ -7,7 +7,12 @@ function SectionTitle({ title, btnText, btnLink }) {
         <h3 dangerouslySetInnerHTML={{ __html: title }} />
       </div>
       <div className="section-btn mt_mobile--30">
-        <a className="button-text" href={`${process.env.PUBLIC_URL + btnLink}`}>
+        <a
+          className="button-text"
+          href={`${btnLink}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span>{btnText}</span>
           <i className="fa fa-arrow-right" />
         </a>

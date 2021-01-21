@@ -38,7 +38,7 @@ function CommunityProjects() {
             <SectionTitle
               title={"Featured <span class='gradientFlow'>Projects</span>"}
               btnText={"View all projects"}
-              btnLink={"/"}
+              btnLink={"https://www.instagram.com/flowus.magazine/"}
             />
           </Col>
         </Row>
