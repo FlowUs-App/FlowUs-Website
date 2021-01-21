@@ -18,6 +18,10 @@
     transform: translateX(-50%);
     border: none;
 
+    @media screen and (max-width: 400px) {
+      left: 48%;
+    }
+
     &.animate {
       animation: bounceUpDown 1s infinite;
     }
