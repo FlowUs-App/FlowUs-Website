@@ -1,7 +1,8 @@
 import React from "react";
+import TermsOfServices from "../container/TermsOfServicesPage";
 
 function tos() {
-  return <div>tos</div>;
+  return <TermsOfServices />;
 }
 
 export default tos;

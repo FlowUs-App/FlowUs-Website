@@ -375,8 +375,14 @@
 }
 
 .contactButton {
-  padding: 10px;
   background-color: white;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.contactButton:hover {
+  color: white !important;
+  background-color: #164269;
   border-radius: 10px;
 }
 
@@ -421,4 +427,9 @@
 
 .mtDistance {
   margin-top: 1rem;
+}
+
+.tosText {
+  padding: 10rem;
+  text-align: left;
 }

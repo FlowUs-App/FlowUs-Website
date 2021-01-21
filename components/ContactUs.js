@@ -13,9 +13,11 @@ function ContactUs() {
                   <h6>Have the time of your life</h6>
                   <h3>Ready to enjoy FlowUS ?</h3>
                   <Link href={"mailto:flowus.app@gmail.com"}>
-                    <span className="contactButton">
-                      Contact us <i className="fa fa-arrow-right" />
-                    </span>
+                    <button className="contactButton">
+                      <span>
+                        Contact us <i className="fa fa-arrow-right" />
+                      </span>
+                    </button>
                   </Link>
                 </div>
               </div>
