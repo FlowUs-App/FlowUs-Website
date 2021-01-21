@@ -22,6 +22,10 @@
       left: 48%;
     }
 
+    @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+      left: 47.5%;
+    }
+
     &.animate {
       animation: bounceUpDown 1s infinite;
     }
