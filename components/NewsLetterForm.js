@@ -37,11 +37,8 @@ function NewsLetterForm() {
             .then(function (docRef) {
               setMail("");
               alreadyRegistered(true);
-              console.log("Document written with ID: ", docRef.id);
             })
-            .catch(function (error) {
-              console.error("Error adding document: ", error);
-            });
+            .catch(function (error) {});
         } else {
           setMail("You already registered yourself");
         }

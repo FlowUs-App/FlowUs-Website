@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CounterItem from "./CounterItem";
-import { Octokit } from "@octokit/core";
 
 import initFirebase from "../utils/firebase";
 import firebase from "firebase/app";

@@ -433,3 +433,19 @@
   padding: 10rem;
   text-align: left;
 }
+
+.centerMe {
+  width: 100%;
+  left: 48%;
+}
+
+.eatPage {
+  width: 100%;
+  height: 30vw;
+}
+
+@media only screen and (max-width: 850px) {
+  .eatPage {
+    height: 100vh;
+  }
+}

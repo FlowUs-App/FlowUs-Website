@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import DefaultLayout from "../layout/DefaultLayout";
 import LaunchTicketInfo from "../components/LaunchTicketInfo";
-import Spacer from "../components/Spacer";
+import ContactUs from "../components/ContactUs";
 
 function LaunchTicketPage() {
   return (
@@ -20,6 +20,7 @@ function LaunchTicketPage() {
           <Header />
 
           <LaunchTicketInfo />
+          <ContactUs />
         </DefaultLayout>
         <Footer />
       </Fragment>
