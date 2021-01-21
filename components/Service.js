@@ -9,7 +9,7 @@ function Service() {
       <Container>
         <Row>
           {services.map(({ thumb, title, id, content }) => (
-            <Col key={id} xs={12} md={4} className={"wow move-up"}>
+            <Col key={id} xs={12} md={4} className={"wow move-up mtDistance"}>
               <ServiceItem thumb={thumb} title={title} content={content} />
             </Col>
           ))}
