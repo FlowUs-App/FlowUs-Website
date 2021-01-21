@@ -383,3 +383,31 @@
 .hoverLink:hover {
   text-decoration: underline;
 }
+
+.hoverAnim::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  position: absolute;
+  left: auto;
+  right: 0;
+  z-index: -1;
+  -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+  transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+  background: currentColor;
+}
+
+.hoverAnim {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-weight: 600;
+  line-height: 1.18;
+  font-size: 16px;
+  font-family: $bodyFont;
+  color: $theme-color;
+  padding: 5px 0px;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
