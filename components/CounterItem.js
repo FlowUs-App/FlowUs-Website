@@ -12,11 +12,20 @@ function CounterItem({ iconClass, title, count }) {
   return (
     <div className="counter-style--2 wow move-up">
       <div className="icon">
-        <i className={iconClass} />
+        <img src={"/service/" + iconClass} />
       </div>
       <VisibilitySensor onChange={(e) => visibleHandler(e)}>
         <span className="count">
-          <CountUp start={appear ? 0 : null} end={count} />
+          {title === "Average Founder" ? (
+            <CountUp
+              start={appear ? 0 : null}
+              end={count}
+              decimals={1}
+              decimal="."
+            />
+          ) : (
+            <CountUp start={appear ? 0 : null} end={count} />
+          )}
         </span>
       </VisibilitySensor>
       <div className="content">

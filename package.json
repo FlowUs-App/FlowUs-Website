@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@octokit/core": "^3.2.4",
     "bootstrap": "^4.6.0",
     "firebase": "^8.2.3",
     "font-awesome": "^4.7.0",

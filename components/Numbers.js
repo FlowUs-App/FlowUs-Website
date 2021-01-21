@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CounterItem from "./CounterItem";
+import { Octokit } from "@octokit/core";
 
 import initFirebase from "../utils/firebase";
 import firebase from "firebase/app";
@@ -10,6 +11,8 @@ initFirebase();
 function Numbers() {
   const db = firebase.firestore();
   const [tickets, setTickets] = useState(0);
+  const [commits, setCommits] = useState([]);
+
   useEffect(() => {
     getDocuments();
   }, []);
@@ -48,20 +51,20 @@ function Numbers() {
             <div className="speakers-number-wrap counter-grid">
               <CounterItem
                 count={tickets}
-                title={"Unique designs"}
-                iconClass={"ion-ios-eye-outline"}
+                title={"Launch Tickets"}
+                iconClass={"launchticket.svg"}
               />
 
               <CounterItem
-                count={1234}
-                title={"Completed Projects"}
-                iconClass={"ion-ios-filing-outline"}
+                count={569}
+                title={"Commits"}
+                iconClass={"commits.svg"}
               />
 
               <CounterItem
-                count={4585}
-                title={"Global Partners"}
-                iconClass={"ion-ios-home-outline"}
+                count={19.3}
+                title={"Average Founder"}
+                iconClass={"age.svg"}
               />
             </div>
           </Col>
