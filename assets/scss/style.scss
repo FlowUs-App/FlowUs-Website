@@ -290,7 +290,7 @@
 }
 
 .textColorWhite {
-  color: white;
+  color: white !important;
 }
 
 .socialBarLeft {
@@ -302,7 +302,7 @@
 }
 
 .lightBlueTextColor {
-  color: #94c2e9;
+  color: #94c2e9 !important;
 }
 
 .removeFancyStylings {
@@ -331,4 +331,51 @@
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
+
+#contactGradient {
+  overflow: hidden;
+  position: relative;
+  background: -webkit-gradient(
+    90deg,
+    rgba(22, 66, 105, 1) 12%,
+    rgba(0, 122, 255, 1) 35%,
+    rgba(148, 194, 233, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(22, 66, 105, 1) 12%,
+    rgba(0, 122, 255, 1) 35%,
+    rgba(148, 194, 233, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(22, 66, 105, 1) 12%,
+    rgba(0, 122, 255, 1) 35%,
+    rgba(148, 194, 233, 1) 100%
+  );
+  background: -o-linear-gradient(
+    90deg,
+    rgba(22, 66, 105, 1) 12%,
+    rgba(0, 122, 255, 1) 35%,
+    rgba(148, 194, 233, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(22, 66, 105, 1) 12%,
+    rgba(0, 122, 255, 1) 35%,
+    rgba(148, 194, 233, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(22, 66, 105, 1) 12%,
+    rgba(0, 122, 255, 1) 35%,
+    rgba(148, 194, 233, 1) 100%
+  );
+}
+
+.contactButton {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
 }

@@ -19,7 +19,7 @@ function Reviews() {
   const NextArrow = ({ className, onClick }) => {
     return (
       <button className={`slick-btn ${className}`} onClick={onClick}>
-        <i className="fa fa-angle-right" />
+        <i className="fa fa-angle-right textColorWhite" />
       </button>
     );
   };
@@ -27,7 +27,7 @@ function Reviews() {
   const PrevArrow = ({ className, onClick }) => {
     return (
       <button className={`slick-btn ${className}`} onClick={onClick}>
-        <i className="fa fa-angle-left" />
+        <i className="fa fa-angle-left textColorWhite" />
       </button>
     );
   };

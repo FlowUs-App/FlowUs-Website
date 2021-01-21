@@ -1,23 +1,25 @@
 [
   {
     "id": 1,
-    "quote": "I am very satisfied with the FlowUs app, because it was a form of motivation to practice exercises in the middle of quarantine. As a facilitator, it encourages me to be more disciplined about physical activities. Excellent app to achieve good results!",
-    "client": {
-      "photo": "Isa.jpeg",
-      "name": "Isabella Martins Silvares",
-      "designation": "Future dentist"
-    },
-    "title": "Best product ever !"
-  },
-  {
-    "id": 2,
     "quote": "The competetive and playful aspects of FlowUs interest me the most. There are similar approaches in other fitness apps, but they fail to encourage intrinsic motivation, unlike FlowUs.",
     "client": {
       "photo": "julis.jpeg",
       "name": "Julis Goerlich",
       "designation": "Artist"
     },
-    "title": "Best product ever !"
+    "title": "Best product ever !",
+    "link": "https://www.instagram.com/julisgoerlich/"
+  },
+  {
+    "id": 2,
+    "quote": "I am very satisfied with the FlowUs app, because it was a form of motivation to practice exercises in the middle of quarantine. As a facilitator, it encourages me to be more disciplined about physical activities. Excellent app to achieve good results!",
+    "client": {
+      "photo": "Isa.jpeg",
+      "name": "Isabella Martins Silvares",
+      "designation": "dentistry student"
+    },
+    "title": "Best product ever !",
+    "link": "https://www.instagram.com/isa_silvares/"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
       "name": "Jan Reuter",
       "designation": "Semi-professional tennisplayer"
     },
-    "title": "Best product ever !"
+    "title": "Best product ever !",
+    "link": "https://www.instagram.com/jan.rtr/"
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
       "name": "Ruben Bosio",
       "designation": "Train driver"
     },
-    "title": "Best product ever !"
+    "title": "Best product ever !",
+    "link": "https://www.instagram.com/rub_ya/"
   },
   {
     "id": 5,
@@ -45,8 +49,9 @@
     "client": {
       "photo": "clara.jpeg",
       "name": "Clara Piccinin",
-      "designation": "Future biomedical scientists"
+      "designation": "Biomedicine student"
     },
-    "title": "Best product ever !"
+    "title": "Best product ever !",
+    "link": "https://www.instagram.com/cla_piccinin/"
   }
 ]

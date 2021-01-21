@@ -1,27 +1,27 @@
 //===== Colors =====//
 
-$theme-color: #0038E3;
-$theme-color-2: #0069FF;
+$theme-color: #0038e3;
+$theme-color-2: #0069ff;
 
-$secondary-color: #FF5EE1;
-$creative-color: #FE378C;
-$red-color: #E33A3F;
-$red-color-2: #F23E20;
-$red-color-3: #F55D4E;
-$red-color-4: #FB6031;
+$secondary-color: #ff5ee1;
+$creative-color: #fe378c;
+$red-color: #e33a3f;
+$red-color-2: #f23e20;
+$red-color-3: #f55d4e;
+$red-color-4: #fb6031;
 $red-color-5: #d0021b;
-$yellow-color: #FCB72B;
-$yellow-color-2: #F8A440;
-$yellow-color-3: #F5A623;
-$pink: #F12C6E;
-$brown: #CE8F4F;
-$brown-2: #F1C078;
-$brown-3: #CAC0B3;
-$third-color: #99E5E8;
-$red-color: #F0263F;
-$tarkis-color: #19D2A8;
-$purple-color: #B013FE;
-$purple-color-2: #AC61EE;
+$yellow-color: #fcb72b;
+$yellow-color-2: #f8a440;
+$yellow-color-3: #f5a623;
+$pink: #f12c6e;
+$brown: #ce8f4f;
+$brown-2: #f1c078;
+$brown-3: #cac0b3;
+$third-color: #99e5e8;
+$red-color: #f0263f;
+$tarkis-color: #19d2a8;
+$purple-color: #b013fe;
+$purple-color-2: #ac61ee;
 $bodyColor: #333333;
 $heading-color: #222222;
 $bg-grey: #f5f5f5;
@@ -32,25 +32,22 @@ $white: #fff;
   color: #222222 !important;
 }
 
-
 //===== Font Family =====//
-$bodyFont: 'Poppins', sans-serif;
-$heading-font: 'louis_george_caferegular';
-$secondary-font: 'Montserrat', sans-serif;
-$playfair-font: 'Playfair Display', serif;
-$Permanent-font: 'Permanent Marker', cursive;
-$roboto: 'Roboto', sans-serif;
+$bodyFont: "Poppins", sans-serif;
+$heading-font: "louis_george_caferegular";
+$secondary-font: "Montserrat", sans-serif;
+$playfair-font: "Playfair Display", serif;
+$Permanent-font: "Permanent Marker", cursive;
+$roboto: "Roboto", sans-serif;
 
-
-$font-1: 'Poppins', sans-serif;
-$font-2: 'louis_george_caferegular';
-$font-3: 'Montserrat', sans-serif;
-$font-4: 'Playfair Display', serif;
-$font-5: 'Permanent Marker', cursive;
-$font-6: 'Roboto', sans-serif;
+$font-1: "Poppins", sans-serif;
+$font-2: "louis_george_caferegular";
+$font-3: "Montserrat", sans-serif;
+$font-4: "Playfair Display", serif;
+$font-5: "Permanent Marker", cursive;
+$font-6: "Roboto", sans-serif;
 // Template Font List
 $fontList: $font-1, $font-2, $font-3, $font-4, $font-5, $font-6;
-
 
 /*================================================
  font-family: 'Poppins', sans-serif;
@@ -60,34 +57,35 @@ $fontList: $font-1, $font-2, $font-3, $font-4, $font-5, $font-6;
   font-family: 'Roboto', sans-serif;
  =================================================*/
 
-
 // Template Colors
 $color-1: $theme-color;
-$color-2: #FE378C;
-$color-3: #F0263F;
-$color-4: #FCB72B;
-$color-5: #F8A440;
-$color-6: #F05874;
-$color-7: #99E5E8;
-$color-8: #82CECF;
-$color-9: #F0263F;
+$color-2: #164269;
+$color-3: #f0263f;
+$color-4: #fcb72b;
+$color-5: #f8a440;
+$color-6: #f05874;
+$color-7: #99e5e8;
+$color-8: #82cecf;
+$color-9: #f0263f;
 $color-10: #19d2a8;
-$color-11: #0069FF;
-$color-12: #F1C078;
-$color-13: #CAC0B3;
-$color-14: #F55D4E;
-$color-15: #AC61EE;
-$color-16: #F5A623;
-$color-17: #B013FE;
+$color-11: #0069ff;
+$color-12: #f1c078;
+$color-13: #cac0b3;
+$color-14: #f55d4e;
+$color-15: #ac61ee;
+$color-16: #f5a623;
+$color-17: #b013fe;
 $color-18: #899664;
-$color-19: #F12C6E;
-$color-20: #CE8F4F;
-$color-21: #FB6031;
-$color-22: #A810E0;
+$color-19: #f12c6e;
+$color-20: #ce8f4f;
+$color-21: #fb6031;
+$color-22: #a810e0;
 
 // Template Color List
-$colorList: $color-1, $color-2, $color-3, $color-4, $color-5, $color-6, $color-7, $color-8, $color-9, $color-10, $color-11, $color-12, $color-13, $color-14, $color-15, $color-16, $color-17, $color-18, $color-19, $color-20, $color-21, $color-22;
-
+$colorList: $color-1, $color-2, $color-3, $color-4, $color-5, $color-6, $color-7,
+  $color-8, $color-9, $color-10, $color-11, $color-12, $color-13, $color-14,
+  $color-15, $color-16, $color-17, $color-18, $color-19, $color-20, $color-21,
+  $color-22;
 
 //===== Line Height =====//
 $body-line-height: 24px;
@@ -102,68 +100,66 @@ $h4: 22px;
 $h5: 18px;
 $h6: 14px;
 
-
 //===== Social Colors =====//
-$facebook: #3B5998;
-$twitter: #00ACEE;
-$google-plus: #DD4B39;
-$pinterest: #C8232C;
-$linkedin: #0E76A8;
-$flickr: #FF0084;
-$dribbble: #EA4C89;
-$google: #DD4B39;
-$skype: #00AFF0;
+$facebook: #3b5998;
+$twitter: #00acee;
+$google-plus: #dd4b39;
+$pinterest: #c8232c;
+$linkedin: #0e76a8;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$google: #dd4b39;
+$skype: #00aff0;
 $behance: #0057ff;
-$youtube: #C4302B;
-$vimeo: #86C9EF;
-$yahoo: #720E9E;
-$paypal: #00588B;
-$delicious: #205CC0;
-$flattr: #F67C1A;
-$android: #A4C639;
-$tumblr: #34526F;
+$youtube: #c4302b;
+$vimeo: #86c9ef;
+$yahoo: #720e9e;
+$paypal: #00588b;
+$delicious: #205cc0;
+$flattr: #f67c1a;
+$android: #a4c639;
+$tumblr: #34526f;
 $wikipedia: #333333;
-$stumbleupon: #F74425;
-$foursquare: #25A0CA;
+$stumbleupon: #f74425;
+$foursquare: #25a0ca;
 $digg: #191919;
-$spotify: #81B71A;
-$reddit: #C6C6C6;
+$spotify: #81b71a;
+$reddit: #c6c6c6;
 $cc: #688527;
-$vk: #2B587A;
-$rss: #EE802F;
-$podcast: #E4B21B;
-$dropbox: #3D9AE8;
+$vk: #2b587a;
+$rss: #ee802f;
+$podcast: #e4b21b;
+$dropbox: #3d9ae8;
 $github: #171515;
-$soundcloud: #FF7700;
-$wordpress: #1E8CBE;
-$yelp: #C41200;
+$soundcloud: #ff7700;
+$wordpress: #1e8cbe;
+$yelp: #c41200;
 $scribd: #666666;
-$cc-stripe: #008CDD;
-$drupal: #27537A;
-$get-pocket: #EE4056;
-$bitbucket: #0E4984;
-$stack-overflow: #EF8236;
-$hacker-news: #FF6600;
+$cc-stripe: #008cdd;
+$drupal: #27537a;
+$get-pocket: #ee4056;
+$bitbucket: #0e4984;
+$stack-overflow: #ef8236;
+$hacker-news: #ff6600;
 $xing: #126567;
-$instagram: #D82E86;
-$quora: #A82400;
-$openid: #E16309;
+$instagram: #d82e86;
+$quora: #a82400;
+$openid: #e16309;
 $steam: #111111;
-$amazon: #E47911;
-$slack: #63C1A0;
-$snapchat: #FFFC00;
-
+$amazon: #e47911;
+$slack: #63c1a0;
+$snapchat: #fffc00;
 
 // Layouts
-$extra-device: 'only screen and (min-width: 1600px) and (max-width: 1919px)';
-$sm-laptop-device: 'only screen and (min-width: 1300px) and (max-width: 1599px)';
-$laptop-device: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
-$lg-layout: 'only screen and (min-width: 992px) and (max-width: 1199px)';
-$custom-lg-layout: 'only screen and (min-width: 1021px) and (max-width: 1090px)';
-$md-layout: 'only screen and (min-width: 768px) and (max-width: 991px)';
-$sm-layout: 'only screen and (max-width: 767px)';
-$large-mobile: 'only screen and (max-width: 575px)';
-$small-mobile: 'only screen and (max-width: 479px)';
+$extra-device: "only screen and (min-width: 1600px) and (max-width: 1919px)";
+$sm-laptop-device: "only screen and (min-width: 1300px) and (max-width: 1599px)";
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
+$lg-layout: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$custom-lg-layout: "only screen and (min-width: 1021px) and (max-width: 1090px)";
+$md-layout: "only screen and (min-width: 768px) and (max-width: 991px)";
+$sm-layout: "only screen and (max-width: 767px)";
+$large-mobile: "only screen and (max-width: 575px)";
+$small-mobile: "only screen and (max-width: 479px)";
 
 @media #{$large-mobile} {
   .container {
@@ -176,14 +172,3 @@ $small-mobile: 'only screen and (max-width: 479px)';
     max-width: 320px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
