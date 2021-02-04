@@ -451,6 +451,10 @@
   margin-top: 20rem;
 }
 
+.testText:hover {
+  transform: scale(1.3);
+}
+
 @media only screen and (max-width: 850px) {
   .eatPage {
     height: 100vh;

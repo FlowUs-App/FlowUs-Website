@@ -22,8 +22,9 @@ function TestFlightPage() {
           <Confetti
             width={size.width}
             height={size.height}
-            colors={["#00bcd4", "#000ed4"]}
-            numberOfPieces={50}
+            colors={["#00bcd4", "#000ed4", "#6198ff", "#164269", "#94c2e9"]}
+            numberOfPieces={2000}
+            tweenDuration={12000}
             recycle={false}
           />
           <Header />
@@ -31,9 +32,11 @@ function TestFlightPage() {
             <a
               href="https://testflight.apple.com/join/XA8bLv0r"
               className="centerThis testText"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h1 className="section-title text-center textColorWhite centerMe">
-                Start Testing
+                Start Testing <span className="lightBlueTextColor">Now</span>
               </h1>
             </a>
           </div>
