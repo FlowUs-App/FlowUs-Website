@@ -441,7 +441,14 @@
 
 .eatPage {
   width: 100%;
-  height: 30vw;
+  height: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.testText {
+  margin-top: 20rem;
 }
 
 @media only screen and (max-width: 850px) {
