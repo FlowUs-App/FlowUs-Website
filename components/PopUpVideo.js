@@ -44,7 +44,11 @@ function PopUpVideo({
         </div>
       ) : gradient ? (
         <div className={`video-btn-2 ${className}`}>
-          <button className="play__btn" onClick={() => openModal()}>
+          <button
+            aria-label="Play promo video"
+            className="play__btn"
+            onClick={() => openModal()}
+          >
             <div className={`icon-gradient ${gradientClass}`}>
               <div className={`video-icon ${iconStyleClass}`} />
             </div>
@@ -55,7 +59,11 @@ function PopUpVideo({
         </div>
       ) : (
         <div className={`video-btn ${className}`}>
-          <button className="play__btn" onClick={() => openModal()}>
+          <button
+            aria-label="Play promo video"
+            className="play__btn"
+            onClick={() => openModal()}
+          >
             <div className={`video-icon ${iconStyleClass}`} />
             {watchText && (
               <span className="watch-text mt--30 d-block">{watchText}</span>
