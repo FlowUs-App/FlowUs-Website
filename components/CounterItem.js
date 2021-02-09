@@ -29,7 +29,7 @@ function CounterItem({ iconClass, title, count }) {
         </span>
       </VisibilitySensor>
       <div className="content">
-        <h6>{title}</h6>
+        <h5 className="contentTitles">{title}</h5>
       </div>
     </div>
   );

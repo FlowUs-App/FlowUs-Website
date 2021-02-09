@@ -2,8 +2,12 @@ import "../styles/globals.scss";
 import "../index.scss";
 import "swiper/swiper.scss";
 import Head from "next/head";
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    document.documentElement.lang = "en";
+  }, []);
   return (
     <>
       <Head>

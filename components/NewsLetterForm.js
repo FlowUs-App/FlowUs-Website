@@ -51,13 +51,14 @@ function NewsLetterForm() {
   return (
     <div className="input-box">
       <input
+        aria-label="Email Input"
         type="email"
         placeholder="Your e-mail"
         className="textColorWhite"
         value={mail}
         onChange={(e) => setMail(e.target.value)}
       />
-      <button onClick={() => checkRoute()}>
+      <button aria-label="Confirm Email" onClick={() => checkRoute()}>
         <i className="ion-android-arrow-forward" />
       </button>
     </div>

@@ -32,7 +32,12 @@ function PopUpVideo({
             <img src={thumb} alt="video thumb" />
           </div>
           <div className="video-btn position--center">
-            <button className="play__btn" onClick={() => openModal()}>
+            <button
+              aria-hidden="true"
+              className="play__btn"
+              aria-label="Play promo video"
+              onClick={() => openModal()}
+            >
               <div className={`video-icon ${iconStyleClass}`} />
             </button>
           </div>
