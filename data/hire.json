@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Programmer",
+    "content": "We are looking for programmers, that like to handle complex problems and want to achieve more experience by working in a team."
+  },
+  {
+    "id": 2,
+    "title": "Designer",
+    "content": "UI/UX is your passion? That is awesome, because we share that too. With Us you are going to have a lot of room to find your style."
+  },
+  {
+    "id": 3,
+    "title": "Social Media Specialist",
+    "content": "You have crazy ideas that could lead FlowUs to the next level, you are outgoing and consider yourself an extrovert? Then we want you."
+  }
+]

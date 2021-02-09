@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import services from "../data/services.json";
+import hire from "../data/hire.json";
 import IconBoxItem from "../components/IconBoxItem";
 
 function HiringInfo() {
@@ -25,7 +25,7 @@ function HiringInfo() {
         </Row>
 
         <Row className="mt--70 mt_sm--20 mt_md--30">
-          {services.map((service) => (
+          {hire.map((service) => (
             <Col xs={12} md={6} lg={4} key={service.id}>
               <IconBoxItem
                 data={service}

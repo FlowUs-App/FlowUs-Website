@@ -20,7 +20,7 @@ function IconBoxItem({ data, border, padding, iconType, className, showBtn }) {
           <p className="bk_pra">{data.content}</p>
           {showBtn ? (
             <a className="icon-btn" href={data.btnLink}>
-              <span>{data.btnText}</span>
+              <span>{"Apply for " + data.title}</span>
               <i className="fa fa-arrow-right" />
             </a>
           ) : null}
