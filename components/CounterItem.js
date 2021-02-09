@@ -12,7 +12,7 @@ function CounterItem({ iconClass, title, count }) {
   return (
     <div className="counter-style--2 wow move-up">
       <div className="icon">
-        <img src={"/service/" + iconClass} />
+        <img alt={title + "count"} src={"/service/" + iconClass} />
       </div>
       <VisibilitySensor onChange={(e) => visibleHandler(e)}>
         <span className="count">

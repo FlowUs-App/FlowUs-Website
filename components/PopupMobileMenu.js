@@ -26,6 +26,7 @@ function PopupMobileMenu() {
       hasMegaMenu.forEach((hasSubMenuAnchor, index) => {
         hasSubMenuAnchor.firstChild.addEventListener("click", (e) => {
           e.preventDefault();
+
           if (e.target.classList.contains("active")) {
             e.target.classList.remove("active");
           } else {
@@ -77,7 +78,10 @@ function PopupMobileMenu() {
                 }
               >
                 <Link href={menuItem.link}>
-                  <span>{menuItem.title}</span>
+                  <span onClick={() => closeMobileMenu()}>
+                    {" "}
+                    {menuItem.title}
+                  </span>
                 </Link>
 
                 {menuItem.subMenu ? (
