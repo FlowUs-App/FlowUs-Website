@@ -298,7 +298,7 @@
 }
 
 .darkBlueTextColor {
-  color: #164269;
+  color: #164269 !important;
 }
 
 .lightBlueTextColor {
@@ -459,4 +459,11 @@
   .eatPage {
     height: 100vh;
   }
+}
+
+.hiringPage {
+  background-image: url(/hiringBG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }

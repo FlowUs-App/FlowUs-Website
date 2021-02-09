@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import DefaultLayout from "../layout/DefaultLayout";
-import LaunchTicketInfo from "../components/LaunchTicketInfo";
+import HiringInfo from "../components/HiringInfo";
 import ContactUs from "../components/ContactUs";
 
 function HiringPage() {
@@ -18,7 +18,7 @@ function HiringPage() {
           revealFooter={true}
         >
           <Header />
-          <LaunchTicketInfo />
+          <HiringInfo />
           <ContactUs />
         </DefaultLayout>
         <Footer />
