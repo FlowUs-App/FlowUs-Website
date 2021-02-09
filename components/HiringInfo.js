@@ -12,7 +12,7 @@ function HiringInfo() {
             <Col xs={12}>
               <div className={`section-title ${"text-center"} `}>
                 <h3 className="textColorWhite">
-                  WHAT <span className="darkBlueTextColor">WE</span> DO
+                  WHAT <span className="lightBlueTextColor">WE</span> DO
                 </h3>
                 <h2 className="textColorWhite">
                   {

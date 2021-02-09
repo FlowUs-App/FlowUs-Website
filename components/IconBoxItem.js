@@ -19,7 +19,7 @@ function IconBoxItem({ data, border, padding, iconType, className, showBtn }) {
           <h5 className="heading heading-h5">{data.title}</h5>
           <p className="bk_pra">{data.content}</p>
           {showBtn ? (
-            <a className="icon-btn" href={data.btnLink}>
+            <a className="icon-btn" href={"/hiring#contact"}>
               <span>{"Apply for " + data.title}</span>
               <i className="fa fa-arrow-right" />
             </a>
