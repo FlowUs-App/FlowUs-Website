@@ -4,7 +4,12 @@ function TeamMemberItem({ data }) {
   return (
     <div className="team team__style--2">
       <div className="thumb">
-        <img src={"./team-2/" + data.thumb} alt={data.name} />
+        <img
+          alt={data.name}
+          src={"./team-2/" + data.thumb + ".webp"}
+          type={"./team-2/" + data.thumb + ".webp"}
+        />
+
         <div className="overlay" />
         <ul className="socialBarLeft social-icon icon-solid-rounded icon-size-medium text-center">
           {data.socials.map((social) => (

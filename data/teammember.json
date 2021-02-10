@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Jan Swoboda",
     "designation": "Execution-Leader",
-    "thumb": "jan.png",
+    "thumb": "jan",
     "socials": [
       {
         "id": 1,
@@ -26,7 +26,7 @@
     "id": 2,
     "name": "Lucas Goldner",
     "designation": "IT-Leader",
-    "thumb": "lucas.jpg",
+    "thumb": "lucas",
     "socials": [
       {
         "id": 1,
@@ -49,7 +49,7 @@
     "id": 3,
     "name": "Philipp Storz",
     "designation": "Programmer/Designer",
-    "thumb": "philipp.jpg",
+    "thumb": "philipp",
     "socials": [
       {
         "id": 1,
@@ -72,7 +72,7 @@
     "id": 4,
     "name": "Lea Mahl",
     "designation": "Designer",
-    "thumb": "lea.jpg",
+    "thumb": "lea",
     "socials": [
       {
         "id": 1,
