@@ -3,7 +3,7 @@
     "id": 1,
     "quote": "The competetive and playful aspects of FlowUs interest me the most. There are similar approaches in other fitness apps, but they fail to encourage intrinsic motivation, unlike FlowUs.",
     "client": {
-      "photo": "julis.jpeg",
+      "photo": "julis",
       "name": "Julis Goerlich",
       "designation": "Artist"
     },
@@ -14,7 +14,7 @@
     "id": 2,
     "quote": "I am very satisfied with the FlowUs app, because it was a form of motivation to practice exercises in the middle of quarantine. As a facilitator, it encourages me to be more disciplined about physical activities. Excellent app to achieve good results!",
     "client": {
-      "photo": "Isa.jpeg",
+      "photo": "Isa",
       "name": "Isabella Martins Silvares",
       "designation": "Dentistry student"
     },
@@ -25,7 +25,7 @@
     "id": 3,
     "quote": "FlowUs is the perfect app for me to do workouts and jogging. It boosts my tennis game to another level.",
     "client": {
-      "photo": "reuter.jpg",
+      "photo": "reuter",
       "name": "Jan Reuter",
       "designation": "Semi-professional tennisplayer"
     },
@@ -36,7 +36,7 @@
     "id": 4,
     "quote": "This app fits to me perfectly: I love to be around. With my job I get to see many new places. In my free time I love cycling and this app lets me share my long tours and many interesting places that might be unknown for many.",
     "client": {
-      "photo": "ruben.jpg",
+      "photo": "ruben",
       "name": "Ruben Bosio",
       "designation": "Train driver"
     },
@@ -47,7 +47,7 @@
     "id": 5,
     "quote": "Since I started using FlowUs, my routine has completely changed! I've always been looking for ways to exercise and take care of my health and for sure it has made everything available to me in the best possible way!",
     "client": {
-      "photo": "clara.jpeg",
+      "photo": "clara",
       "name": "Clara Piccinin",
       "designation": "Biomedicine student"
     },

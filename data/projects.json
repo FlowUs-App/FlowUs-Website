@@ -2,16 +2,16 @@
   {
     "id": 1,
     "title": "Shootings",
-    "thumb": "shootings.jpg"
+    "thumb": "shootings"
   },
   {
     "id": 2,
     "title": "Interviews",
-    "thumb": "interview.jpg"
+    "thumb": "interview"
   },
   {
     "id": 3,
     "title": "Cooking",
-    "thumb": "cooking.jpg"
+    "thumb": "cooking"
   }
 ]

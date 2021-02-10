@@ -5,7 +5,10 @@ function CommunityProjectItem({ title, thumb, category, className }) {
   return (
     <div className={`portfolio portfolio_style--2 mt--30 ${className}`}>
       <div className="thumb">
-        <img src={thumb} alt={title} />
+        <picture>
+          <source srcset={thumb + ".jpg"} type={thumb + ".jpg"} />
+          <img alt={title} src={thumb + ".webp"} type={thumb + ".webp"} />
+        </picture>
       </div>
       <div className="portfolio-overlay" />
       <div className="port-overlay-info">
