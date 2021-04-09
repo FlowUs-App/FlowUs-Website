@@ -67,23 +67,5 @@
         "username": "stoorrzi"
       }
     ]
-  },
-  {
-    "id": 4,
-    "name": "Lea Mahl",
-    "designation": "Designer",
-    "thumb": "lea",
-    "socials": [
-      {
-        "id": 1,
-        "media": "linkedin",
-        "username": "lea-mahl"
-      },
-      {
-        "id": 2,
-        "media": "instagram",
-        "username": "lea.shania"
-      }
-    ]
   }
 ]
